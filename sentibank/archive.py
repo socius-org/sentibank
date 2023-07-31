@@ -64,4 +64,7 @@ class load:
             file_path = os.path.join(self.script_dir, 'dict_arXiv', 'Aigents', 'Aigents+_v2022.csv')
             self.origin_df = pd.read_csv(file_path)
         
+        else: 
+            raise ValueError
+        
         return self.origin_df

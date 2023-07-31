@@ -9,7 +9,7 @@ from spacymoji import Emoji
 from sentibank.dict_arXiv import emos
 
 
-class lexical_overview:
+class analysis:
     def __init__(self):
         self.spacy_nlp = spacy.load(
             "en_core_web_sm",
@@ -240,13 +240,10 @@ class lexical_overview:
 
         return pprint(summary)
 
-class overview: 
-    def __init__(self):
-        pass
-    
-    def overview(self, dictionary:dict=None): 
+class lexical_overview: 
+    def __init__(self, dictionary:dict=None): 
         #dict:str = Consider if users simply come up with the lex_dict_idx
         if dict is None: 
             raise ValueError
         else:
-            return lexical_overview().summarise_lex_dict(dictionary)
+            analysis().summarise_lex_dict(dictionary)
