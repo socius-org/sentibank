@@ -221,14 +221,22 @@ class analysis:
                 misc.append(key)
                 general_dict["miscellaneous"] += value
 
-        granular_dict = dict(
-            ("{} ({})".format(key, spacy.explain(key)), value)
-            for (key, value) in granular_dict.items()
-        )
+        granular_dict_adv = {} 
+        
+        if "EMOTICON" or "EMOJI" in granular_dict.keys(): 
+            for key, value in granular_dict.items(): 
+                if key == "EMOTICON": 
+                    granular_dict_adv["EMOTICON (textual representations of emotions)"] = value
+                elif key == "EMOJI": 
+                    granular_dict_adv["EMOJI (pictorial symbols of emotions, objects, or concepts)"] = value 
+                else: 
+                    granular_dict_adv["{} ({})".format(key,spacy.explain(key))] = value
+        else: 
+            granular_dict_adv = dict(("{} ({})".format(key,spacy.explain(key)), value) for (key, value) in granular_dict.items())
 
         part_of_speech = {
             "general": self.sort_dict(general_dict),
-            "granular": self.sort_dict(granular_dict),
+            "granular": self.sort_dict(granular_dict_adv),
             "misc": misc,
         }
 
