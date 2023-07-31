@@ -1,0 +1,3 @@
+spacy
+spacymoji
+rich
