@@ -15,7 +15,7 @@ class analysis:
             "en_core_web_sm",
             exclude=["parser", "senter", "attribute_ruler", "lemmatizer", "ner"],
         )
-        #self.spacy_nlp.add_pipe("sentencizer")
+        # self.spacy_nlp.add_pipe("sentencizer")
         self.spacy_nlp.add_pipe("emoji", first=True)
 
     def count_categorical_labels(self, dictionary):
@@ -172,7 +172,12 @@ class analysis:
             "adjectives": 0,
             "adverbs": 0,
             "prepositions": 0,
+            "conjunctions": 0,
+            "determiners": 0,
+            "pronouns": 0,
+            "numerals": 0,
             "nouns": 0,
+            "particles": 0,
             "emos": 0,
             "miscellaneous": 0,
         }
@@ -213,6 +218,16 @@ class analysis:
                 general_dict["prepositions"] += value
             elif key.startswith("N"):
                 general_dict["nouns"] += value
+            elif key.startswith("PRP") or key.startswith("WP"):
+                general_dict["pronouns"] += value
+            elif key == "CD":
+                general_dict["numerals"] += value
+            elif key == "CC":
+                general_dict["conjunctions"] += value
+            elif key == "DT" or key == "WDT":
+                general_dict["determiners"] += value
+            elif key == "RP":
+                general_dict["particles"] += value
             elif key == "EMOTICON":
                 general_dict["emos"] += value
             elif key == "EMOJI":
@@ -221,18 +236,25 @@ class analysis:
                 misc.append(key)
                 general_dict["miscellaneous"] += value
 
-        granular_dict_adv = {} 
-        
-        if "EMOTICON" or "EMOJI" in granular_dict.keys(): 
-            for key, value in granular_dict.items(): 
-                if key == "EMOTICON": 
-                    granular_dict_adv["EMOTICON (textual representations of emotions)"] = value
-                elif key == "EMOJI": 
-                    granular_dict_adv["EMOJI (pictorial symbols of emotions, objects, or concepts)"] = value 
-                else: 
-                    granular_dict_adv["{} ({})".format(key,spacy.explain(key))] = value
-        else: 
-            granular_dict_adv = dict(("{} ({})".format(key,spacy.explain(key)), value) for (key, value) in granular_dict.items())
+        granular_dict_adv = {}
+
+        if "EMOTICON" or "EMOJI" in granular_dict.keys():
+            for key, value in granular_dict.items():
+                if key == "EMOTICON":
+                    granular_dict_adv[
+                        "EMOTICON (textual representations of emotions)"
+                    ] = value
+                elif key == "EMOJI":
+                    granular_dict_adv[
+                        "EMOJI (pictorial symbols of emotions, objects, or concepts)"
+                    ] = value
+                else:
+                    granular_dict_adv["{} ({})".format(key, spacy.explain(key))] = value
+        else:
+            granular_dict_adv = dict(
+                ("{} ({})".format(key, spacy.explain(key)), value)
+                for (key, value) in granular_dict.items()
+            )
 
         part_of_speech = {
             "general": self.sort_dict(general_dict),
@@ -248,10 +270,11 @@ class analysis:
 
         return pprint(summary)
 
-class lexical_overview: 
-    def __init__(self, dictionary:dict=None): 
-        #dict:str = Consider if users simply come up with the lex_dict_idx
-        if dict is None: 
+
+class lexical_overview:
+    def __init__(self, dictionary: dict = None):
+        # dict:str = Consider if users simply come up with the lex_dict_idx
+        if dict is None:
             raise ValueError
         else:
             analysis().summarise_lex_dict(dictionary)
