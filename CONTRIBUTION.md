@@ -32,7 +32,7 @@ Contributions should meet the following criteria:
 - Contains no personally identifiable or otherwise confidential information.
 
 
-Please open a [pull request](https://github.com/socius-org/sentibank/pulls) or [issue](https://github.com/socius-org/sentibank/issues) on GitHub to begin the contribution process. 
+Please open an [issue]((https://github.com/socius-org/sentibank/issues) outlining your proposed lexicon before dedicating resources to annotation. This can serve as a transparent public record on how lexicons are created, processed and enhanced. We expect this record to: Allow all sentibank users to better understand the composition and quality of included dictionaries; Enable substantive community discussion; and Provide a learning opportunity for those developing lexicons in the future.  
 
 
 >  We understand sentiment annotation can be new territory for many. Please don't hesitate to reach out - we're happy to provide guidance each step of the way.
@@ -41,7 +41,7 @@ Please open a [pull request](https://github.com/socius-org/sentibank/pulls) or [
 > 
 > If any part of the process seem unclear, let us know. We're glad to advise on effective instructions, corpus creation, quality control, and any other annotation needs.
 > 
-> Feel free to reach out to discuss best practices tailored to your goals. We look forward to hearing your ideas and providing customised support to make them a reality.
+> Feel free to reach out through xxx@xxx to discuss best practices tailored to your goals. We look forward to hearing your ideas and providing customised support to make them a reality.
 > 
 > Our hope is for the criteria to inspire creative solutions, not deter participation. We're here to lower barriers and see new lexicons brought to life through thoughtful partnership.
 
