@@ -1,11 +1,14 @@
 # Contribution Criteria
+
 We welcome new lexicons that help expand the coverage and capabilities of sentibank. 
 
-Contributions should meet the following criteria:
+Contributions should meet the following criteria.
 
 ## Scope 🎯
 - Lexicon is *within the domain of sentiment analysis and opinion mining*. Other linguistic resources may be out of scope.
 - Lexicon covers a new domain or expands existing coverage meaningfully. Niche/duplicate datasets are lower priority.
+
+> ``ℹ️`` Please open an [issue](https://github.com/socius-org/sentibank/issues) outlining your proposed lexicon before dedicating resources to annotation. This can serve as a transparent public record on how lexicons are created, processed and enhanced. We expect this record to: Allow all sentibank users to better understand the composition and quality of included dictionaries; Enable substantive community discussion; and Provide a learning opportunity for those developing lexicons in the future.
 
 ## Composition 📝
 - Contains a minimum of 100 labeled sentiment terms/phrases. Smaller sample sizes tend not over-index specific sources.
@@ -32,10 +35,7 @@ Contributions should meet the following criteria:
 - Contains no personally identifiable or otherwise confidential information.
 
 
-Please open an [issue](https://github.com/socius-org/sentibank/issues) outlining your proposed lexicon before dedicating resources to annotation. This can serve as a transparent public record on how lexicons are created, processed and enhanced. We expect this record to: Allow all sentibank users to better understand the composition and quality of included dictionaries; Enable substantive community discussion; and Provide a learning opportunity for those developing lexicons in the future.  
-
-
->  We understand sentiment annotation can be new territory for many. Please don't hesitate to reach out - we're happy to provide guidance each step of the way.
+>  ``ℹ️`` We understand sentiment annotation can be new territory for many. Please don't hesitate to reach out - we're happy to provide guidance each step of the way.
 > 
 > Our team has experience developing guidelines, training annotators, measuring agreement, and related tasks. We can lend our knowledge to ensure your project goes smoothly.
 > 
@@ -46,4 +46,4 @@ Please open an [issue](https://github.com/socius-org/sentibank/issues) outlining
 > Our hope is for the criteria to inspire creative solutions, not deter participation. We're here to lower barriers and see new lexicons brought to life through thoughtful partnership.
 
 
-By pooling our talents, we can transform sentibank into an even more powerful tool. Join us in unlocking sentibank's full potential through shared knowledge! 
+By pooling our talents, we can transform sentibank into an even more powerful tool. Join us in unlocking sentibank's full potential through shared knowledge!
