@@ -12,6 +12,10 @@ sentibank.egg-info/dependency_links.txt
 sentibank.egg-info/requires.txt
 sentibank.egg-info/top_level.txt
 sentibank/dict_arXiv/emos.py
+sentibank/dict_arXiv/AFINN/AFINN_v2009.csv
+sentibank/dict_arXiv/AFINN/AFINN_v2009.pickle
+sentibank/dict_arXiv/AFINN/AFINN_v2011.csv
+sentibank/dict_arXiv/AFINN/AFINN_v2011.pickle
 sentibank/dict_arXiv/AFINN/AFINN_v2015.csv
 sentibank/dict_arXiv/AFINN/AFINN_v2015.pickle
 sentibank/dict_arXiv/Aigents/Aigents+_v2022.csv
