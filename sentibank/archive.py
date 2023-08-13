@@ -23,9 +23,9 @@ class load:
             with open(file_path, "rb") as handle:
                 self.lex_dict = pickle.load(handle)
 
-        elif idx == "VADER_v2014_mod":
+        elif idx == "VADER_v2014":
             file_path = os.path.join(
-                self.script_dir, "dict_arXiv", "VADER", "VADER_v2014_mod.pickle"
+                self.script_dir, "dict_arXiv", "VADER", "VADER_v2014.pickle"
             )
             with open(file_path, "rb") as handle:
                 self.lex_dict = pickle.load(handle)
@@ -43,7 +43,17 @@ class load:
             )
             with open(file_path, "rb") as handle:
                 self.lex_dict = pickle.load(handle)
-
+        
+        elif idx == "HarvardGI_v2000":
+            file_path = os.path.join(
+                self.script_dir, "dict_arXiv", "Harvard_GI", "HarvardGI_v2000.pickle"
+            )
+            with open(file_path, "rb") as handle:
+                self.lex_dict = pickle.load(handle)
+        
+        else: 
+            raise ValueError
+        
         return self.lex_dict
 
     def origin(self, idx: str):
@@ -63,7 +73,7 @@ class load:
             )
             self.origin_df = pd.read_csv(file_path)
 
-        elif idx == "VADER_v2014_mod":
+        elif idx == "VADER_v2014":
             file_path = os.path.join(
                 self.script_dir, "dict_arXiv", "VADER", "VADER_v2014.csv"
             )
@@ -78,6 +88,12 @@ class load:
         elif idx == "Aigents+_v2022":
             file_path = os.path.join(
                 self.script_dir, "dict_arXiv", "Aigents", "Aigents+_v2022.csv"
+            )
+            self.origin_df = pd.read_csv(file_path)
+            
+        elif idx == "HarvardGI_v2000": 
+            file_path = os.path.join(
+                self.script_dir, "dict_arXiv", "Harvard_GI", "HarvardGI_v2000.csv"
             )
             self.origin_df = pd.read_csv(file_path)
 
