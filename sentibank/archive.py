@@ -29,7 +29,21 @@ class load:
             )
             with open(file_path, "rb") as handle:
                 self.lex_dict = pickle.load(handle)
-
+        
+        elif idx == "AFINN_v2009":
+            file_path = os.path.join(
+                self.script_dir, "dict_arXiv", "AFINN", "AFINN_v2009.pickle"
+            )
+            with open(file_path, "rb") as handle:
+                self.lex_dict = pickle.load(handle)
+                
+        elif idx == "AFINN_v2011":
+            file_path = os.path.join(
+                self.script_dir, "dict_arXiv", "AFINN", "AFINN_v2011.pickle"
+            )
+            with open(file_path, "rb") as handle:
+                self.lex_dict = pickle.load(handle)
+        
         elif idx == "AFINN_v2015":
             file_path = os.path.join(
                 self.script_dir, "dict_arXiv", "AFINN", "AFINN_v2015.pickle"
@@ -79,6 +93,18 @@ class load:
             )
             self.origin_df = pd.read_csv(file_path)
 
+        elif idx == "AFINN_v2009":
+            file_path = os.path.join(
+                self.script_dir, "dict_arXiv", "AFINN", "AFINN_v2009.csv"
+            )
+            self.origin_df = pd.read_csv(file_path)
+        
+        elif idx == "AFINN_v2011":
+            file_path = os.path.join(
+                self.script_dir, "dict_arXiv", "AFINN", "AFINN_v2011.csv"
+            )
+            self.origin_df = pd.read_csv(file_path) 
+            
         elif idx == "AFINN_v2015":
             file_path = os.path.join(
                 self.script_dir, "dict_arXiv", "AFINN", "AFINN_v2015.csv"
