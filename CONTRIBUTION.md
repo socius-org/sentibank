@@ -1,35 +1,38 @@
 # Contribution Criteria
 
-We welcome new lexicons that help expand the coverage and capabilities of sentibank. 
+We welcome new lexicons that help expand the coverage and capabilities of SentiBank. 
 
 Contributions should meet the following criteria.
 
-## Scope 🎯
+## 🎯 Scope 
 - Lexicon is *within the domain of sentiment analysis and opinion mining*. Other linguistic resources may be out of scope.
 - Lexicon covers a new domain or expands existing coverage meaningfully. Niche/duplicate datasets are lower priority.
+  - Determine the domain (i.e Psychology, Economics, Politics) or genre (i.e News, Social Media, Academic) 
+  - Refer to existing lexicons to identify gaps to fill  
 
-> ``ℹ️`` Please open an [issue](https://github.com/socius-org/sentibank/issues) outlining your proposed lexicon before dedicating resources to annotation. This can serve as a transparent public record on how lexicons are created, processed and enhanced. We expect this record to: Allow all sentibank users to better understand the composition and quality of included dictionaries; Enable substantive community discussion; and Provide a learning opportunity for those developing lexicons in the future.
+> ``ℹ️`` Before dedicating resources to creating new dictionary, please open an [issue](https://github.com/socius-org/sentibank/issues) outlining your proposed lexicon. This can serve as a transparent public record on how lexicons are created, processed and enhanced. We expect this record to: Allow all SentiBank users to better understand the composition and quality of included dictionaries; Enable substantive community discussion; and Provide a learning opportunity for those developing lexicons in the future.
 
-## Composition 📝
+## 📝 Composition 
 - Contains a minimum of 100 labeled sentiment terms/phrases. Smaller sample sizes tend not over-index specific sources.
 - Spans common vocabulary in the domain, including slang, acronyms, morphological variations, and domain-specific terminology.
 - Provides discrete categorical labels or fine-grained numerical sentiment scores for each entry. Rating scale details should be specified.
 
-## Methodology 🔬
+## 🔬 Methodology 
 - *Details should be provided* if used a systematic process for collecting representative text sources and annotations.
   - Used a rigorous process for collecting a corpus of texts representative of the target domain. This may involve sampling social media, academic texts, dialog transcripts, etc.
+  - Ensure diversity of authors, publications, demographics, etc. 
   - Details on source material should be provided.
 - *Qualifications should be highlighted* if annotated by subject matter experts, native speakers, trained linguists, or independent qualified annotators.
   - Clear annotation guidelines and rating scales were provided to annotators.
   - Examples of instructions and training procedures should be shared. 
 - *Disagreements should be noted and reconciled* if inter-annotator agreement was measured during creation.
-  - Ideal to include metrics like Cohen's Kappa 
+  - Ideal to include metrics like Cohen's Kappa, or simply document edge cases to ensure consistency. 
 
-## Licensing ⚖️
+## ⚖️ Licensing 
 - Lexicon is under a permissive open license compatible with CC-BY-SA 4.0 or public domain.
 - Sources allow free re-use, re-distribution, and commercial use. Proprietary datasets cannot be accepted.
 
-## Format 🗂️
+## 🗂️ Format 
 - Submitted as a CSV file with column headers specifying key attributes of each entry.
 - Uses consistent text encoding (ideally UTF-8) and escapes special characters or markup.
 - Contains no personally identifiable or otherwise confidential information.
@@ -46,4 +49,4 @@ Contributions should meet the following criteria.
 > Our hope is for the criteria to inspire creative solutions, not deter participation. We're here to lower barriers and see new lexicons brought to life through thoughtful partnership.
 
 
-By pooling our talents, we can transform sentibank into an even more powerful tool. Join us in unlocking sentibank's full potential through shared knowledge!
+By pooling our talents, we can transform SentiBank into an even more powerful tool. Join us in unlocking SentiBank's full potential through shared knowledge!
