@@ -65,9 +65,9 @@ class load:
             with open(file_path, "rb") as handle:
                 self.lex_dict = pickle.load(handle)
         
-        elif idx == "WordNet_Affect_v2006": 
+        elif idx == "WordNet-Affect_v2006": 
             file_path = os.path.join(
-                self.script_dir, "dict_arXiv", "WordNet_Affect", "WordNet-Affect_v2006.pickle"
+                self.script_dir, "dict_arXiv", "WordNet_Affect", "WordNet_Affect_v2006.pickle"
             )
             with open(file_path, "rb") as handle:
                 self.lex_dict = pickle.load(handle)
@@ -129,9 +129,9 @@ class load:
             )
             self.origin_df = pd.read_csv(file_path)
             
-        elif idx == "WordNetAffect_v2006": 
+        elif idx == "WordNet-Affect_v2006": 
             file_path = os.path.join(
-                self.script_dir, "dict_arXiv", "WordNet_Affect", "WordNet-Affect_v2006.csv"
+                self.script_dir, "dict_arXiv", "WordNet_Affect", "WordNet_Affect_v2006.csv"
             )
             self.origin_df = pd.read_csv(file_path)
 
