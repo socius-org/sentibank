@@ -26,3 +26,5 @@ sentibank/dict_arXiv/MASTER/MASTER_v2022.csv
 sentibank/dict_arXiv/MASTER/MASTER_v2022.pickle
 sentibank/dict_arXiv/VADER/VADER_v2014.csv
 sentibank/dict_arXiv/VADER/VADER_v2014.pickle
+sentibank/dict_arXiv/WordNet_Affect/WordNet_Affect_v2006.csv
+sentibank/dict_arXiv/WordNet_Affect/WordNet_Affect_v2006.pickle
