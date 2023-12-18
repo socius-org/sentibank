@@ -62,4 +62,4 @@ Refer [documentation](docs_link) for details on usage.
 
 ## Contributing 
 
-We welcome contributions of new expert-curated lexicons. Please refer to [guidelines](contributing_docs_link).
+We welcome contributions of new expert-curated lexicons. Please refer to [guidelines](https://github.com/socius-org/sentibank/blob/main/CONTRIBUTION.md).
