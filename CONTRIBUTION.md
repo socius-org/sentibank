@@ -1,6 +1,6 @@
 # Contribution Criteria
 
-We welcome new lexicons that help expand the coverage and capabilities of SentiBank. 
+We welcome new lexicons that help expand the coverage and capabilities of `sentibank`. 
 
 Contributions should meet the following criteria.
 
@@ -10,7 +10,7 @@ Contributions should meet the following criteria.
   - Determine the domain (i.e Psychology, Economics, Politics) or genre (i.e News, Social Media, Academic) 
   - Refer to existing lexicons to identify gaps to fill  
 
-> ``ℹ️`` Before dedicating resources to creating new dictionary, please open an [issue](https://github.com/socius-org/sentibank/issues) outlining your proposed lexicon. This can serve as a transparent public record on how lexicons are created, processed and enhanced. We expect this record to: Allow all SentiBank users to better understand the composition and quality of included dictionaries; Enable substantive community discussion; and Provide a learning opportunity for those developing lexicons in the future.
+> ``ℹ️`` Before dedicating resources to creating new dictionary, please open an [issue](https://github.com/socius-org/sentibank/issues) outlining your proposed lexicon. This can serve as a transparent public record on how lexicons are created, processed and enhanced. We expect this record to: Allow all sentibank users to better understand the composition and quality of included dictionaries; Enable substantive community discussion; and Provide a learning opportunity for those developing lexicons in the future.
 
 ## 📝 Composition 
 - Contains a minimum of 100 labeled sentiment terms/phrases. Smaller sample sizes tend not over-index specific sources.
@@ -49,4 +49,4 @@ Contributions should meet the following criteria.
 > Our hope is for the criteria to inspire creative solutions, not deter participation. We're here to lower barriers and see new lexicons brought to life through thoughtful partnership.
 
 
-By pooling our talents, we can transform SentiBank into an even more powerful tool. Join us in unlocking SentiBank's full potential through shared knowledge!
+By pooling our talents, we can transform sentibank into an even more powerful tool. Join us in unlocking sentibank's full potential through shared knowledge!
