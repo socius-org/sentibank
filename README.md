@@ -1,7 +1,8 @@
 # sentibank
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?label=license)](https://opensource.org/licenses/MIT)
-[![Github Stars](https://img.shields.io/github/stars/socius-org/sentibank?logo=github)](https://github.com/socius-org/sentibank)
-[![Github Watchers](https://img.shields.io/github/watchers/socius-org/sentibank?style=flat&logo=github)](https://github.com/socius-org/sentibank)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square&label=license)](https://opensource.org/licenses/MIT)
+[![Github Stars](https://img.shields.io/github/stars/socius-org/sentibank?style=flat-square&logo=github)](https://github.com/socius-org/sentibank)
+[![Github Watchers](https://img.shields.io/github/watchers/socius-org/sentibank?style=flat-square&logo=github)](https://github.com/socius-org/sentibank)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/sentibank?style=flat-square&logo=python)
 
 **`sentibank`** is a comprehensive, open database of expert-curated sentiment dictionaries and lexicons to power sentiment analysis.
 
