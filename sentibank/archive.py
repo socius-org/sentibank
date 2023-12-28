@@ -1,7 +1,6 @@
 import os
 import pickle
 
-
 class load:
     def __init__(self):
         self.script_dir = os.path.dirname(os.path.abspath(__file__))
