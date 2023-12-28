@@ -1,0 +1,114 @@
+#AFINN 
+
+This database of words is copyright protected and distributed under
+"Open Database License (ODbL) v1.0"
+http://www.opendatacommons.org/licenses/odbl/1.0/ or a similar
+copyleft license.
+
+You are free to share, create works from, and adapt the lexicon, as long as you attribute the original lexicon in your work. 
+If you adapt the lexicon, you must keep the adapted lexicon open and apply a similar license.
+https://www2.imm.dtu.dk/pubdb/pubs/6010-full.html 
+
+
+#Aigents+ 
+
+MIT License 
+https://github.com/aigents/aigents-java
+
+
+#Harvard_GI 
+
+The development of the General Inquirer has been supported by grants from American, British and Australian government science foundations and by industry. 
+Those who developed and contributed categories have done so with the understanding that they could be used by others for academic research. 
+Many categories have a long and complicated history and may be copyrighted at one point or another. 
+Persons who would like to use any category for any commercial use should first send an email to inquirer@wjh.harvard.edu describing its intended use and arrange a permission for that application.
+https://inquirer.sites.fas.harvard.edu/spreadsheet_guide.htm
+
+
+#MASTER 
+
+The dictionary/sentiment lists are free for use in academic research. 
+For commercial licenses, please contact us at loughranmcdonald@gmail.com.
+https://sraf.nd.edu/loughranmcdonald-master-dictionary/
+
+
+#VADER 
+
+MIT License 
+https://github.com/cjhutto/vaderSentiment 
+
+
+#WordNet_Affect 
+
+Licensed under a Creative Commons Attribution 3.0 Unported License. 
+You are free to share and adapt the lexicon, as long as you give attribution to the original authors.
+https://wndomains.fbk.eu/download.html 
+
+
+#SentiWordNet 
+
+CC BY-SA 4.0 
+https://github.com/aesuli/SentiWordNet
+
+
+#EmoLex 
+
+- The lexicons listed here are available free for research purposes. 
+Cite the papers associated with the lexicons in your research papers and articles that make use of them. 
+(The papers associated with each lexicon are listed below, and also in the READMEs for individual lexicons.)
+
+- If interested in commercial use of any of these lexicons, 
+send email to Saif M. Mohammad (Senior Research Officer at NRC and creator of these lexicons): saif.mohammad@nrc-cnrc.gc.ca and 
+Pierre Charron (Client Relationship Leader at NRC): Pierre.Charron@nrc-cnrc.gc.ca. 
+A nominal one-time licensing fee may apply.
+
+- In news articles and online posts on work using these lexicons, cite the appropriate lexicons. 
+For example: "This application/product/tool makes use of the <resource name>, created by <author(s)> at the National Research Council Canada." 
+(The creators of each lexicon are listed below. Also, if you send us an email, we will be thrilled to know about how you have used the lexicon.) 
+If possible hyperlink to this page: http://saifmohammad.com/WebPages/lexicons.html
+
+- If you use a lexicon in a product or application, then acknowledge this in the 'About' page and other relevant documentation of the application by stating the name of the resource, the authors, and NRC. 
+For example: "This application/product/tool makes use of the <resource name>, created by <author(s)> at the National Research Council Canada." 
+(The creators of each lexicon are listed below. Also, if you send us an email, we will be thrilled to know about how you have used the lexicon.) 
+If possible hyperlink to this page: http://saifmohammad.com/WebPages/lexicons.html
+
+- Do not redistribute the data. Direct interested parties to this page:
+http://saifmohammad.com/WebPages/lexicons.html
+
+
+#OpinionLexicon (Hu and Liu, 2004)
+
+N/A 
+https://www.cs.uic.edu/~liub/FBS/sentiment-analysis.html#lexicon 
+
+
+#SenticNet 
+
+https://sentic.net/downloads/
+
+
+#Henry 
+
+
+
+
+#SO-CAL 
+
+CC-BY-NC-SA 4.0 
+https://github.com/sfu-discourse-lab/SO-CAL
+
+
+#Lexicoder 
+
+It is discussed and tested in detail in [Young and Soroka 2012](http://dx.doi.org/10.1080/10584609.2012.671234) 
+and is freely available for academic use. 
+
+For those who would prefer to implement the dictionary outside of quanteda, 
+you can look over the [user agreement](https://www.snsoroka.com/s/LSDagreement.pdf) and 
+then [download the dictionary](https://www.snsoroka.com/s/LSDaug2015.zip)
+https://www.snsoroka.com/data-lexicoder/
+
+
+#DED (Discrete Emotions Dictionary)
+
+https://osf.io/cbm9e/ 
