@@ -32,14 +32,14 @@ class analysis:
                 label_counts[label] = label_counts.get(label, 0) + 1
             elif isinstance(value_list, list):
                 labels = value_list
-                label_counts.update({label: label_counts.get(label, 0) + 1 for label in labels})
+                label_counts.update(labels)
 
                 combinations_set = set(
                     chain.from_iterable(
                         combinations(labels, r) for r in range(2, len(labels) + 1)
                     )
                 )
-                multi_label_counts.update({combo: multi_label_counts.get(combo, 0) + 1 for combo in combinations_set})
+                multi_label_counts.update(combinations_set)
 
 
         output = {
