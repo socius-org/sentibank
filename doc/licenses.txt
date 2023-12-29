@@ -106,9 +106,20 @@ and is freely available for academic use.
 For those who would prefer to implement the dictionary outside of quanteda, 
 you can look over the [user agreement](https://www.snsoroka.com/s/LSDagreement.pdf) and 
 then [download the dictionary](https://www.snsoroka.com/s/LSDaug2015.zip)
+
+Prohibits redistribution without McGill's prior written permission
+
+The agreement allows adapting and modifying the LSD for your own research use with proper attribution.
+
 https://www.snsoroka.com/data-lexicoder/
 
 
 #DED (Discrete Emotions Dictionary)
 
 https://osf.io/cbm9e/ 
+
+
+#SentiBigNomics 
+
+Apache 2.0 License 
+https://github.com/consose/SentiBigNomics  

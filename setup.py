@@ -1,20 +1,31 @@
-from distutils.core import setup
+from setuptools import setup
+from setuptools.command.install import install
+import subprocess
+import sys
+
+class CustomInstallCommand(install):
+    def run(self):
+        install.run(self)
+        subprocess.check_call([sys.executable, "-m", "spacy", "download", "en_core_web_sm"])
 
 setup(
-  name = 'sentibank', 
-  packages = ['sentibank'],   
-  version = '0.0.1.12',      
-  license='MIT',        
-  description = 'Unifying sentiment lexicons and dictionaries into an accessible open python package',   
-  author = 'Nick S.H Oh',                   
-  author_email = 'nick.sh.oh@socialscience.ai',      
-  url = 'https://github.com/socius-org/sentibank',  
-  download_url = 'https://github.com/socius-org/sentibank/archive/refs/tags/0.0.1.12.tar.gz', 
-  keywords = ['AI', 'Social Science', 'Sentiment Analysis'],   # Keywords that define your package best
-  install_requires=[
-          'spacy',
-          'spacymoji',
-          'rich'
-      ],
-  include_package_data=True
+    name='sentibank',
+    packages=['sentibank'],
+    version='0.0.1.14',
+    license='CC BY-NC-SA 4.0',
+    description='Unifying sentiment lexicons and dictionaries into an accessible open python package',
+    author='Nick S.H Oh',
+    author_email='nick.sh.oh@socialscience.ai',
+    url='https://github.com/socius-org/sentibank',
+    download_url='https://github.com/socius-org/sentibank/archive/refs/tags/0.0.1.14.tar.gz',
+    keywords=['AI', 'Social Science', 'Sentiment Analysis'],
+    install_requires=[
+        'spacy == 3.7.2',
+        'spacymoji == 3.1.0',
+        'rich == 13.4.2',
+    ],
+    include_package_data=True,
+    cmdclass={
+        'install': CustomInstallCommand,
+    }
 )

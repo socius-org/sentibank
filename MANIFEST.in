@@ -1,1 +1,4 @@
 recursive-include sentibank/dict_arXiv *
+
+exclude sentibank\__pycache__\*
+exclude sentibank\dict_arXiv\__pycache__\*

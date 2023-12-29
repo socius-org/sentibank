@@ -1,3 +1,10 @@
-#Distribution (PyPi packaging) 
+venv/ 
 dist/ 
 *.egg-info/ 
+__pycache__/
+
+sentibank/__pycache__/
+sentibank/dict_arXiv/__pycache__/
+
+test.py
+test.ipynb

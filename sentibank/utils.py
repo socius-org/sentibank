@@ -59,21 +59,21 @@ class analysis:
             description="Computing Summary Statistics of Sentiment Scores",
             # transient=True,
         ):
-            unique_labels = set(value_list)
+            if isinstance(value_list, str):
+                label = value_list
+                label_counts[label] = label_counts.get(label, 0) + 1
+            elif isinstance(value_list, list):
+                unique_labels = set(value_list)
 
-            for label in unique_labels:
-                if label in label_counts:
-                    label_counts[label] += 1
-                else:
-                    label_counts[label] = 1
+                for label in unique_labels:
+                    label_counts[label] = label_counts.get(label, 0) + 1
 
-            if len(unique_labels) > 1:
-                multi_label = tuple(sorted(unique_labels))
+                if len(unique_labels) > 1:
+                    multi_label = tuple(sorted(unique_labels))
 
-                if multi_label in multi_label_counts:
-                    multi_label_counts[multi_label] += 1
-                else:
-                    multi_label_counts[multi_label] = 1
+                    multi_label_counts[multi_label] = multi_label_counts.get(
+                        multi_label, 0
+                    ) + 1
 
         output = {
             "labels": sorted(list(label_counts.keys())),
