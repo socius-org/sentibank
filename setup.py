@@ -23,6 +23,7 @@ setup(
         'spacy == 3.7.2',
         'spacymoji == 3.1.0',
         'rich == 13.4.2',
+        'pandas == 2.1.4'
     ],
     include_package_data=True,
     cmdclass={

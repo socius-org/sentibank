@@ -8,9 +8,17 @@ import spacy
 from spacymoji import Emoji
 from sentibank.dict_arXiv import emos
 
-
 class analysis:
+    """
+    Class for analyzing sentiment dictionaries and generating summary insights.
+
+    Attributes:
+        spacy_nlp (spacy.lang.en.English): Spacy NLP pipeline with emoji detection.
+    """
     def __init__(self):
+        """
+        Initializes the Analysis class by loading the Spacy NLP pipeline with emoji detection.
+        """
         self.spacy_nlp = spacy.load(
             "en_core_web_sm",
             exclude=["parser", "senter", "attribute_ruler", "lemmatizer", "ner"],
@@ -18,7 +26,16 @@ class analysis:
         # self.spacy_nlp.add_pipe("sentencizer")
         self.spacy_nlp.add_pipe("emoji", first=True)
 
-    def count_categorical_labels(self, dictionary):
+    def count_categorical_labels(self, dictionary: dict):
+        """
+        Counts the frequency of categorical sentiment labels in a given dictionary.
+
+        Args:
+            dictionary (dict): Input dictionary with sentiment labels.
+
+        Returns:
+            dict: Summary statistics of sentiment labels.
+        """
         label_counts = Counter()
         multi_label_counts = Counter()
 
@@ -53,7 +70,16 @@ class analysis:
 
         return output
 
-    def count_discrete_labels(self, dictionary):
+    def count_discrete_labels(self, dictionary: dict):
+        """
+        Counts the frequency of discrete sentiment labels in a given dictionary.
+
+        Args:
+            dictionary (dict): Input dictionary with sentiment labels.
+
+        Returns:
+            dict: Summary statistics of sentiment labels.
+        """
         label_counts = {}
         multi_label_counts = {}
 
@@ -89,7 +115,16 @@ class analysis:
 
         return output
 
-    def count_cont_variables(self, dictionary):
+    def count_cont_variables(self, dictionary: dict):
+        """
+        Computes summary statistics for continuous sentiment scores in a given dictionary.
+
+        Args:
+            dictionary (dict): Input dictionary with sentiment scores.
+
+        Returns:
+            dict: Summary statistics of sentiment scores.
+        """
         value_range = [min(dictionary.values()), max(dictionary.values())]
         neg, pos, neu = [], [], []
 
@@ -136,10 +171,28 @@ class analysis:
             }
         return output
 
-    def sort_dict(self, dictionary):
+    def sort_dict(self, dictionary: dict):
+        """
+        Sorts a dictionary by values in descending order.
+
+        Args:
+            dictionary (dict): Input dictionary to be sorted.
+
+        Returns:
+            dict: Sorted dictionary.
+        """
         return dict(sorted(dictionary.items(), key=lambda x: x[1], reverse=True))
 
-    def summarise_lex_dict(self, lexicon_dictionary):
+    def summarise_lex_dict(self, lexicon_dictionary: dict):
+        """
+        Summarizes sentiment scores and lexicon information.
+
+        Args:
+            lexicon_dictionary (dict): Input sentiment lexicon dictionary.
+
+        Returns:
+            None: Prints a summary of sentiment scores and lexicon information.
+        """
         # Sentiment Score Summary
         lex_dict_type = None
 
@@ -251,13 +304,19 @@ class analysis:
                     granular_dict_adv[
                         "EMOJI (pictorial symbols of emotions, objects, or concepts)"
                     ] = value
+                elif key == "JJ": 
+                    granular_dict_adv["JJ (adjective)"] = value
                 else:
                     granular_dict_adv["{} ({})".format(key, spacy.explain(key))] = value
         else:
-            granular_dict_adv = dict(
-                ("{} ({})".format(key, spacy.explain(key)), value)
-                for (key, value) in granular_dict.items()
-            )
+            for key, value in granular_dict.items(): 
+                if key == "JJ": 
+                    granular_dict_adv["JJ (adjective)"] = value
+                else: 
+                    granular_dict_adv = dict(
+                        ("{} ({})".format(key, spacy.explain(key)), value)
+                        for (key, value) in granular_dict.items()
+                    )
 
         part_of_speech = {
             "general": self.sort_dict(general_dict),
@@ -275,7 +334,22 @@ class analysis:
 
 
 class lexical_overview:
+    """
+    Class for generating a lexical overview based on a sentiment lexicon dictionary.
+
+    Attributes:
+        dictionary (dict): Input sentiment lexicon dictionary for analysis.
+    """
     def __init__(self, dictionary: dict = None):
+        """
+        Initializes the LexicalOverview class with a sentiment lexicon dictionary.
+
+        Args:
+            dictionary (dict): Input sentiment lexicon dictionary for analysis.
+
+        Raises:
+            ValueError: Raised if no dictionary is provided.
+        """
         # dict:str = Consider if users simply come up with the lex_dict_idx
         if dict is None:
             raise ValueError

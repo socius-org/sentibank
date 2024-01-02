@@ -1,19 +1,43 @@
 import os
 import pickle
+import pandas as pd 
 
 class load:
+    """
+    Class for loading sentiment lexicon dictionaries and their origin datasets.
+
+    Attributes:
+        script_dir (str): Directory of the script.
+        lex_dict (dict): Loaded sentiment lexicon dictionary.
+        origin_df (pd.DataFrame): Loaded origin dataset.
+
+    Methods:
+        load_dict(idx: str) -> dict:
+            Load sentiment lexicon dictionary based on the provided index.
+
+        load_origin(idx: str) -> pd.DataFrame:
+            Load the origin dataset based on the provided index.
+    """
     def __init__(self):
+        """
+        Initializes the load class.
+        """
         self.script_dir = os.path.dirname(os.path.abspath(__file__))
         self.lex_dict = None
+        self.origin_df = None 
 
     def dict(self, idx: str):
-        """_summary_
+        """
+        Load sentiment lexicon dictionary based on the provided index.
 
         Args:
-            idx (str): _description_
+            idx (str): Index identifying the sentiment lexicon dictionary.
 
         Returns:
-            _type_: _description_
+            dict: Loaded sentiment lexicon dictionary.
+        
+        Raises:
+            ValueError: Raised for an unknown index.
         """
         if idx == "MASTER_v2022":
             file_path = os.path.join(
@@ -70,19 +94,37 @@ class load:
             )
             with open(file_path, "rb") as handle:
                 self.lex_dict = pickle.load(handle)
+        
+        elif idx == "SentiWordNet_v2010_simple": 
+            file_path = os.path.join(
+                self.script_dir, "dict_arXiv", "SentiWordNet", "SentiWordNet_v2010_simple.pickle"
+            )
+            with open(file_path, "rb") as handle:
+                self.lex_dict = pickle.load(handle)
+        
+        elif idx == "SentiWordNet_v2010_nuanced": 
+            file_path = os.path.join(
+                self.script_dir, "dict_arXiv", "SentiWordNet", "SentiWordNet_v2010_nuanced.pickle"
+            )
+            with open(file_path, "rb") as handle:
+                self.lex_dict = pickle.load(handle)
         else: 
             raise ValueError
         
         return self.lex_dict
 
     def origin(self, idx: str):
-        """_summary_
+        """
+        Load the original dataset based on the provided index.
 
         Args:
-            idx (str): _description_
+            idx (str): Index identifying the origin dataset.
 
         Returns:
-            _type_: _description_
+            pd.DataFrame: Loaded origin dataset.
+        
+        Raises:
+            ValueError: Raised for an unknown index.
         """
         import pandas as pd
 
@@ -131,6 +173,12 @@ class load:
         elif idx == "WordNet-Affect_v2006": 
             file_path = os.path.join(
                 self.script_dir, "dict_arXiv", "WordNet_Affect", "WordNet_Affect_v2006.csv"
+            )
+            self.origin_df = pd.read_csv(file_path)
+        
+        elif idx == "SentiWordNet_v2010": 
+            file_path = os.path.join(
+                self.script_dir, "dict_arXiv", "SentiWordNet", "SentiWordNet_v2010.csv"
             )
             self.origin_df = pd.read_csv(file_path)
 
