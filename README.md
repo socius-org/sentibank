@@ -19,7 +19,7 @@ However, sentiment analysis today faces key challenges:
 
 ## Key Capabilities 
 
-- **7+ (and counting) sentiment dictionaries** spanning domains and use cases
+- **8+ (and counting) sentiment dictionaries** spanning domains and use cases
 - Curation of dictionaries provided by **leading experts** in sentiment analysis
 - Access **original lexicons** and **preprocessed versions**
 - Customise existing dictionaries or contribute new ones
@@ -55,7 +55,8 @@ See below for the available predefined lexicon identifier.
 |**AFINN** <br> (Nielsen, 2011)| General purpose lexicon with sentiment ratings for common emotion words. |Social Media|General| `AFINN_v2009`, `AFINN_v2011`, `AFINN_v2015` |
 |**Aigents+** <br> (Raheman et al., 2022)| Lexicon optimised for social media posts related to cryptocurrencies. |Social Media|Cryptocurrency| `Aigents+_v2022`|
 |**General Inquirer** <br> (Stone et al., 1962)| Lexicon capturing broad psycholinguistic dimensions across semantics, values and motivations.  |General|Psychology| `HarvardGI_v2000`|
-|**MASTER** <br> (Loughran and McDonland, 2011; Bodnaruk, Loughran and McDonald, 2015)| Financial lexicons covering expressions common in business writing. |Corporate Filings|Finance| `MASTER_v2022`|
+|**Henry** <br> (Henry, 2006) | Leixcon designed for analysing tone in earnings press releases. |Corporate Communication (Earnings Press Releases)|Finance| `Henry_v2006`|
+|**MASTER** <br> (Loughran and McDonland, 2011; Bodnaruk, Loughran and McDonald, 2015)| Financial lexicons covering expressions common in business writing. |Regulatory Filings (10-K)|Finance| `MASTER_v2022`|
 |**SentiWordNet** <br> (Esuli and Sebastiani, 2006; Baccianella, Esuli and Sebastiani, 2010)| Lexicon associating WordNet synsets with positive, negative, and objective scores. |General|General| `SentiWordNet_v2010_simple`, `SentiWordNet_v2010_nuanced` |
 |**VADER** <br> (Hutto and Gilbert, 2014)| General purpose lexicon optimised for social media and microblogs. |Social Media|General| `VADER_v2014`|
 |**WordNet-Affect** <br> (Strapparava and Valitutti, 2004; Valitutti, Strapparava and Stock, 2004; Strapparava, Valitutti and Stock, 2006)| Hierarchically organised affective labels providing a  granular emotional dimension. |General|Psychology| `WordNet-Affect_v2006`|
