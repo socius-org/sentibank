@@ -15,7 +15,7 @@ However, sentiment analysis today faces key challenges:
 - Lack of verified, high-quality lexicons spanning domains
 - Inaccessibility limiting transparency and advancement
 
-**sentibank tackles these issues by consolidating lexicons into an integrated, open-source database**
+**`sentibank` tackles these issues by consolidating lexicons into an integrated, open-source database**
 
 ## Key Capabilities 
 
