@@ -19,10 +19,10 @@ However, sentiment analysis today faces key challenges:
 
 ## Key Capabilities 
 
-- **6+ (and counting) sentiment dictionaries** spanning domains and use cases
+- **7+ (and counting) sentiment dictionaries** spanning domains and use cases
 - Curation of dictionaries provided by **leading experts** in sentiment analysis
-- Access original lexicons and **preprocessed versions**
-- Customize existing dictionaries or contribute new ones
+- Access **original lexicons** and **preprocessed versions**
+- Customise existing dictionaries or contribute new ones
 - Production-ready for integration into analyses
 
 ## Getting Started 
@@ -35,7 +35,7 @@ Install the sentibank package:
 pip install sentibank
 ```
 
-### Load Dictionaries
+### Load Preprocessed Dictionaries
 
 Import sentibank and load dictionaries:
 
@@ -56,11 +56,46 @@ See below for the available predefined lexicon identifier.
 |**Aigents+** <br> (Raheman et al., 2022)| Lexicon optimised for social media posts related to cryptocurrencies. |Social Media|Cryptocurrency| `Aigents+_v2022`|
 |**General Inquirer** <br> (Stone et al., 1962)| Lexicon capturing broad psycholinguistic dimensions across semantics, values and motivations.  |General|Psychology| `HarvardGI_v2000`|
 |**MASTER** <br> (Loughran and McDonland, 2011; Bodnaruk, Loughran and McDonald, 2015)| Financial lexicons covering expressions common in business writing. |Corporate Filings|Finance| `MASTER_v2022`|
+|**SentiWordNet** <br> (Esuli and Sebastiani, 2006; Baccianella, Esuli and Sebastiani, 2010)| Lexicon associating WordNet synsets with positive, negative, and objective scores. |General|General| `SentiWordNet_v2010_simple`, `SentiWordNet_v2010_nuanced` |
 |**VADER** <br> (Hutto and Gilbert, 2014)| General purpose lexicon optimised for social media and microblogs. |Social Media|General| `VADER_v2014`|
 |**WordNet-Affect** <br> (Strapparava and Valitutti, 2004; Valitutti, Strapparava and Stock, 2004; Strapparava, Valitutti and Stock, 2006)| Hierarchically organised affective labels providing a  granular emotional dimension. |General|Psychology| `WordNet-Affect_v2006`|
 
 Refer [documentation](docs_link) for details on usage.
 
+### Analyse Dictionaries
+
+Once you've loaded the sentiment dictionaries using `sentibank`, you can perform various analyses on them. The `lexical_overview` module provides insights into the structure and content of sentiment lexicons. Here's a quick example:
+
+```python
+from sentibank import archive
+from sentibank.utils import lexical_overview
+
+# Load dictionaries
+load = archive.load()
+vader = load.dict("VADER_v2014")
+
+# Analyse the loaded dictionary
+lexical_overview(vader)
+```
+
+This will provide you with a summary of the sentiment scores and lexicon structure. You can further explore and analyse other sentiment dictionaries using the same approach.
+
+### Load Original Dictionaries
+
+In addition to preprocessed sentiment dictionaries, `sentibank` provides the capability to load the original datasets sourced directly from the authors, which were used in the creation of these sentiment dictionaries. These original datasets offer valuable insights into the raw sentiment data as originally curated by the authors and can be particularly beneficial for in-depth research and analysis.
+
+To load an original dictionary, you can use the `load.origin` method, which returns a Pandas DataFrame containing the original dataset. Here's a basic example:
+
+```python
+from sentibank import archive
+
+# Load the original dataset for VADER sentiment dictionary
+load = archive.load()
+vader_original = load.origin("VADER_v2014")
+```
+
+This will load the original dataset associated with the VADER sentiment dictionary. You can replace "VADER_v2014" with other original dictionary identifiers. The loaded data will be in the form of a Pandas DataFrame, allowing you to explore and analyse the original sentiment data directly.
+
 ## Contributing 
 
-We welcome contributions of new expert-curated lexicons. Please refer to [guidelines](https://github.com/socius-org/sentibank/blob/main/CONTRIBUTION.md).
+We welcome contributions of new expert-curated lexicons. Please refer to [guidelines](https://github.com/socius-org/sentibank/blob/main/doc/CONTRIBUTING.md).
