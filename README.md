@@ -19,7 +19,7 @@ However, sentiment analysis today faces key challenges:
 
 ## Key Capabilities 
 
-- **8+ (and counting) sentiment dictionaries** spanning domains and use cases
+- **9+ (and counting) sentiment dictionaries** spanning domains and use cases
 - Curation of dictionaries provided by **leading experts** in sentiment analysis
 - Access **original lexicons** and **preprocessed versions**
 - Customise existing dictionaries or contribute new ones
