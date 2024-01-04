@@ -116,6 +116,13 @@ class load:
             with open(file_path, "rb") as handle:
                 self.lex_dict = pickle.load(handle)
         
+        elif idx == "OpinionLexicon_v2004": 
+            file_path = os.path.join(
+                self.script_dir, "dict_arXiv", "OpinionLexicon", "OpinionLexicon_v2004.pickle"
+            )
+            with open(file_path, "rb") as handle:
+                self.lex_dict = pickle.load(handle)
+        
         else: 
             raise ValueError
         
@@ -193,6 +200,12 @@ class load:
         elif idx == "Henry_v2006": 
             file_path = os.path.join(
                 self.script_dir, "dict_arXiv", "Henry", "Henry_v2006.csv"
+            )
+            self.origin_df = pd.read_csv(file_path)
+        
+        elif idx == "OpinionLexicon_v2004": 
+            file_path = os.path.join(
+                self.script_dir, "dict_arXiv", "OpinionLexicon", "OpinionLexicon_v2004.csv"
             )
             self.origin_df = pd.read_csv(file_path)
 
