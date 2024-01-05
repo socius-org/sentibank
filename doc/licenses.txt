@@ -16,7 +16,24 @@ MIT License
 https://github.com/aigents/aigents-java
 
 
-#Harvard_GI 
+#ANEW
+
+?
+
+
+#DED (Discrete Emotions Dictionary)
+
+https://osf.io/cbm9e/ 
+
+https://github.com/CenterForOpenScience/cos.io/blob/master/TERMS_OF_USE.md
+
+
+#Dictionary of Affect 
+
+? 
+
+
+#General Inquirer 
 
 The development of the General Inquirer has been supported by grants from American, British and Australian government science foundations and by industry. 
 Those who developed and contributed categories have done so with the understanding that they could be used by others for academic research. 
@@ -25,11 +42,69 @@ Persons who would like to use any category for any commercial use should first s
 https://inquirer.sites.fas.harvard.edu/spreadsheet_guide.htm
 
 
+#Henry 
+
+Unspecified 
+
+
 #MASTER 
 
 The dictionary/sentiment lists are free for use in academic research. 
 For commercial licenses, please contact us at loughranmcdonald@gmail.com.
 https://sraf.nd.edu/loughranmcdonald-master-dictionary/
+
+
+#MPQA 
+
+? 
+
+
+#News PMI 
+
+? 
+
+
+#OpinionLexicon (Hu and Liu, 2004)
+
+Custom License 
+; This file and the papers can all be downloaded from 
+;    http://www.cs.uic.edu/~liub/FBS/sentiment-analysis.html
+;
+; If you use this list, please cite the following paper:
+;
+;   Minqing Hu and Bing Liu. "Mining and Summarizing Customer Reviews." 
+;       Proceedings of the ACM SIGKDD International Conference on Knowledge 
+;       Discovery and Data Mining (KDD-2004), Aug 22-25, 2004, Seattle, 
+;       Washington, USA, 
+https://www.cs.uic.edu/~liub/FBS/sentiment-analysis.html#lexicon 
+
+
+#SentiBigNomics 
+
+Apache 2.0 License 
+https://github.com/consose/SentiBigNomics  
+
+
+#SenticNet 
+
+https://sentic.net/downloads/
+
+
+#SentiWordNet 
+
+CC BY-SA 4.0 
+https://github.com/aesuli/SentiWordNet
+
+
+#SO-CAL 
+
+CC-BY-NC-SA 4.0 
+https://github.com/sfu-discourse-lab/SO-CAL
+
+
+#StockTwits-Investor 
+
+? 
 
 
 #VADER 
@@ -45,14 +120,12 @@ You are free to share and adapt the lexicon, as long as you give attribution to 
 https://wndomains.fbk.eu/download.html 
 
 
-#SentiWordNet 
 
-CC BY-SA 4.0 
-https://github.com/aesuli/SentiWordNet
 
 
 #EmoLex 
 
+Custom License 
 - The lexicons listed here are available free for research purposes. 
 Cite the papers associated with the lexicons in your research papers and articles that make use of them. 
 (The papers associated with each lexicon are listed below, and also in the READMEs for individual lexicons.)
@@ -76,27 +149,6 @@ If possible hyperlink to this page: http://saifmohammad.com/WebPages/lexicons.ht
 http://saifmohammad.com/WebPages/lexicons.html
 
 
-#OpinionLexicon (Hu and Liu, 2004)
-
-N/A 
-https://www.cs.uic.edu/~liub/FBS/sentiment-analysis.html#lexicon 
-
-
-#SenticNet 
-
-https://sentic.net/downloads/
-
-
-#Henry 
-
-
-
-#SO-CAL 
-
-CC-BY-NC-SA 4.0 
-https://github.com/sfu-discourse-lab/SO-CAL
-
-
 #Lexicoder 
 
 It is discussed and tested in detail in [Young and Soroka 2012](http://dx.doi.org/10.1080/10584609.2012.671234) 
@@ -113,18 +165,9 @@ The agreement allows adapting and modifying the LSD for your own research use wi
 https://www.snsoroka.com/data-lexicoder/
 
 
-#DED (Discrete Emotions Dictionary)
-
-https://osf.io/cbm9e/ 
-
-https://github.com/CenterForOpenScience/cos.io/blob/master/TERMS_OF_USE.md
-
-
-#SentiBigNomics 
-
-Apache 2.0 License 
-https://github.com/consose/SentiBigNomics  
-
-
 #Emoticons 
 https://arxiv.org/abs/1406.0032 
+
+
+#SentiStrength 
+http://sentistrength.wlv.ac.uk/ 

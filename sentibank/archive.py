@@ -123,6 +123,20 @@ class load:
             with open(file_path, "rb") as handle:
                 self.lex_dict = pickle.load(handle)
         
+        elif idx == "ANEW_v1999_simple": 
+            file_path = os.path.join(
+                self.script_dir, "dict_arXiv", "ANEW", "ANEW_v1999_simple.pickle"
+            )
+            with open(file_path, "rb") as handle:
+                self.lex_dict = pickle.load(handle)
+        
+        elif idx == "ANEW_v1999_weighted": 
+            file_path = os.path.join(
+                self.script_dir, "dict_arXiv", "ANEW", "ANEW_v1999_weighted.pickle"
+            )
+            with open(file_path, "rb") as handle:
+                self.lex_dict = pickle.load(handle)
+        
         else: 
             raise ValueError
         
@@ -208,7 +222,13 @@ class load:
                 self.script_dir, "dict_arXiv", "OpinionLexicon", "OpinionLexicon_v2004.csv"
             )
             self.origin_df = pd.read_csv(file_path)
-
+        
+        elif idx == "ANEW_v1999": 
+            file_path = os.path.join(
+                self.script_dir, "dict_arXiv", "ANEW", "ANEW_v1999.csv"
+            )
+            self.origin_df = pd.read_csv(file_path, index_col=['Word', 'Gender'])
+    
         else:
             raise ValueError
 
