@@ -55,7 +55,7 @@ See below for the available predefined lexicon identifier.
 |**AFINN** <br> (Nielsen, 2011)| General purpose lexicon with sentiment ratings for common emotion words. |Social Media|General| `AFINN_v2009`, `AFINN_v2011`, `AFINN_v2015` |
 |**Aigents+** <br> (Raheman et al., 2022)| Lexicon optimised for social media posts related to cryptocurrencies. |Social Media|Cryptocurrency| `Aigents+_v2022`|
 |**ANEW** <br> (Bradley and Lang, 1999)| Provides normative emotional ratings across pleasure, arousal, and dominance dimensions.|General|Psychology|`ANEW_v1999_simple`, `ANEW_v1999_weighted`|
-|**General Inquirer** <br> (Stone et al., 1962)| Lexicon capturing broad psycholinguistic dimensions across semantics, values and motivations.  |General|Psychology| `HarvardGI_v2000`|
+|**General Inquirer** <br> (Stone et al., 1962)| Lexicon capturing broad psycholinguistic dimensions across semantics, values and motivations.  |General|Psychology, Political Science| `HarvardGI_v2000`|
 |**Henry** <br> (Henry, 2006) | Leixcon designed for analysing tone in earnings press releases. |Corporate Communication (Earnings Press Releases)|Finance| `Henry_v2006`|
 |**MASTER** <br> (Loughran and McDonland, 2011; Bodnaruk, Loughran and McDonald, 2015)| Financial lexicons covering expressions common in business writing. |Regulatory Filings (10-K)|Finance| `MASTER_v2022`|
 |**OpinionLexicon** <br> (Hu and Liu, 2004)| Opinion words tailored for sentiment analysis of product reviews.|Product Reviews|Consumer Products|`OpinionLexicon_v2004`|
