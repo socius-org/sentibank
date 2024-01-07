@@ -11,13 +11,13 @@ class CustomInstallCommand(install):
 setup(
     name='sentibank',
     packages=['sentibank'],
-    version='0.0.3',
+    version='0.0.4',
     license='CC BY-NC-SA 4.0',
     description='Unifying sentiment lexicons and dictionaries into an accessible open python package',
     author='Nick S.H Oh',
     author_email='nick.sh.oh@socialscience.ai',
     url='https://github.com/socius-org/sentibank',
-    download_url='https://github.com/socius-org/sentibank/archive/refs/tags/0.0.3.tar.gz',
+    download_url='https://github.com/socius-org/sentibank/archive/refs/tags/0.0.4.tar.gz',
     keywords=[
         'AI', 
         'Social Science', 
