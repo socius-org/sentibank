@@ -50,20 +50,20 @@ The predefined lexicon identifiers follow the convention {NAME}_{VERSION} - for 
 
 See below for the available predefined lexicon identifier.
 
-| Sentiment Dictionary | Description | Genre | Domain | Predefined Identifiers (preprocessed) |
-|------------------------|---------------|------|-----|------------------------|
-|**AFINN** <br> (Nielsen, 2011)| General purpose lexicon with sentiment ratings for common emotion words. |Social Media|General| `AFINN_v2009`, `AFINN_v2011`, `AFINN_v2015` |
-|**Aigents+** <br> (Raheman et al., 2022)| Lexicon optimised for social media posts related to cryptocurrencies. |Social Media|Cryptocurrency| `Aigents+_v2022`|
-|**ANEW** <br> (Bradley and Lang, 1999)| Provides normative emotional ratings across pleasure, arousal, and dominance dimensions.|General|Psychology|`ANEW_v1999_simple`, `ANEW_v1999_weighted`|
-|**Dictionary of Affect in Language (DAL)** <br> (Whissell, 1989; Whissell, 2009)| Lexicon designed to quantify pleasantness, activation, and imagery dimensions across diverse everyday English words. | General | General | `DAL_v2009`|
-|**Discrete Emotions Dictionary (DED)** <br> (Fioroni et al., 2022)| Lexicon focused on precisely distinguishing four key discrete emotions in political communication | News | Political Science | `DED_v2022` |
-|**General Inquirer** <br> (Stone et al., 1962)| Lexicon capturing broad psycholinguistic dimensions across semantics, values and motivations.  |General|Psychology, Political Science| `HarvardGI_v2000`|
-|**Henry** <br> (Henry, 2006) | Leixcon designed for analysing tone in earnings press releases. |Corporate Communication (Earnings Press Releases)|Finance| `Henry_v2006`|
-|**MASTER** <br> (Loughran and McDonland, 2011; Bodnaruk, Loughran and McDonald, 2015)| Financial lexicons covering expressions common in business writing. |Regulatory Filings (10-K)|Finance| `MASTER_v2022`|
-|**OpinionLexicon** <br> (Hu and Liu, 2004)| Opinion words tailored for sentiment analysis of product reviews.|Product Reviews|Consumer Products|`OpinionLexicon_v2004`|
-|**SentiWordNet** <br> (Esuli and Sebastiani, 2006; Baccianella, Esuli and Sebastiani, 2010)| Lexicon associating WordNet synsets with positive, negative, and objective scores. |General|General| `SentiWordNet_v2010_simple`, `SentiWordNet_v2010_nuanced` |
-|**VADER** <br> (Hutto and Gilbert, 2014)| General purpose lexicon optimised for social media and microblogs. |Social Media|General| `VADER_v2014`|
-|**WordNet-Affect** <br> (Strapparava and Valitutti, 2004; Valitutti, Strapparava and Stock, 2004; Strapparava, Valitutti and Stock, 2006)| Hierarchically organised affective labels providing a  granular emotional dimension. |General|Psychology| `WordNet-Affect_v2006`|
+| Sentiment Dictionary | Associated Institution <br> (Principal Investigator) | Description | Genre | Domain | Predefined Identifiers (preprocessed) |
+|------------------------|---------------------|---------------|------|-----|------------------------|
+|**AFINN** <br> (Nielsen, 2011)| DTU Informatics <br> (Technical University of Denmark) | General purpose lexicon with sentiment ratings for common emotion words. |Social Media|General| `AFINN_v2009`, `AFINN_v2011`, `AFINN_v2015` |
+|**Aigents+** <br> (Raheman et al., 2022)| Autonio Foundation | Lexicon optimised for social media posts related to cryptocurrencies. |Social Media|Cryptocurrency| `Aigents+_v2022`|
+|**ANEW** <br> (Bradley and Lang, 1999)| NIMH Center for Emotion and Attention <br> (University of Florida) | Provides normative emotional ratings across pleasure, arousal, and dominance dimensions.|General|Psychology|`ANEW_v1999_simple`, `ANEW_v1999_weighted`|
+|**Dictionary of Affect in Language (DAL)** <br> (Whissell, 1989; Whissell, 2009)| Laurentian University | Lexicon designed to quantify pleasantness, activation, and imagery dimensions across diverse everyday English words. | General | General | `DAL_v2009`|
+|**Discrete Emotions Dictionary (DED)** <br> (Fioroni et al., 2022)| Gallup | Lexicon focused on precisely distinguishing four key discrete emotions in political communication | News | Political Science | `DED_v2022` |
+|**General Inquirer** <br> (Stone et al., 1962)| Harvard University | Lexicon capturing broad psycholinguistic dimensions across semantics, values and motivations.  |General|Psychology, Political Science| `HarvardGI_v2000`|
+|**Henry** <br> (Henry, 2006) | University of Miami  | Leixcon designed for analysing tone in earnings press releases. |Corporate Communication (Earnings Press Releases)|Finance| `Henry_v2006`|
+|**MASTER** <br> (Loughran and McDonland, 2011; Bodnaruk, Loughran and McDonald, 2015)| University of Notre Dame | Financial lexicons covering expressions common in business writing. |Regulatory Filings (10-K)|Finance| `MASTER_v2022`|
+|**OpinionLexicon** <br> (Hu and Liu, 2004)| University of Illinois Chicago | Opinion words tailored for sentiment analysis of product reviews.|Product Reviews|Consumer Products|`OpinionLexicon_v2004`|
+|**SentiWordNet** <br> (Esuli and Sebastiani, 2006; Baccianella, Esuli and Sebastiani, 2010)| Institute of Information Science and Technologies <br>(Consiglio Nazionale delle Ricerche) | Lexicon associating WordNet synsets with positive, negative, and objective scores. |General|General| `SentiWordNet_v2010_simple`, `SentiWordNet_v2010_nuanced` |
+|**VADER** <br> (Hutto and Gilbert, 2014)| Georgia Institute of Technology | General purpose lexicon optimised for social media and microblogs. |Social Media|General| `VADER_v2014`|
+|**WordNet-Affect** <br> (Strapparava and Valitutti, 2004; Valitutti, Strapparava and Stock, 2004; Strapparava, Valitutti and Stock, 2006)| Institute for Scientific and Technological Research <br> (Fondazione Bruno Kessler) | Hierarchically organised affective labels providing a  granular emotional dimension. |General|Psychology| `WordNet-Affect_v2006`|
 
 Refer [documentation](docs_link) for details on usage.
 
