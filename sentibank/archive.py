@@ -144,9 +144,16 @@ class load:
             with open(file_path, "rb") as handle:
                 self.lex_dict = pickle.load(handle)
         
-        elif idx == "DAL_v2009": 
+        elif idx == "DAL_v2009_norm": 
             file_path = os.path.join(
-                self.script_dir, "dict_arXiv", "DAL", "DAL_v2009.pickle"
+                self.script_dir, "dict_arXiv", "DAL", "DAL_v2009_norm.pickle"
+            )
+            with open(file_path, "rb") as handle:
+                self.lex_dict = pickle.load(handle)
+        
+        elif idx == "DAL_v2009_boosted": 
+            file_path = os.path.join(
+                self.script_dir, "dict_arXiv", "DAL", "DAL_v2009_boosted.pickle"
             )
             with open(file_path, "rb") as handle:
                 self.lex_dict = pickle.load(handle)
