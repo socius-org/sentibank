@@ -18,7 +18,8 @@ https://github.com/aigents/aigents-java
 
 #ANEW
 
-?
+Publicly Avaliable 
+(Report)
 
 
 #DED (Discrete Emotions Dictionary)
@@ -27,10 +28,13 @@ https://osf.io/cbm9e/
 
 https://github.com/CenterForOpenScience/cos.io/blob/master/TERMS_OF_USE.md
 
+Publicly Avaliable 
+(Open Science Framework) 
 
-#Dictionary of Affect 
 
-? 
+#DAL (Dictionary of Affect in Language)
+
+Publicly Avaliable 
 
 
 #General Inquirer 
@@ -44,7 +48,8 @@ https://inquirer.sites.fas.harvard.edu/spreadsheet_guide.htm
 
 #Henry 
 
-Unspecified 
+Publicly avaliable 
+(SSRN)
 
 
 #MASTER 
@@ -52,11 +57,6 @@ Unspecified
 The dictionary/sentiment lists are free for use in academic research. 
 For commercial licenses, please contact us at loughranmcdonald@gmail.com.
 https://sraf.nd.edu/loughranmcdonald-master-dictionary/
-
-
-#MPQA 
-
-? 
 
 
 #News PMI 
@@ -87,6 +87,7 @@ https://github.com/consose/SentiBigNomics
 
 #SenticNet 
 
+MIT License 
 https://sentic.net/downloads/
 
 
@@ -118,9 +119,6 @@ https://github.com/cjhutto/vaderSentiment
 Licensed under a Creative Commons Attribution 3.0 Unported License. 
 You are free to share and adapt the lexicon, as long as you give attribution to the original authors.
 https://wndomains.fbk.eu/download.html 
-
-
-
 
 
 #EmoLex 
@@ -171,3 +169,32 @@ https://arxiv.org/abs/1406.0032
 
 #SentiStrength 
 http://sentistrength.wlv.ac.uk/ 
+
+
+#MPQA 
+
+The annotations in this data collection are copyrighted by the MITRE Corporation. 
+User acknowledges and agrees that: 
+(i) as between User and MITRE, MITRE owns all the right, title and interest in the Annotated Content, unless expressly stated otherwise; 
+(ii) nothing in this Agreement shall confer in User any right of ownership in the Annotated Content; and 
+(iii) User is granted a non-exclusive, royalty free, worldwide licence (with no right to sublicense) to use the Annotated Content solely for academic and research purposes. 
+This Agreement is governed by the law of the Commonwealth of Massachusetts and User agrees to submit to the exclusive jurisdiction of the Massachusetts courts.
+
+
+#+/-Effect Lexicon
+
+GNU General Public License 
+
+
+#Warriner 
+
+Publicly avaliable 
+(Springer)
+https://www.springernature.com/gp/authors/research-data-policy/data-availability-statements
+
+
+#HSSWE 
+
+https://github.com/NUSTM/HSSWE/tree/master
+https://aclanthology.org/D17-1052/
+CC BY 4.0 DEED 

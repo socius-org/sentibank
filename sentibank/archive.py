@@ -102,9 +102,9 @@ class load:
             with open(file_path, "rb") as handle:
                 self.lex_dict = pickle.load(handle)
         
-        elif idx == "SentiWordNet_v2010_nuanced": 
+        elif idx == "SentiWordNet_v2010_logtransform": 
             file_path = os.path.join(
-                self.script_dir, "dict_arXiv", "SentiWordNet", "SentiWordNet_v2010_nuanced.pickle"
+                self.script_dir, "dict_arXiv", "SentiWordNet", "SentiWordNet_v2010_logtransform.pickle"
             )
             with open(file_path, "rb") as handle:
                 self.lex_dict = pickle.load(handle)
@@ -154,6 +154,20 @@ class load:
         elif idx == "DAL_v2009_boosted": 
             file_path = os.path.join(
                 self.script_dir, "dict_arXiv", "DAL", "DAL_v2009_boosted.pickle"
+            )
+            with open(file_path, "rb") as handle:
+                self.lex_dict = pickle.load(handle)
+            
+        elif idx == "NoVAD_v2013_bidimensional": 
+            file_path = os.path.join(
+                self.script_dir, "dict_arXiv", "NoVAD", "NoVAD_v2013_bidimensional.pickle"
+            )
+            with open(file_path, "rb") as handle:
+                self.lex_dict = pickle.load(handle)
+        
+        elif idx == "NoVAD_v2013_adjusted": 
+            file_path = os.path.join(
+                self.script_dir, "dict_arXiv", "NoVAD", "NoVAD_v2013_adjusted.pickle"
             )
             with open(file_path, "rb") as handle:
                 self.lex_dict = pickle.load(handle)
@@ -261,7 +275,13 @@ class load:
                 self.script_dir, "dict_arXiv", "DAL", "DAL_v2009.csv"
             )
             self.origin_df = pd.read_csv(file_path)
-            
+        
+        elif idx == "NoVAD_v2013": 
+            file_path = os.path.join(
+                self.script_dir, "dict_arXiv", "NoVAD", "NoVAD_v2013.csv"
+            )
+            self.origin_df = pd.read_csv(file_path)
+        
         else:
             raise ValueError
 
