@@ -46,7 +46,7 @@ load = archive.load()
 vader = load.dict("VADER_v2014") 
 ```
 
-The predefined lexicon identifiers follow the convention {NAME}_{VERSION} - for example, "VADER_v2014". This naming structure indicates the lexicon name and its version for easy recognition and selection. 
+The predefined lexicon identifiers follow either a `{NAME}_{VERSION}` convention, meaning only compulsory processing was completed on the base lexicon, or a `{NAME}_{VERSION}_{refined}` structure specifying additional transformations that represent discretionary refinements. For example, `NoVAD_v2013_adjusted` applies arousal-based adjustments to intensify extreme valence values and dampen neutral ones, providing a richness-preserving single score.
 
 See below for the available predefined lexicon identifier.
 
