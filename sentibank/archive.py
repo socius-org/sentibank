@@ -128,6 +128,7 @@ class load:
             "DED_v2022": "DED",
             "DAL_v2009": "DAL",
             "NoVAD_v2013": "NoVAD",
+            "SenticNet_v2022": "SenticNet"
         }
 
         if idx in csv_paths:
