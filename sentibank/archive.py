@@ -39,141 +39,61 @@ class load:
         Raises:
             ValueError: Raised for an unknown index.
         """
-        if idx == "MASTER_v2022":
-            file_path = os.path.join(
-                self.script_dir, "dict_arXiv", "MASTER", "MASTER_v2022.pickle"
-            )
-            with open(file_path, "rb") as handle:
-                self.lex_dict = pickle.load(handle)
-
-        elif idx == "VADER_v2014":
-            file_path = os.path.join(
-                self.script_dir, "dict_arXiv", "VADER", "VADER_v2014.pickle"
-            )
-            with open(file_path, "rb") as handle:
-                self.lex_dict = pickle.load(handle)
         
-        elif idx == "AFINN_v2009":
-            file_path = os.path.join(
-                self.script_dir, "dict_arXiv", "AFINN", "AFINN_v2009.pickle"
-            )
-            with open(file_path, "rb") as handle:
-                self.lex_dict = pickle.load(handle)
-                
-        elif idx == "AFINN_v2011":
-            file_path = os.path.join(
-                self.script_dir, "dict_arXiv", "AFINN", "AFINN_v2011.pickle"
-            )
-            with open(file_path, "rb") as handle:
-                self.lex_dict = pickle.load(handle)
+        lexicon_paths = {
+            "MASTER_v2022": "MASTER",
+            "VADER_v2014": "VADER",
+            "AFINN_v2009": "AFINN",
+            "AFINN_v2011": "AFINN",
+            "AFINN_v2015": "AFINN",
+            "Aigents+_v2022": "Aigents",
+            "HarvardGI_v2000": "Harvard_GI",
+            "WordNet-Affect_v2006": "WordNet_Affect",
+            "SentiWordNet_v2010_simple": "SentiWordNet",
+            "SentiWordNet_v2010_logtransform": "SentiWordNet",
+            "Henry_v2006": "Henry",
+            "OpinionLexicon_v2004": "OpinionLexicon",
+            "ANEW_v1999_simple": "ANEW",
+            "ANEW_v1999_weighted": "ANEW",
+            "DED_v2022": "DED",
+            "DAL_v2009_norm": "DAL",
+            "DAL_v2009_boosted": "DAL",
+            "NoVAD_v2013_bidimensional": "NoVAD",
+            "NoVAD_v2013_adjusted": "NoVAD",
+            "SenticNet_v2010": "SenticNet",
+            "SenticNet_v2012": "SenticNet",
+            "SenticNet_v2012_attributes": "SenticNet",
+            "SenticNet_v2012_semantics": "SenticNet",
+            "SenticNet_v2014": "SenticNet",
+            "SenticNet_v2014_attributes": "SenticNet",
+            "SenticNet_v2014_semantics": "SenticNet",
+            "SenticNet_v2016": "SenticNet",
+            "SenticNet_v2016_attributes": "SenticNet",
+            "SenticNet_v2016_mood": "SenticNet",
+            "SenticNet_v2016_semantics": "SenticNet",
+            "SenticNet_v2018": "SenticNet",
+            "SenticNet_v2018_attributes": "SenticNet",
+            "SenticNet_v2018_mood": "SenticNet",
+            "SenticNet_v2018_semantics": "SenticNet",
+            "SenticNet_v2020": "SenticNet",
+            "SenticNet_v2020_attributes": "SenticNet",
+            "SenticNet_v2020_mood": "SenticNet",
+            "SenticNet_v2020_semantics": "SenticNet",
+            "SenticNet_v2022": "SenticNet",
+            "SenticNet_v2022_attributes": "SenticNet",
+            "SenticNet_v2022_mood": "SenticNet",
+            "SenticNet_v2022_semantics": "SenticNet",
+        }
         
-        elif idx == "AFINN_v2015":
+        if idx in lexicon_paths:
             file_path = os.path.join(
-                self.script_dir, "dict_arXiv", "AFINN", "AFINN_v2015.pickle"
-            )
-            with open(file_path, "rb") as handle:
-                self.lex_dict = pickle.load(handle)
-
-        elif idx == "Aigents+_v2022":
-            file_path = os.path.join(
-                self.script_dir, "dict_arXiv", "Aigents", "Aigents+_v2022.pickle"
-            )
-            with open(file_path, "rb") as handle:
-                self.lex_dict = pickle.load(handle)
-        
-        elif idx == "HarvardGI_v2000":
-            file_path = os.path.join(
-                self.script_dir, "dict_arXiv", "Harvard_GI", "HarvardGI_v2000.pickle"
-            )
-            with open(file_path, "rb") as handle:
-                self.lex_dict = pickle.load(handle)
-        
-        elif idx == "WordNet-Affect_v2006": 
-            file_path = os.path.join(
-                self.script_dir, "dict_arXiv", "WordNet_Affect", "WordNet_Affect_v2006.pickle"
-            )
-            with open(file_path, "rb") as handle:
-                self.lex_dict = pickle.load(handle)
-        
-        elif idx == "SentiWordNet_v2010_simple": 
-            file_path = os.path.join(
-                self.script_dir, "dict_arXiv", "SentiWordNet", "SentiWordNet_v2010_simple.pickle"
-            )
-            with open(file_path, "rb") as handle:
-                self.lex_dict = pickle.load(handle)
-        
-        elif idx == "SentiWordNet_v2010_logtransform": 
-            file_path = os.path.join(
-                self.script_dir, "dict_arXiv", "SentiWordNet", "SentiWordNet_v2010_logtransform.pickle"
-            )
-            with open(file_path, "rb") as handle:
-                self.lex_dict = pickle.load(handle)
-                
-        elif idx == "Henry_v2006": 
-            file_path = os.path.join(
-                self.script_dir, "dict_arXiv", "Henry", "Henry_v2006.pickle"
-            )
-            with open(file_path, "rb") as handle:
-                self.lex_dict = pickle.load(handle)
-        
-        elif idx == "OpinionLexicon_v2004": 
-            file_path = os.path.join(
-                self.script_dir, "dict_arXiv", "OpinionLexicon", "OpinionLexicon_v2004.pickle"
-            )
-            with open(file_path, "rb") as handle:
-                self.lex_dict = pickle.load(handle)
-        
-        elif idx == "ANEW_v1999_simple": 
-            file_path = os.path.join(
-                self.script_dir, "dict_arXiv", "ANEW", "ANEW_v1999_simple.pickle"
-            )
-            with open(file_path, "rb") as handle:
-                self.lex_dict = pickle.load(handle)
-        
-        elif idx == "ANEW_v1999_weighted": 
-            file_path = os.path.join(
-                self.script_dir, "dict_arXiv", "ANEW", "ANEW_v1999_weighted.pickle"
-            )
-            with open(file_path, "rb") as handle:
-                self.lex_dict = pickle.load(handle)
-        
-        elif idx == "DED_v2022": 
-            file_path = os.path.join(
-                self.script_dir, "dict_arXiv", "DED", "DED_v2022.pickle"
-            )
-            with open(file_path, "rb") as handle:
-                self.lex_dict = pickle.load(handle)
-        
-        elif idx == "DAL_v2009_norm": 
-            file_path = os.path.join(
-                self.script_dir, "dict_arXiv", "DAL", "DAL_v2009_norm.pickle"
-            )
-            with open(file_path, "rb") as handle:
-                self.lex_dict = pickle.load(handle)
-        
-        elif idx == "DAL_v2009_boosted": 
-            file_path = os.path.join(
-                self.script_dir, "dict_arXiv", "DAL", "DAL_v2009_boosted.pickle"
-            )
-            with open(file_path, "rb") as handle:
-                self.lex_dict = pickle.load(handle)
-            
-        elif idx == "NoVAD_v2013_bidimensional": 
-            file_path = os.path.join(
-                self.script_dir, "dict_arXiv", "NoVAD", "NoVAD_v2013_bidimensional.pickle"
-            )
-            with open(file_path, "rb") as handle:
-                self.lex_dict = pickle.load(handle)
-        
-        elif idx == "NoVAD_v2013_adjusted": 
-            file_path = os.path.join(
-                self.script_dir, "dict_arXiv", "NoVAD", "NoVAD_v2013_adjusted.pickle"
+                self.script_dir, "dict_arXiv", lexicon_paths[idx], f"{idx}.pickle"
             )
             with open(file_path, "rb") as handle:
                 self.lex_dict = pickle.load(handle)
         
         else: 
-            raise ValueError
+            raise ValueError(f"Unknown index: {idx}")
         
         return self.lex_dict
 
@@ -192,97 +112,33 @@ class load:
         """
         import pandas as pd
 
-        if idx == "MASTER_v2022":
-            file_path = os.path.join(
-                self.script_dir, "dict_arXiv", "MASTER", "MASTER_v2022.csv"
-            )
-            self.origin_df = pd.read_csv(file_path)
+        csv_paths = {
+            "MASTER_v2022": "MASTER",
+            "VADER_v2014": "VADER",
+            "AFINN_v2009": "AFINN",
+            "AFINN_v2011": "AFINN",
+            "AFINN_v2015": "AFINN",
+            "Aigents+_v2022": "Aigents",
+            "HarvardGI_v2000": "Harvard_GI",
+            "WordNet-Affect_v2006": "WordNet_Affect",
+            "SentiWordNet_v2010": "SentiWordNet",
+            "Henry_v2006": "Henry",
+            "OpinionLexicon_v2004": "OpinionLexicon",
+            "ANEW_v1999": "ANEW",
+            "DED_v2022": "DED",
+            "DAL_v2009": "DAL",
+            "NoVAD_v2013": "NoVAD",
+        }
 
-        elif idx == "VADER_v2014":
+        if idx in csv_paths:
             file_path = os.path.join(
-                self.script_dir, "dict_arXiv", "VADER", "VADER_v2014.csv"
+                self.script_dir, "dict_arXiv", csv_paths[idx], f"{idx}.csv"
             )
-            self.origin_df = pd.read_csv(file_path)
-
-        elif idx == "AFINN_v2009":
-            file_path = os.path.join(
-                self.script_dir, "dict_arXiv", "AFINN", "AFINN_v2009.csv"
-            )
-            self.origin_df = pd.read_csv(file_path)
-        
-        elif idx == "AFINN_v2011":
-            file_path = os.path.join(
-                self.script_dir, "dict_arXiv", "AFINN", "AFINN_v2011.csv"
-            )
-            self.origin_df = pd.read_csv(file_path) 
-            
-        elif idx == "AFINN_v2015":
-            file_path = os.path.join(
-                self.script_dir, "dict_arXiv", "AFINN", "AFINN_v2015.csv"
-            )
-            self.origin_df = pd.read_csv(file_path)
-
-        elif idx == "Aigents+_v2022":
-            file_path = os.path.join(
-                self.script_dir, "dict_arXiv", "Aigents", "Aigents+_v2022.csv"
-            )
-            self.origin_df = pd.read_csv(file_path)
-            
-        elif idx == "HarvardGI_v2000": 
-            file_path = os.path.join(
-                self.script_dir, "dict_arXiv", "Harvard_GI", "HarvardGI_v2000.csv"
-            )
-            self.origin_df = pd.read_csv(file_path)
-            
-        elif idx == "WordNet-Affect_v2006": 
-            file_path = os.path.join(
-                self.script_dir, "dict_arXiv", "WordNet_Affect", "WordNet_Affect_v2006.csv"
-            )
-            self.origin_df = pd.read_csv(file_path)
-        
-        elif idx == "SentiWordNet_v2010": 
-            file_path = os.path.join(
-                self.script_dir, "dict_arXiv", "SentiWordNet", "SentiWordNet_v2010.csv"
-            )
-            self.origin_df = pd.read_csv(file_path)
-        
-        elif idx == "Henry_v2006": 
-            file_path = os.path.join(
-                self.script_dir, "dict_arXiv", "Henry", "Henry_v2006.csv"
-            )
-            self.origin_df = pd.read_csv(file_path)
-        
-        elif idx == "OpinionLexicon_v2004": 
-            file_path = os.path.join(
-                self.script_dir, "dict_arXiv", "OpinionLexicon", "OpinionLexicon_v2004.csv"
-            )
-            self.origin_df = pd.read_csv(file_path)
-        
-        elif idx == "ANEW_v1999": 
-            file_path = os.path.join(
-                self.script_dir, "dict_arXiv", "ANEW", "ANEW_v1999.csv"
-            )
-            self.origin_df = pd.read_csv(file_path, index_col=['Word', 'Gender'])
-        
-        elif idx == "DED_v2022": 
-            file_path = os.path.join(
-                self.script_dir, "dict_arXiv", "DED", "DED_v2022.csv"
-            )
-            self.origin_df = pd.read_csv(file_path)
-        
-        elif idx == "DAL_v2009": 
-            file_path = os.path.join(
-                self.script_dir, "dict_arXiv", "DAL", "DAL_v2009.csv"
-            )
-            self.origin_df = pd.read_csv(file_path)
-        
-        elif idx == "NoVAD_v2013": 
-            file_path = os.path.join(
-                self.script_dir, "dict_arXiv", "NoVAD", "NoVAD_v2013.csv"
-            )
-            self.origin_df = pd.read_csv(file_path)
-        
+            if idx == "ANEW_v1999":
+                self.origin_df = pd.read_csv(file_path, index_col=['Word', 'Gender'])
+            else:
+                self.origin_df = pd.read_csv(file_path)
         else:
-            raise ValueError
+            raise ValueError(f"Unknown index: {idx}")
 
         return self.origin_df
