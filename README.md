@@ -8,14 +8,14 @@
 
 ## Overview 
 
-Sentiment analysis is the automated process of identifying and extracting subjective information such as opinions, emotions, and attitudes from textual data. It has become an increasingly critical technique across many social science domains such as business, politics, and economics. 
+Sentiment analysis, the automated process of identifying and extracting subjective information like opinions, emotions, and attitudes from text data, has become an increasingly critical technique across social science domains. In particular, rule-based sentiment analysis relies on expert-curated lexicons containing words with pre-assigned sentiment scores.
 
-However, sentiment analysis today faces key challenges:
+However, creating effective rule-based systems faces several challenges::
 - Disparate, fragmented resources requiring laborious integration
 - Lack of verified, high-quality lexicons spanning domains
 - Inaccessibility limiting transparency and advancement
 
-**`sentibank` tackles these issues by consolidating lexicons into an integrated, open-source database**
+**`sentibank` tackles these issues by consolidating lexicons into an integrated, open-source database**. With a unified library of expert-curated lexicons consolidated into a single open database, this knowledge base empowers more effective rule-based sentiment analysis. Additionally, the open access fosters ongoing quality improvement through community participation.
 
 ## Key Capabilities 
 
