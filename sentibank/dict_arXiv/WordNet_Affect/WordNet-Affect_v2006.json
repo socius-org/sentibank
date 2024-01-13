@@ -1,0 +1,8843 @@
+{
+  "@context": {
+    "@vocab": "http://schema.org/",
+    "dc": "http://purl.org/dc/terms/"
+  },
+  "@type": "Dataset",
+  "name": "WordNet-Affect",
+  "description": "WordNet-Affect provides affective (emotional) labels that are hierarchically organised.",
+  "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  "relatedIdentifier": [
+    {
+      "@type": "PropertyValue",
+      "propertyID": "URL",
+      "value": "http://www.lrec-conf.org/proceedings/lrec2004/pdf/369.pdf"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "URL",
+      "value": "https://www.scss.tcd.ie/Khurshid.Ahmad/Research/High_Frequency_Trading/psychno.pdf"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "URL",
+      "value": "http://www.lrec-conf.org/proceedings/lrec2006/pdf/186_pdf.pdf"
+    }
+  ],
+  "creator": [
+    {
+      "@type": "Person",
+      "name": "Strapparava, Carlo",
+      "affiliation": "Original Creator",
+      "license": "https://creativecommons.org/licenses/by/3.0/"
+    },
+    {
+      "@type": "Person",
+      "name": " Valitutti, Alessandro",
+      "affiliation": "Original Creator",
+      "license": "https://creativecommons.org/licenses/by/3.0/"
+    },
+    {
+      "@type": "Person",
+      "name": "Stock, Oliviero",
+      "affiliation": "Original Creator",
+      "license": "https://creativecommons.org/licenses/by/3.0/"
+    },
+    {
+      "@type": "Organization",
+      "name": "socius",
+      "affiliation": "Modifier and Provider"
+    }
+  ],
+  "dateCreated": "2006",
+  "dateModified": "2024",
+  "data": {
+    "@type": "Dictionary",
+    "sentiment": {
+      "wrath": [
+        "general-dislike",
+        "anger",
+        "fury",
+        "negative-emotion",
+        "wrath"
+      ],
+      "worship": [
+        "ambiguous-emotion"
+      ],
+      "adoration": [
+        "love",
+        "positive-emotion",
+        "worship"
+      ],
+      "world-weariness": [
+        "negative-emotion",
+        "sadness",
+        "melancholy",
+        "world-weariness"
+      ],
+      "Weltschmerz": [
+        "negative-emotion",
+        "sadness",
+        "melancholy",
+        "world-weariness"
+      ],
+      "wonder": [
+        "wonder",
+        "astonishment",
+        "surprise",
+        "ambiguous-emotion"
+      ],
+      "wonderment": [
+        "astonishment",
+        "surprise",
+        "ambiguous-emotion",
+        "wonder"
+      ],
+      "admiration": [
+        "ambiguous-emotion"
+      ],
+      "woe": [
+        "sorrow",
+        "lost-sorrow",
+        "negative-emotion",
+        "sadness",
+        "mournfulness",
+        "woe"
+      ],
+      "woefulness": [
+        "sorrow",
+        "lost-sorrow",
+        "negative-emotion",
+        "sadness",
+        "mournfulness",
+        "woe"
+      ],
+      "withdrawal": [
+        "neutral-unconcern",
+        "indifference",
+        "neutral-emotion",
+        "withdrawal"
+      ],
+      "detachment": [
+        "neutral-unconcern",
+        "indifference",
+        "neutral-emotion",
+        "withdrawal"
+      ],
+      "weight": [
+        "oppression",
+        "depression",
+        "negative-emotion",
+        "sadness",
+        "weight"
+      ],
+      "weepiness": [
+        "negative-emotion",
+        "sadness",
+        "weepiness"
+      ],
+      "tearfulness": [
+        "negative-emotion",
+        "sadness",
+        "weepiness"
+      ],
+      "weakness": [
+        "liking",
+        "preference",
+        "positive-emotion",
+        "weakness"
+      ],
+      "warpath": [
+        "general-dislike",
+        "hostility",
+        "belligerence",
+        "hate",
+        "negative-emotion",
+        "warpath"
+      ],
+      "warmheartedness": [
+        "positive-emotion"
+      ],
+      "warmth": [
+        "lovingness",
+        "love",
+        "positive-emotion",
+        "warmheartedness"
+      ],
+      "vindictiveness": [
+        "general-dislike",
+        "malevolence",
+        "hate",
+        "negative-emotion",
+        "vindictiveness"
+      ],
+      "vengefulness": [
+        "general-dislike",
+        "malevolence",
+        "hate",
+        "negative-emotion",
+        "vindictiveness"
+      ],
+      "unrest": [
+        "ambiguous-agitation",
+        "ambiguous-emotion",
+        "unrest"
+      ],
+      "unfriendliness": [
+        "general-dislike",
+        "dislike",
+        "negative-emotion",
+        "unfriendliness"
+      ],
+      "unconcern": [
+        "neutral-emotion",
+        "neutral-unconcern"
+      ],
+      "unassertiveness": [
+        "diffidence",
+        "timidity",
+        "negative-emotion",
+        "negative-fear",
+        "unassertiveness"
+      ],
+      "umbrage": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "umbrage"
+      ],
+      "offense": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "umbrage"
+      ],
+      "tumult": [
+        "ambiguous-agitation",
+        "ambiguous-emotion",
+        "tumult"
+      ],
+      "turmoil": [
+        "ambiguous-agitation",
+        "ambiguous-emotion",
+        "tumult"
+      ],
+      "triumph": [
+        "joy",
+        "positive-emotion",
+        "exultation",
+        "triumph"
+      ],
+      "trepidation": [
+        "apprehension",
+        "negative-emotion",
+        "negative-fear",
+        "trepidation"
+      ],
+      "tranquillity": [
+        "calmness",
+        "positive-emotion",
+        "tranquillity"
+      ],
+      "tranquility": [
+        "calmness",
+        "positive-emotion",
+        "tranquillity"
+      ],
+      "quietness": [
+        "calmness",
+        "positive-emotion",
+        "tranquillity"
+      ],
+      "quietude": [
+        "calmness",
+        "positive-emotion",
+        "tranquillity"
+      ],
+      "togetherness": [
+        "joy",
+        "closeness",
+        "positive-emotion",
+        "belonging",
+        "togetherness"
+      ],
+      "titillation": [
+        "exhilaration",
+        "joy",
+        "positive-emotion",
+        "titillation"
+      ],
+      "timidity": [
+        "negative-emotion",
+        "negative-fear",
+        "timidity"
+      ],
+      "timidness": [
+        "negative-emotion",
+        "negative-fear",
+        "timidity"
+      ],
+      "timorousness": [
+        "negative-emotion",
+        "negative-fear",
+        "timidity"
+      ],
+      "thing": [
+        "ambiguous-emotion",
+        "thing"
+      ],
+      "tenderness": [
+        "ambiguous-emotion"
+      ],
+      "tenderheartedness": [
+        "compassion",
+        "negative-emotion",
+        "tenderness"
+      ],
+      "sympathy": [
+        "liking",
+        "positive-emotion",
+        "sympathy"
+      ],
+      "fellow feeling": [
+        "liking",
+        "positive-emotion",
+        "sympathy"
+      ],
+      "suspense": [
+        "ambiguous-emotion"
+      ],
+      "surprise": [
+        "astonishment",
+        "surprise",
+        "ambiguous-emotion"
+      ],
+      "sulkiness": [
+        "general-dislike",
+        "hostility",
+        "resentment",
+        "hate",
+        "negative-emotion",
+        "sulkiness"
+      ],
+      "huffishness": [
+        "general-dislike",
+        "hostility",
+        "resentment",
+        "hate",
+        "negative-emotion",
+        "sulkiness"
+      ],
+      "stupefaction": [
+        "astonishment",
+        "surprise",
+        "ambiguous-emotion",
+        "stupefaction"
+      ],
+      "stir": [
+        "stir",
+        "ambiguous-emotion",
+        "ambiguous-agitation"
+      ],
+      "stewing": [
+        "anxiety",
+        "negative-emotion",
+        "negative-agitation",
+        "stewing"
+      ],
+      "stage fright": [
+        "negative-emotion",
+        "negative-fear",
+        "stage-fright"
+      ],
+      "sorrow": [
+        "negative-emotion",
+        "sadness",
+        "sorrow"
+      ],
+      "regret": [
+        "negative-emotion",
+        "sadness",
+        "regret-sorrow",
+        "sorrow"
+      ],
+      "ruefulness": [
+        "sorrow",
+        "negative-emotion",
+        "sadness",
+        "regret-sorrow"
+      ],
+      "solicitude": [
+        "anxiety",
+        "negative-emotion",
+        "solicitude"
+      ],
+      "solicitousness": [
+        "anxiety",
+        "negative-emotion",
+        "solicitude"
+      ],
+      "softheartedness": [
+        "sympathy",
+        "positive-concern",
+        "liking",
+        "positive-emotion",
+        "softheartedness"
+      ],
+      "soft spot": [
+        "affection",
+        "positive-emotion",
+        "soft-spot"
+      ],
+      "smugness": [
+        "satisfaction",
+        "contentment",
+        "joy",
+        "complacency",
+        "positive-emotion",
+        "smugness"
+      ],
+      "sinking": [
+        "anxiety",
+        "negative-emotion",
+        "sinking"
+      ],
+      "sinking feeling": [
+        "anxiety",
+        "negative-emotion",
+        "sinking"
+      ],
+      "shyness": [
+        "timidity",
+        "negative-emotion",
+        "negative-fear",
+        "shyness"
+      ],
+      "shamefacedness": [
+        "embarrassment",
+        "negative-emotion",
+        "shame",
+        "shamefacedness"
+      ],
+      "sheepishness": [
+        "embarrassment",
+        "negative-emotion",
+        "shame",
+        "shamefacedness"
+      ],
+      "shame": [
+        "negative-emotion",
+        "shame"
+      ],
+      "shadow": [
+        "apprehension",
+        "foreboding",
+        "negative-emotion",
+        "negative-fear",
+        "shadow"
+      ],
+      "sensation": [
+        "ambiguous-agitation",
+        "stir",
+        "ambiguous-emotion",
+        "sensation"
+      ],
+      "self-pity": [
+        "sorrow",
+        "lost-sorrow",
+        "negative-emotion",
+        "sadness",
+        "self-pity"
+      ],
+      "self-esteem": [
+        "self-pride",
+        "positive-emotion",
+        "self-esteem"
+      ],
+      "self-pride": [
+        "self-pride",
+        "positive-emotion",
+        "self-esteem"
+      ],
+      "self-disgust": [
+        "negative-emotion",
+        "shame",
+        "self-disgust"
+      ],
+      "self-hatred": [
+        "negative-emotion",
+        "shame",
+        "self-disgust"
+      ],
+      "self-depreciation": [
+        "negative-emotion",
+        "humility",
+        "self-depreciation"
+      ],
+      "self-consciousness": [
+        "embarrassment",
+        "negative-emotion",
+        "shame",
+        "self-consciousness"
+      ],
+      "uneasiness": [
+        "negative-emotion"
+      ],
+      "uncomfortableness": [
+        "embarrassment",
+        "negative-emotion",
+        "shame",
+        "self-consciousness"
+      ],
+      "security": [
+        "fearlessness",
+        "positive-emotion",
+        "security"
+      ],
+      "scruple": [
+        "anxiety",
+        "negative-emotion",
+        "scruple"
+      ],
+      "qualm": [
+        "anxiety",
+        "negative-emotion",
+        "scruple"
+      ],
+      "misgiving": [
+        "anxiety",
+        "negative-emotion",
+        "scruple"
+      ],
+      "scare": [
+        "negative-emotion",
+        "scare",
+        "negative-fear"
+      ],
+      "panic attack": [
+        "negative-emotion",
+        "negative-fear",
+        "scare"
+      ],
+      "satisfaction": [
+        "contentment",
+        "joy",
+        "positive-emotion",
+        "satisfaction"
+      ],
+      "sanguinity": [
+        "positive-hope",
+        "optimism",
+        "positive-emotion",
+        "sanguinity"
+      ],
+      "sanguineness": [
+        "positive-hope",
+        "optimism",
+        "positive-emotion",
+        "sanguinity"
+      ],
+      "sadness": [
+        "negative-emotion",
+        "sadness"
+      ],
+      "unhappiness": [
+        "negative-emotion",
+        "sadness"
+      ],
+      "reverence": [
+        "reverence",
+        "ambiguous-emotion",
+        "ambiguous-fear"
+      ],
+      "awe": [
+        "ambiguous-emotion"
+      ],
+      "veneration": [
+        "ambiguous-fear",
+        "ambiguous-emotion",
+        "reverence"
+      ],
+      "resignation": [
+        "despair",
+        "negative-emotion",
+        "resignation"
+      ],
+      "surrender": [
+        "despair",
+        "negative-emotion",
+        "resignation"
+      ],
+      "resentment": [
+        "general-dislike",
+        "hostility",
+        "hate",
+        "negative-emotion",
+        "resentment"
+      ],
+      "bitterness": [
+        "general-dislike",
+        "hostility",
+        "hate",
+        "negative-emotion",
+        "resentment"
+      ],
+      "gall": [
+        "general-dislike",
+        "hostility",
+        "hate",
+        "negative-emotion",
+        "resentment"
+      ],
+      "rancor": [
+        "general-dislike",
+        "hostility",
+        "hate",
+        "negative-emotion",
+        "resentment"
+      ],
+      "rancour": [
+        "general-dislike",
+        "hostility",
+        "hate",
+        "negative-emotion",
+        "resentment"
+      ],
+      "repugnance": [
+        "general-dislike",
+        "dislike",
+        "disgust",
+        "negative-emotion",
+        "repugnance"
+      ],
+      "repulsion": [
+        "general-dislike",
+        "dislike",
+        "disgust",
+        "negative-emotion",
+        "repugnance"
+      ],
+      "revulsion": [
+        "general-dislike",
+        "dislike",
+        "disgust",
+        "negative-emotion",
+        "repugnance"
+      ],
+      "horror": [
+        "negative-emotion"
+      ],
+      "repentance": [
+        "sorrow",
+        "compunction",
+        "regret-sorrow",
+        "negative-emotion",
+        "sadness",
+        "repentance"
+      ],
+      "penitence": [
+        "sorrow",
+        "compunction",
+        "regret-sorrow",
+        "negative-emotion",
+        "sadness",
+        "repentance"
+      ],
+      "penance": [
+        "sorrow",
+        "compunction",
+        "regret-sorrow",
+        "negative-emotion",
+        "sadness",
+        "repentance"
+      ],
+      "rejoicing": [
+        "positive-emotion",
+        "joy"
+      ],
+      "regard": [
+        "affection",
+        "positive-emotion",
+        "regard"
+      ],
+      "respect": [
+        "affection",
+        "positive-emotion",
+        "regard"
+      ],
+      "puppy love": [
+        "love",
+        "positive-emotion",
+        "puppy-love"
+      ],
+      "calf love": [
+        "love",
+        "positive-emotion",
+        "puppy-love"
+      ],
+      "crush": [
+        "love",
+        "positive-emotion",
+        "puppy-love"
+      ],
+      "infatuation": [
+        "love",
+        "positive-emotion",
+        "puppy-love"
+      ],
+      "protectiveness": [
+        "affection",
+        "positive-emotion",
+        "protectiveness"
+      ],
+      "pride": [
+        "satisfaction",
+        "satisfaction-pride",
+        "contentment",
+        "joy",
+        "positive-emotion"
+      ],
+      "pridefulness": [
+        "satisfaction",
+        "contentment",
+        "joy",
+        "positive-emotion",
+        "satisfaction-pride"
+      ],
+      "presage": [
+        "apprehension",
+        "foreboding",
+        "negative-emotion",
+        "negative-fear",
+        "presage"
+      ],
+      "preference": [
+        "liking",
+        "positive-emotion",
+        "preference"
+      ],
+      "penchant": [
+        "liking",
+        "positive-emotion",
+        "preference"
+      ],
+      "predilection": [
+        "liking",
+        "positive-emotion",
+        "preference"
+      ],
+      "taste": [
+        "liking",
+        "positive-emotion",
+        "preference"
+      ],
+      "plaintiveness": [
+        "sorrow",
+        "lost-sorrow",
+        "negative-emotion",
+        "sadness",
+        "mournfulness",
+        "plaintiveness"
+      ],
+      "placidity": [
+        "calmness",
+        "positive-emotion",
+        "placidity"
+      ],
+      "placidness": [
+        "calmness",
+        "positive-emotion",
+        "placidity"
+      ],
+      "pique": [
+        "general-dislike",
+        "anger",
+        "annoyance",
+        "negative-emotion",
+        "pique"
+      ],
+      "temper": [
+        "general-dislike",
+        "anger",
+        "annoyance",
+        "negative-emotion",
+        "pique"
+      ],
+      "irritation": [
+        "general-dislike",
+        "anger",
+        "annoyance",
+        "negative-emotion",
+        "pique"
+      ],
+      "pessimism": [
+        "despair",
+        "negative-emotion",
+        "pessimism"
+      ],
+      "pensiveness": [
+        "ambiguous-emotion",
+        "pensiveness"
+      ],
+      "brooding": [
+        "ambiguous-emotion",
+        "pensiveness"
+      ],
+      "peace": [
+        "calmness",
+        "tranquillity",
+        "positive-emotion",
+        "peace"
+      ],
+      "peacefulness": [
+        "calmness",
+        "tranquillity",
+        "positive-emotion",
+        "peace"
+      ],
+      "peace of mind": [
+        "calmness",
+        "tranquillity",
+        "positive-emotion",
+        "peace"
+      ],
+      "repose": [
+        "calmness",
+        "tranquillity",
+        "positive-emotion",
+        "peace"
+      ],
+      "serenity": [
+        "calmness",
+        "tranquillity",
+        "positive-emotion",
+        "peace"
+      ],
+      "heartsease": [
+        "calmness",
+        "tranquillity",
+        "positive-emotion",
+        "peace"
+      ],
+      "ataraxis": [
+        "calmness",
+        "tranquillity",
+        "positive-emotion",
+        "peace"
+      ],
+      "panic": [
+        "negative-emotion",
+        "negative-fear",
+        "panic"
+      ],
+      "terror": [
+        "negative-emotion",
+        "negative-fear",
+        "panic"
+      ],
+      "optimism": [
+        "positive-hope",
+        "positive-emotion",
+        "optimism"
+      ],
+      "oppression": [
+        "depression",
+        "negative-emotion",
+        "sadness",
+        "oppression"
+      ],
+      "oppressiveness": [
+        "depression",
+        "negative-emotion",
+        "sadness",
+        "oppression"
+      ],
+      "nausea": [
+        "general-dislike",
+        "dislike",
+        "disgust",
+        "negative-emotion",
+        "nausea"
+      ],
+      "murderousness": [
+        "general-dislike",
+        "hate",
+        "negative-emotion",
+        "murderousness"
+      ],
+      "mournfulness": [
+        "sorrow",
+        "lost-sorrow",
+        "negative-emotion",
+        "sadness",
+        "mournfulness"
+      ],
+      "sorrowfulness": [
+        "sorrow",
+        "lost-sorrow",
+        "negative-emotion",
+        "sadness",
+        "mournfulness"
+      ],
+      "ruthfulness": [
+        "sorrow",
+        "lost-sorrow",
+        "negative-emotion",
+        "sadness",
+        "mournfulness"
+      ],
+      "misopedia": [
+        "general-dislike",
+        "hate",
+        "negative-emotion",
+        "misopedia"
+      ],
+      "misoneism": [
+        "general-dislike",
+        "hate",
+        "negative-emotion",
+        "misoneism"
+      ],
+      "misology": [
+        "general-dislike",
+        "hate",
+        "negative-emotion",
+        "misology"
+      ],
+      "misogyny": [
+        "general-dislike",
+        "hate",
+        "negative-emotion",
+        "misogyny"
+      ],
+      "misogynism": [
+        "general-dislike",
+        "hate",
+        "negative-emotion",
+        "misogyny"
+      ],
+      "misogamy": [
+        "general-dislike",
+        "hate",
+        "negative-emotion",
+        "misogamy"
+      ],
+      "misocainea": [
+        "general-dislike",
+        "misoneism",
+        "hate",
+        "negative-emotion",
+        "misocainea"
+      ],
+      "misery": [
+        "negative-emotion",
+        "sadness",
+        "misery"
+      ],
+      "misanthropy": [
+        "general-dislike",
+        "hate",
+        "negative-emotion",
+        "misanthropy"
+      ],
+      "mercifulness": [
+        "compassion",
+        "negative-emotion",
+        "mercifulness"
+      ],
+      "mercy": [
+        "compassion",
+        "negative-emotion",
+        "mercifulness"
+      ],
+      "melancholy": [
+        "negative-emotion",
+        "sadness",
+        "melancholy"
+      ],
+      "meekness": [
+        "negative-emotion",
+        "humility",
+        "meekness"
+      ],
+      "malice": [
+        "general-dislike",
+        "malevolence",
+        "hate",
+        "negative-emotion",
+        "malice"
+      ],
+      "maliciousness": [
+        "general-dislike",
+        "malevolence",
+        "hate",
+        "negative-emotion",
+        "malice"
+      ],
+      "spite": [
+        "general-dislike",
+        "malevolence",
+        "hate",
+        "negative-emotion",
+        "malice"
+      ],
+      "spitefulness": [
+        "general-dislike",
+        "malevolence",
+        "hate",
+        "negative-emotion",
+        "malice"
+      ],
+      "venom": [
+        "general-dislike",
+        "malevolence",
+        "hate",
+        "negative-emotion",
+        "malice"
+      ],
+      "malevolence": [
+        "general-dislike",
+        "hate",
+        "negative-emotion",
+        "malevolence"
+      ],
+      "malignity": [
+        "general-dislike",
+        "hate",
+        "negative-emotion",
+        "malevolence"
+      ],
+      "maleficence": [
+        "general-dislike",
+        "malevolence",
+        "hate",
+        "negative-emotion",
+        "maleficence"
+      ],
+      "loyalty": [
+        "love",
+        "positive-emotion",
+        "loyalty"
+      ],
+      "lovingness": [
+        "love",
+        "positive-emotion",
+        "lovingness"
+      ],
+      "caring": [
+        "ambiguous-emotion"
+      ],
+      "love": [
+        "love",
+        "positive-emotion"
+      ],
+      "lividity": [
+        "general-dislike",
+        "anger",
+        "fury",
+        "negative-emotion",
+        "lividity"
+      ],
+      "liking": [
+        "positive-emotion",
+        "liking"
+      ],
+      "levity": [
+        "positive-emotion",
+        "levity"
+      ],
+      "languor": [
+        "neutral-emotion"
+      ],
+      "lassitude": [
+        "apathy",
+        "neutral-emotion",
+        "neutral-languor"
+      ],
+      "listlessness": [
+        "apathy",
+        "neutral-emotion",
+        "neutral-languor"
+      ],
+      "dreaminess": [
+        "calmness",
+        "tranquillity",
+        "positive-emotion",
+        "easiness",
+        "positive-languor"
+      ],
+      "kindheartedness": [
+        "sympathy",
+        "liking",
+        "positive-emotion",
+        "kindheartedness"
+      ],
+      "joylessness": [
+        "cheerlessness",
+        "negative-emotion",
+        "sadness",
+        "joylessness"
+      ],
+      "joy": [
+        "joy",
+        "positive-emotion"
+      ],
+      "joyousness": [
+        "positive-emotion",
+        "joy"
+      ],
+      "joyfulness": [
+        "positive-emotion",
+        "joy"
+      ],
+      "jollity": [
+        "merriment",
+        "joy",
+        "positive-emotion",
+        "jollity"
+      ],
+      "joviality": [
+        "merriment",
+        "joy",
+        "positive-emotion",
+        "jollity"
+      ],
+      "jocundity": [
+        "merriment",
+        "joy",
+        "positive-emotion",
+        "jocundity"
+      ],
+      "jocularity": [
+        "merriment",
+        "joy",
+        "positive-emotion",
+        "jocundity"
+      ],
+      "jitteriness": [
+        "anxiety",
+        "negative-emotion",
+        "jitteriness"
+      ],
+      "jumpiness": [
+        "anxiety",
+        "negative-emotion",
+        "jitteriness"
+      ],
+      "nervousness": [
+        "anxiety",
+        "negative-emotion",
+        "jitteriness"
+      ],
+      "restiveness": [
+        "anxiety",
+        "negative-emotion",
+        "jitteriness"
+      ],
+      "jealousy": [
+        "general-dislike",
+        "hostility",
+        "resentment",
+        "hate",
+        "negative-emotion",
+        "envy",
+        "jealousy"
+      ],
+      "green-eyed monster": [
+        "general-dislike",
+        "hostility",
+        "resentment",
+        "hate",
+        "negative-emotion",
+        "envy",
+        "jealousy"
+      ],
+      "isolation": [
+        "general-dislike",
+        "dislike",
+        "negative-emotion",
+        "alienation",
+        "isolation"
+      ],
+      "irascibility": [
+        "general-dislike",
+        "anger",
+        "bad-temper",
+        "negative-emotion",
+        "irascibility"
+      ],
+      "short temper": [
+        "general-dislike",
+        "anger",
+        "bad-temper",
+        "negative-emotion",
+        "irascibility"
+      ],
+      "spleen": [
+        "general-dislike",
+        "anger",
+        "bad-temper",
+        "negative-emotion",
+        "irascibility"
+      ],
+      "quick temper": [
+        "general-dislike",
+        "anger",
+        "bad-temper",
+        "negative-emotion",
+        "irascibility"
+      ],
+      "intimidation": [
+        "negative-emotion"
+      ],
+      "insecurity": [
+        "anxiety",
+        "negative-emotion",
+        "insecurity"
+      ],
+      "ingratitude": [
+        "negative-emotion",
+        "ingratitude"
+      ],
+      "ungratefulness": [
+        "negative-emotion",
+        "ingratitude"
+      ],
+      "infuriation": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "infuriation"
+      ],
+      "enragement": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "infuriation"
+      ],
+      "indignation": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "indignation"
+      ],
+      "outrage": [
+        "general-dislike",
+        "anger",
+        "negative-emotion"
+      ],
+      "indifference": [
+        "neutral-emotion"
+      ],
+      "impatience": [
+        "anxiety",
+        "fidget",
+        "negative-emotion",
+        "negative-agitation",
+        "impatience"
+      ],
+      "identification": [
+        "sympathy",
+        "empathy",
+        "liking",
+        "positive-emotion",
+        "identification"
+      ],
+      "feeling of identity": [
+        "sympathy",
+        "empathy",
+        "liking",
+        "positive-emotion",
+        "identification"
+      ],
+      "hysteria": [
+        "negative-emotion",
+        "negative-fear",
+        "hysteria"
+      ],
+      "humility": [
+        "negative-emotion",
+        "humility"
+      ],
+      "humbleness": [
+        "negative-emotion",
+        "humility"
+      ],
+      "huffiness": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "huffiness"
+      ],
+      "hostility": [
+        "general-dislike",
+        "hate",
+        "negative-emotion",
+        "hostility"
+      ],
+      "enmity": [
+        "general-dislike",
+        "hate",
+        "negative-emotion",
+        "hostility"
+      ],
+      "ill will": [
+        "general-dislike",
+        "hate",
+        "negative-emotion",
+        "hostility"
+      ],
+      "hopelessness": [
+        "despair",
+        "negative-emotion",
+        "hopelessness"
+      ],
+      "hopefulness": [
+        "positive-hope",
+        "positive-emotion",
+        "hopefulness"
+      ],
+      "hope": [
+        "ambiguous-emotion"
+      ],
+      "hilarity": [
+        "merriment",
+        "joy",
+        "positive-emotion",
+        "hilarity"
+      ],
+      "mirth": [
+        "merriment",
+        "joy",
+        "positive-emotion",
+        "hilarity"
+      ],
+      "mirthfulness": [
+        "merriment",
+        "joy",
+        "positive-emotion",
+        "hilarity"
+      ],
+      "glee": [
+        "positive-emotion",
+        "joy"
+      ],
+      "gleefulness": [
+        "merriment",
+        "joy",
+        "positive-emotion",
+        "hilarity"
+      ],
+      "hesitance": [
+        "diffidence",
+        "timidity",
+        "negative-emotion",
+        "negative-fear",
+        "hesitance"
+      ],
+      "hesitancy": [
+        "diffidence",
+        "timidity",
+        "negative-emotion",
+        "negative-fear",
+        "hesitance"
+      ],
+      "hero worship": [
+        "admiration",
+        "liking",
+        "positive-emotion",
+        "hero-worship"
+      ],
+      "helplessness": [
+        "depression",
+        "negative-emotion",
+        "sadness",
+        "helplessness"
+      ],
+      "heavyheartedness": [
+        "negative-emotion",
+        "sadness",
+        "melancholy",
+        "heavyheartedness"
+      ],
+      "heartlessness": [
+        "negative-unconcern",
+        "negative-emotion",
+        "negative-fear",
+        "heartlessness"
+      ],
+      "coldheartedness": [
+        "negative-unconcern",
+        "negative-emotion",
+        "negative-fear",
+        "heartlessness"
+      ],
+      "hardheartedness": [
+        "negative-unconcern",
+        "negative-emotion",
+        "negative-fear",
+        "heartlessness"
+      ],
+      "heartburning": [
+        "general-dislike",
+        "hostility",
+        "resentment",
+        "hate",
+        "negative-emotion",
+        "heartburning"
+      ],
+      "hate": [
+        "general-dislike",
+        "hate",
+        "negative-emotion"
+      ],
+      "hatred": [
+        "general-dislike",
+        "negative-emotion",
+        "hate"
+      ],
+      "harassment": [
+        "general-dislike",
+        "anger",
+        "annoyance",
+        "negative-emotion",
+        "harassment"
+      ],
+      "torment": [
+        "general-dislike",
+        "negative-emotion",
+        "anger",
+        "annoyance"
+      ],
+      "happiness": [
+        "joy",
+        "positive-emotion",
+        "happiness"
+      ],
+      "gusto": [
+        "enthusiasm",
+        "positive-emotion",
+        "gusto"
+      ],
+      "relish": [
+        "enthusiasm",
+        "positive-emotion",
+        "gusto"
+      ],
+      "zest": [
+        "enthusiasm",
+        "positive-emotion",
+        "gusto"
+      ],
+      "zestfulness": [
+        "enthusiasm",
+        "positive-emotion",
+        "gusto"
+      ],
+      "guilt": [
+        "sorrow",
+        "compunction",
+        "regret-sorrow",
+        "negative-emotion",
+        "sadness",
+        "guilt"
+      ],
+      "guilty conscience": [
+        "sorrow",
+        "compunction",
+        "regret-sorrow",
+        "negative-emotion",
+        "sadness",
+        "guilt"
+      ],
+      "guilt feelings": [
+        "sorrow",
+        "compunction",
+        "regret-sorrow",
+        "negative-emotion",
+        "sadness",
+        "guilt"
+      ],
+      "guilt trip": [
+        "sorrow",
+        "compunction",
+        "regret-sorrow",
+        "negative-emotion",
+        "sadness",
+        "guilt"
+      ],
+      "grudge": [
+        "general-dislike",
+        "hostility",
+        "resentment",
+        "hate",
+        "grudge",
+        "negative-emotion"
+      ],
+      "score": [
+        "general-dislike",
+        "hostility",
+        "resentment",
+        "hate",
+        "negative-emotion",
+        "grudge"
+      ],
+      "grievance": [
+        "general-dislike",
+        "hostility",
+        "resentment",
+        "hate",
+        "negative-emotion",
+        "grudge"
+      ],
+      "grief": [
+        "sorrow",
+        "lost-sorrow",
+        "negative-emotion",
+        "sadness",
+        "grief"
+      ],
+      "heartache": [
+        "sorrow",
+        "lost-sorrow",
+        "negative-emotion",
+        "sadness",
+        "grief"
+      ],
+      "heartbreak": [
+        "sorrow",
+        "lost-sorrow",
+        "negative-emotion",
+        "sadness",
+        "grief"
+      ],
+      "brokenheartedness": [
+        "sorrow",
+        "lost-sorrow",
+        "negative-emotion",
+        "sadness",
+        "grief"
+      ],
+      "gravity": [
+        "ambiguous-emotion",
+        "gravity"
+      ],
+      "solemnity": [
+        "ambiguous-emotion",
+        "gravity"
+      ],
+      "gratitude": [
+        "positive-emotion",
+        "gratitude"
+      ],
+      "gratefulness": [
+        "positive-emotion",
+        "gratitude",
+        "gratefulness"
+      ],
+      "thankfulness": [
+        "positive-emotion",
+        "gratitude",
+        "gratefulness"
+      ],
+      "appreciativeness": [
+        "positive-emotion",
+        "gratitude",
+        "gratefulness"
+      ],
+      "good will": [
+        "friendliness",
+        "liking",
+        "positive-emotion",
+        "good-will"
+      ],
+      "goodwill": [
+        "friendliness",
+        "liking",
+        "positive-emotion",
+        "good-will"
+      ],
+      "gloom": [
+        "negative-emotion",
+        "sadness",
+        "melancholy",
+        "gloom"
+      ],
+      "gloominess": [
+        "negative-emotion",
+        "sadness",
+        "melancholy",
+        "gloom"
+      ],
+      "somberness": [
+        "negative-emotion",
+        "sadness",
+        "melancholy",
+        "gloom"
+      ],
+      "gloat": [
+        "satisfaction",
+        "contentment",
+        "joy",
+        "positive-emotion",
+        "gloat"
+      ],
+      "gloating": [
+        "satisfaction",
+        "contentment",
+        "joy",
+        "positive-emotion",
+        "gloat"
+      ],
+      "schadenfreude": [
+        "satisfaction",
+        "contentment",
+        "joy",
+        "positive-emotion",
+        "gloat"
+      ],
+      "gladness": [
+        "joy",
+        "positive-emotion",
+        "gladness"
+      ],
+      "gladfulness": [
+        "joy",
+        "positive-emotion",
+        "gladness"
+      ],
+      "gladsomeness": [
+        "joy",
+        "positive-emotion",
+        "gladness"
+      ],
+      "gaiety": [
+        "positive-emotion"
+      ],
+      "playfulness": [
+        "levity",
+        "positive-emotion",
+        "playfulness"
+      ],
+      "merriment": [
+        "joy",
+        "positive-emotion",
+        "merriment"
+      ],
+      "fury": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "fury"
+      ],
+      "rage": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "fury"
+      ],
+      "madness": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "fury"
+      ],
+      "fulfillment": [
+        "satisfaction",
+        "contentment",
+        "joy",
+        "positive-emotion",
+        "fulfillment"
+      ],
+      "fulfilment": [
+        "satisfaction",
+        "contentment",
+        "joy",
+        "positive-emotion",
+        "fulfillment"
+      ],
+      "frustration": [
+        "general-dislike",
+        "anger",
+        "annoyance",
+        "negative-emotion",
+        "frustration"
+      ],
+      "frisson": [
+        "positive-fear",
+        "positive-emotion",
+        "frisson"
+      ],
+      "shiver": [
+        "positive-fear",
+        "positive-emotion",
+        "frisson"
+      ],
+      "chill": [
+        "ambiguous-emotion"
+      ],
+      "quiver": [
+        "positive-fear",
+        "positive-emotion",
+        "frisson"
+      ],
+      "shudder": [
+        "positive-fear",
+        "positive-emotion",
+        "frisson"
+      ],
+      "thrill": [
+        "positive-emotion"
+      ],
+      "tingle": [
+        "positive-fear",
+        "positive-emotion",
+        "frisson"
+      ],
+      "friendliness": [
+        "liking",
+        "positive-emotion",
+        "friendliness"
+      ],
+      "forlornness": [
+        "negative-emotion",
+        "sadness",
+        "forlornness"
+      ],
+      "loneliness": [
+        "negative-emotion",
+        "sadness",
+        "forlornness"
+      ],
+      "desolation": [
+        "negative-emotion",
+        "sadness",
+        "forlornness"
+      ],
+      "forgiveness": [
+        "compassion",
+        "mercifulness",
+        "negative-emotion",
+        "forgiveness"
+      ],
+      "foreboding": [
+        "apprehension",
+        "negative-emotion",
+        "negative-fear",
+        "foreboding"
+      ],
+      "premonition": [
+        "apprehension",
+        "negative-emotion",
+        "negative-fear",
+        "foreboding"
+      ],
+      "presentiment": [
+        "apprehension",
+        "negative-emotion",
+        "negative-fear",
+        "foreboding"
+      ],
+      "boding": [
+        "apprehension",
+        "negative-emotion",
+        "negative-fear",
+        "foreboding"
+      ],
+      "fondness": [
+        "positive-emotion"
+      ],
+      "fancy": [
+        "liking",
+        "positive-emotion",
+        "fondness"
+      ],
+      "partiality": [
+        "liking",
+        "positive-emotion",
+        "fondness"
+      ],
+      "fit": [
+        "general-dislike",
+        "anger",
+        "bad-temper",
+        "negative-emotion",
+        "fit"
+      ],
+      "tantrum": [
+        "general-dislike",
+        "anger",
+        "bad-temper",
+        "negative-emotion",
+        "fit"
+      ],
+      "scene": [
+        "general-dislike",
+        "anger",
+        "bad-temper",
+        "negative-emotion",
+        "fit"
+      ],
+      "fidget": [
+        "anxiety",
+        "negative-emotion",
+        "negative-agitation",
+        "fidget"
+      ],
+      "fidgetiness": [
+        "anxiety",
+        "negative-emotion",
+        "negative-agitation",
+        "fidget"
+      ],
+      "restlessness": [
+        "anxiety",
+        "negative-emotion",
+        "negative-agitation",
+        "fidget"
+      ],
+      "fever": [
+        "ambiguous-expectation",
+        "ambiguous-emotion",
+        "fever"
+      ],
+      "fearlessness": [
+        "positive-emotion",
+        "fearlessness"
+      ],
+      "bravery": [
+        "positive-emotion",
+        "fearlessness"
+      ],
+      "fear": [
+        "ambiguous-emotion"
+      ],
+      "fearfulness": [
+        "negative-emotion",
+        "negative-fear"
+      ],
+      "fright": [
+        "negative-emotion",
+        "negative-fear"
+      ],
+      "favor": [
+        "liking",
+        "positive-emotion",
+        "approval",
+        "favor"
+      ],
+      "favour": [
+        "liking",
+        "positive-emotion",
+        "approval",
+        "favor"
+      ],
+      "exultation": [
+        "joy",
+        "positive-emotion",
+        "exultation"
+      ],
+      "jubilance": [
+        "joy",
+        "positive-emotion",
+        "exultation"
+      ],
+      "jubilancy": [
+        "joy",
+        "positive-emotion",
+        "exultation"
+      ],
+      "jubilation": [
+        "joy",
+        "positive-emotion",
+        "exultation"
+      ],
+      "exuberance": [
+        "enthusiasm",
+        "positive-emotion",
+        "exuberance"
+      ],
+      "expectation": [
+        "ambiguous-emotion",
+        "ambiguous-expectation"
+      ],
+      "exhilaration": [
+        "joy",
+        "positive-emotion",
+        "exhilaration"
+      ],
+      "excitement": [
+        "joy",
+        "positive-emotion",
+        "exhilaration"
+      ],
+      "euphoria": [
+        "joy",
+        "elation",
+        "positive-emotion",
+        "euphoria"
+      ],
+      "envy": [
+        "general-dislike",
+        "hostility",
+        "resentment",
+        "hate",
+        "negative-emotion",
+        "envy"
+      ],
+      "enviousness": [
+        "general-dislike",
+        "hostility",
+        "resentment",
+        "hate",
+        "negative-emotion",
+        "envy"
+      ],
+      "the green-eyed monster": [
+        "general-dislike",
+        "hostility",
+        "resentment",
+        "hate",
+        "negative-emotion",
+        "envy"
+      ],
+      "enthusiasm": [
+        "positive-emotion",
+        "enthusiasm"
+      ],
+      "encouragement": [
+        "positive-hope",
+        "positive-emotion",
+        "encouragement"
+      ],
+      "empathy": [
+        "sympathy",
+        "liking",
+        "positive-emotion",
+        "empathy"
+      ],
+      "emotionlessness": [
+        "apathy",
+        "neutral-emotion",
+        "emotionlessness"
+      ],
+      "impassivity": [
+        "apathy",
+        "neutral-emotion",
+        "emotionlessness"
+      ],
+      "impassiveness": [
+        "apathy",
+        "neutral-emotion",
+        "emotionlessness"
+      ],
+      "phlegm": [
+        "neutral-emotion"
+      ],
+      "stolidity": [
+        "apathy",
+        "neutral-emotion",
+        "emotionlessness"
+      ],
+      "unemotionality": [
+        "apathy",
+        "neutral-emotion",
+        "emotionlessness"
+      ],
+      "embarrassment": [
+        "negative-emotion",
+        "shame",
+        "embarrassment"
+      ],
+      "electricity": [
+        "ambiguous-agitation",
+        "stir",
+        "ambiguous-emotion",
+        "electricity"
+      ],
+      "elation": [
+        "joy",
+        "positive-emotion",
+        "elation"
+      ],
+      "high spirits": [
+        "joy",
+        "positive-emotion",
+        "elation"
+      ],
+      "ego": [
+        "self-pride",
+        "positive-emotion",
+        "ego"
+      ],
+      "egotism": [
+        "self-pride",
+        "positive-emotion",
+        "ego"
+      ],
+      "self-importance": [
+        "self-pride",
+        "positive-emotion",
+        "ego"
+      ],
+      "edginess": [
+        "anxiety",
+        "negative-emotion",
+        "edginess"
+      ],
+      "inquietude": [
+        "anxiety",
+        "negative-emotion",
+        "edginess"
+      ],
+      "disquietude": [
+        "anxiety",
+        "negative-emotion",
+        "edginess"
+      ],
+      "easiness": [
+        "calmness",
+        "tranquillity",
+        "positive-emotion",
+        "easiness"
+      ],
+      "relaxation": [
+        "calmness",
+        "tranquillity",
+        "positive-emotion",
+        "easiness"
+      ],
+      "earnestness": [
+        "gravity",
+        "ambiguous-emotion",
+        "earnestness"
+      ],
+      "seriousness": [
+        "gravity",
+        "ambiguous-emotion",
+        "earnestness"
+      ],
+      "sincerity": [
+        "gravity",
+        "ambiguous-emotion",
+        "earnestness"
+      ],
+      "eagerness": [
+        "enthusiasm",
+        "positive-emotion",
+        "eagerness"
+      ],
+      "avidity": [
+        "enthusiasm",
+        "positive-emotion",
+        "eagerness"
+      ],
+      "avidness": [
+        "enthusiasm",
+        "positive-emotion",
+        "eagerness"
+      ],
+      "keenness": [
+        "enthusiasm",
+        "positive-emotion",
+        "eagerness"
+      ],
+      "dysphoria": [
+        "depression",
+        "negative-emotion",
+        "sadness",
+        "dysphoria"
+      ],
+      "dudgeon": [
+        "general-dislike",
+        "anger",
+        "indignation",
+        "negative-emotion",
+        "dudgeon"
+      ],
+      "high dudgeon": [
+        "general-dislike",
+        "anger",
+        "indignation",
+        "negative-emotion",
+        "dudgeon"
+      ],
+      "downheartedness": [
+        "negative-emotion",
+        "sadness",
+        "downheartedness"
+      ],
+      "low-spiritedness": [
+        "negative-emotion",
+        "sadness",
+        "downheartedness"
+      ],
+      "dispiritedness": [
+        "negative-emotion",
+        "sadness",
+        "downheartedness"
+      ],
+      "dolor": [
+        "sorrow",
+        "lost-sorrow",
+        "grief",
+        "negative-emotion",
+        "sadness",
+        "dolor"
+      ],
+      "dolour": [
+        "sorrow",
+        "lost-sorrow",
+        "grief",
+        "negative-emotion",
+        "sadness",
+        "dolor"
+      ],
+      "dolefulness": [
+        "negative-emotion",
+        "sadness",
+        "dolefulness"
+      ],
+      "distress": [
+        "negative-emotion",
+        "distress",
+        "anxiety"
+      ],
+      "worry": [
+        "ambiguous-emotion"
+      ],
+      "trouble": [
+        "anxiety",
+        "negative-emotion",
+        "distress"
+      ],
+      "distance": [
+        "neutral-unconcern",
+        "distance",
+        "indifference",
+        "neutral-emotion"
+      ],
+      "aloofness": [
+        "neutral-unconcern",
+        "indifference",
+        "neutral-emotion",
+        "distance"
+      ],
+      "displeasure": [
+        "general-dislike",
+        "anger",
+        "annoyance",
+        "negative-emotion",
+        "displeasure"
+      ],
+      "dislike": [
+        "general-dislike",
+        "dislike",
+        "negative-emotion"
+      ],
+      "disinclination": [
+        "general-dislike",
+        "dislike",
+        "negative-emotion",
+        "disinclination"
+      ],
+      "disgust": [
+        "general-dislike",
+        "disgust",
+        "dislike",
+        "negative-emotion"
+      ],
+      "discouragement": [
+        "despair",
+        "negative-emotion",
+        "discouragement"
+      ],
+      "disheartenment": [
+        "despair",
+        "negative-emotion",
+        "discouragement"
+      ],
+      "dismay": [
+        "negative-emotion"
+      ],
+      "discomfiture": [
+        "anxiety",
+        "negative-emotion",
+        "discomfiture"
+      ],
+      "discomposure": [
+        "anxiety",
+        "negative-emotion",
+        "discomfiture"
+      ],
+      "disconcertion": [
+        "anxiety",
+        "negative-emotion",
+        "discomfiture"
+      ],
+      "disconcertment": [
+        "anxiety",
+        "negative-emotion",
+        "discomfiture"
+      ],
+      "disapproval": [
+        "general-dislike",
+        "dislike",
+        "negative-emotion",
+        "disapproval"
+      ],
+      "diffidence": [
+        "timidity",
+        "negative-emotion",
+        "negative-fear",
+        "diffidence"
+      ],
+      "self-doubt": [
+        "timidity",
+        "negative-emotion",
+        "negative-fear",
+        "diffidence"
+      ],
+      "self-distrust": [
+        "timidity",
+        "negative-emotion",
+        "negative-fear",
+        "diffidence"
+      ],
+      "devotion": [
+        "love",
+        "positive-emotion",
+        "devotion"
+      ],
+      "devotedness": [
+        "love",
+        "positive-emotion",
+        "devotion"
+      ],
+      "despondency": [
+        "depression",
+        "negative-emotion",
+        "sadness",
+        "despondency"
+      ],
+      "despondence": [
+        "depression",
+        "negative-emotion",
+        "sadness",
+        "despondency"
+      ],
+      "heartsickness": [
+        "depression",
+        "negative-emotion",
+        "sadness",
+        "despondency"
+      ],
+      "disconsolateness": [
+        "depression",
+        "negative-emotion",
+        "sadness",
+        "despondency"
+      ],
+      "despisal": [
+        "general-dislike",
+        "hate",
+        "negative-emotion",
+        "despisal"
+      ],
+      "despising": [
+        "general-dislike",
+        "hate",
+        "negative-emotion",
+        "despisal"
+      ],
+      "despair": [
+        "negative-emotion",
+        "despair"
+      ],
+      "depression": [
+        "negative-emotion",
+        "sadness",
+        "depression"
+      ],
+      "demoralization": [
+        "depression",
+        "negative-emotion",
+        "sadness",
+        "demoralization"
+      ],
+      "defeatism": [
+        "despair",
+        "resignation",
+        "negative-emotion",
+        "defeatism"
+      ],
+      "daze": [
+        "negative-emotion",
+        "daze"
+      ],
+      "shock": [
+        "negative-emotion",
+        "daze"
+      ],
+      "stupor": [
+        "negative-emotion",
+        "daze"
+      ],
+      "dander": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "dander"
+      ],
+      "hackles": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "dander"
+      ],
+      "cynicism": [
+        "pessimism",
+        "despair",
+        "negative-emotion",
+        "cynicism"
+      ],
+      "cruelty": [
+        "heartlessness",
+        "negative-unconcern",
+        "negative-emotion",
+        "negative-fear",
+        "cruelty"
+      ],
+      "mercilessness": [
+        "heartlessness",
+        "negative-unconcern",
+        "negative-emotion",
+        "negative-fear",
+        "cruelty"
+      ],
+      "pitilessness": [
+        "heartlessness",
+        "negative-unconcern",
+        "negative-emotion",
+        "negative-fear",
+        "cruelty"
+      ],
+      "ruthlessness": [
+        "heartlessness",
+        "negative-unconcern",
+        "negative-emotion",
+        "negative-fear",
+        "cruelty"
+      ],
+      "creeps": [
+        "negative-emotion",
+        "negative-fear",
+        "creeps"
+      ],
+      "covetousness": [
+        "general-dislike",
+        "hostility",
+        "resentment",
+        "hate",
+        "negative-emotion",
+        "envy",
+        "covetousness"
+      ],
+      "coolness": [
+        "calmness",
+        "positive-emotion",
+        "coolness"
+      ],
+      "imperturbability": [
+        "calmness",
+        "positive-emotion",
+        "coolness"
+      ],
+      "imperturbableness": [
+        "calmness",
+        "positive-emotion",
+        "coolness"
+      ],
+      "contentment": [
+        "joy",
+        "positive-emotion",
+        "contentment"
+      ],
+      "contempt": [
+        "general-dislike",
+        "dislike",
+        "negative-emotion",
+        "contempt"
+      ],
+      "disdain": [
+        "general-dislike",
+        "negative-emotion"
+      ],
+      "scorn": [
+        "general-dislike",
+        "negative-emotion"
+      ],
+      "conscience": [
+        "negative-emotion",
+        "shame",
+        "conscience"
+      ],
+      "confusion": [
+        "embarrassment",
+        "negative-emotion",
+        "shame",
+        "confusion"
+      ],
+      "discombobulation": [
+        "embarrassment",
+        "negative-emotion",
+        "shame",
+        "confusion"
+      ],
+      "confidence": [
+        "security",
+        "fearlessness",
+        "positive-emotion",
+        "confidence"
+      ],
+      "concern": [
+        "ambiguous-emotion"
+      ],
+      "care": [
+        "anxiety",
+        "negative-emotion",
+        "negative-concern"
+      ],
+      "compunction": [
+        "sorrow",
+        "regret-sorrow",
+        "negative-emotion",
+        "sadness",
+        "compunction"
+      ],
+      "remorse": [
+        "sorrow",
+        "regret-sorrow",
+        "negative-emotion",
+        "sadness",
+        "compunction"
+      ],
+      "self-reproach": [
+        "sorrow",
+        "regret-sorrow",
+        "negative-emotion",
+        "sadness",
+        "compunction"
+      ],
+      "complacency": [
+        "satisfaction",
+        "contentment",
+        "joy",
+        "positive-emotion",
+        "complacency"
+      ],
+      "complacence": [
+        "satisfaction",
+        "contentment",
+        "joy",
+        "positive-emotion",
+        "complacency"
+      ],
+      "self-complacency": [
+        "satisfaction",
+        "contentment",
+        "joy",
+        "positive-emotion",
+        "complacency"
+      ],
+      "self-satisfaction": [
+        "satisfaction",
+        "contentment",
+        "joy",
+        "positive-emotion",
+        "complacency"
+      ],
+      "compatibility": [
+        "sympathy",
+        "liking",
+        "positive-emotion",
+        "compatibility"
+      ],
+      "rapport": [
+        "sympathy",
+        "liking",
+        "positive-emotion",
+        "compatibility"
+      ],
+      "compassion": [
+        "negative-emotion",
+        "compassion"
+      ],
+      "compassionateness": [
+        "negative-emotion",
+        "compassion"
+      ],
+      "commiseration": [
+        "compassion",
+        "negative-emotion",
+        "commiseration"
+      ],
+      "pity": [
+        "negative-emotion",
+        "compassion"
+      ],
+      "ruth": [
+        "compassion",
+        "negative-emotion",
+        "commiseration"
+      ],
+      "pathos": [
+        "compassion",
+        "negative-emotion",
+        "commiseration"
+      ],
+      "comfortableness": [
+        "joy",
+        "positive-emotion",
+        "belonging",
+        "comfortableness"
+      ],
+      "closeness": [
+        "joy",
+        "positive-emotion",
+        "belonging",
+        "closeness"
+      ],
+      "intimacy": [
+        "joy",
+        "positive-emotion",
+        "belonging",
+        "closeness"
+      ],
+      "class feeling": [
+        "general-dislike",
+        "hostility",
+        "hate",
+        "negative-emotion",
+        "class-feeling"
+      ],
+      "pall": [
+        "negative-emotion",
+        "negative-fear"
+      ],
+      "cheerlessness": [
+        "negative-emotion",
+        "sadness",
+        "cheerlessness"
+      ],
+      "uncheerfulness": [
+        "negative-emotion",
+        "sadness",
+        "cheerlessness"
+      ],
+      "cheerfulness": [
+        "joy",
+        "positive-emotion",
+        "cheerfulness"
+      ],
+      "blitheness": [
+        "joy",
+        "positive-emotion",
+        "cheerfulness"
+      ],
+      "chagrin": [
+        "negative-emotion"
+      ],
+      "humiliation": [
+        "embarrassment",
+        "negative-emotion",
+        "shame",
+        "chagrin"
+      ],
+      "mortification": [
+        "embarrassment",
+        "negative-emotion",
+        "shame",
+        "chagrin"
+      ],
+      "carefreeness": [
+        "joy",
+        "cheerfulness",
+        "positive-emotion",
+        "carefreeness"
+      ],
+      "insouciance": [
+        "joy",
+        "cheerfulness",
+        "positive-emotion",
+        "carefreeness"
+      ],
+      "lightheartedness": [
+        "joy",
+        "cheerfulness",
+        "positive-emotion",
+        "carefreeness"
+      ],
+      "lightsomeness": [
+        "joy",
+        "cheerfulness",
+        "positive-emotion",
+        "carefreeness"
+      ],
+      "captivation": [
+        "liking",
+        "positive-emotion",
+        "captivation"
+      ],
+      "enchantment": [
+        "liking",
+        "positive-emotion",
+        "captivation"
+      ],
+      "enthrallment": [
+        "liking",
+        "positive-emotion",
+        "captivation"
+      ],
+      "fascination": [
+        "liking",
+        "positive-emotion",
+        "captivation"
+      ],
+      "calmness": [
+        "positive-emotion",
+        "calmness"
+      ],
+      "buoyancy": [
+        "joy",
+        "cheerfulness",
+        "positive-emotion",
+        "buoyancy"
+      ],
+      "perkiness": [
+        "joy",
+        "cheerfulness",
+        "positive-emotion",
+        "buoyancy"
+      ],
+      "buck fever": [
+        "fever",
+        "ambiguous-expectation",
+        "ambiguous-emotion",
+        "buck-fever"
+      ],
+      "brotherhood": [
+        "friendliness",
+        "liking",
+        "positive-emotion",
+        "brotherhood"
+      ],
+      "bonheur": [
+        "joy",
+        "positive-emotion",
+        "bonheur"
+      ],
+      "blue devils": [
+        "depression",
+        "despondency",
+        "negative-emotion",
+        "sadness",
+        "blue-devils"
+      ],
+      "benevolence": [
+        "love",
+        "positive-emotion",
+        "benevolence"
+      ],
+      "beneficence": [
+        "love",
+        "benevolence",
+        "positive-emotion",
+        "beneficence"
+      ],
+      "belonging": [
+        "joy",
+        "positive-emotion",
+        "belonging"
+      ],
+      "belligerence": [
+        "general-dislike",
+        "hostility",
+        "hate",
+        "negative-emotion",
+        "belligerence"
+      ],
+      "belligerency": [
+        "general-dislike",
+        "hostility",
+        "hate",
+        "negative-emotion",
+        "belligerence"
+      ],
+      "bang": [
+        "exhilaration",
+        "joy",
+        "positive-emotion",
+        "bang"
+      ],
+      "charge": [
+        "exhilaration",
+        "joy",
+        "positive-emotion",
+        "bang"
+      ],
+      "rush": [
+        "exhilaration",
+        "joy",
+        "positive-emotion",
+        "bang"
+      ],
+      "flush": [
+        "exhilaration",
+        "joy",
+        "positive-emotion",
+        "bang"
+      ],
+      "kick": [
+        "exhilaration",
+        "joy",
+        "positive-emotion",
+        "bang"
+      ],
+      "bad temper": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "bad-temper"
+      ],
+      "ill temper": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "bad-temper"
+      ],
+      "attrition": [
+        "sorrow",
+        "regret-sorrow",
+        "negative-emotion",
+        "sadness",
+        "attrition"
+      ],
+      "contrition": [
+        "sorrow",
+        "regret-sorrow",
+        "negative-emotion",
+        "sadness",
+        "attrition"
+      ],
+      "contriteness": [
+        "sorrow",
+        "regret-sorrow",
+        "negative-emotion",
+        "sadness",
+        "attrition"
+      ],
+      "attachment": [
+        "affection",
+        "positive-emotion",
+        "attachment"
+      ],
+      "fond regard": [
+        "affection",
+        "positive-emotion",
+        "attachment"
+      ],
+      "astonishment": [
+        "surprise",
+        "ambiguous-emotion",
+        "astonishment"
+      ],
+      "amazement": [
+        "surprise",
+        "ambiguous-emotion",
+        "astonishment"
+      ],
+      "ardor": [
+        "positive-emotion"
+      ],
+      "ardour": [
+        "positive-emotion"
+      ],
+      "elan": [
+        "enthusiasm",
+        "positive-emotion",
+        "eagerness",
+        "enthusiasm-ardor"
+      ],
+      "zeal": [
+        "enthusiasm",
+        "positive-emotion",
+        "eagerness",
+        "enthusiasm-ardor"
+      ],
+      "approval": [
+        "liking",
+        "positive-emotion",
+        "approval"
+      ],
+      "apprehension": [
+        "negative-emotion",
+        "negative-fear",
+        "apprehension"
+      ],
+      "apprehensiveness": [
+        "negative-emotion",
+        "negative-fear",
+        "apprehension"
+      ],
+      "dread": [
+        "negative-emotion",
+        "negative-fear"
+      ],
+      "apathy": [
+        "neutral-emotion",
+        "apathy"
+      ],
+      "anxiousness": [
+        "anxiety",
+        "negative-emotion",
+        "anxiousness"
+      ],
+      "disquiet": [
+        "anxiety",
+        "negative-emotion",
+        "anxiousness"
+      ],
+      "anxiety": [
+        "negative-emotion",
+        "anxiety"
+      ],
+      "antipathy": [
+        "general-dislike",
+        "dislike",
+        "negative-emotion",
+        "antipathy"
+      ],
+      "aversion": [
+        "general-dislike",
+        "dislike",
+        "negative-emotion",
+        "antipathy"
+      ],
+      "distaste": [
+        "general-dislike",
+        "dislike",
+        "negative-emotion",
+        "antipathy"
+      ],
+      "anticipation": [
+        "positive-expectation",
+        "positive-emotion",
+        "anticipation"
+      ],
+      "expectancy": [
+        "positive-expectation",
+        "positive-emotion",
+        "anticipation"
+      ],
+      "antagonism": [
+        "general-dislike",
+        "hostility",
+        "hate",
+        "negative-emotion",
+        "antagonism"
+      ],
+      "annoyance": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "annoyance"
+      ],
+      "chafe": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "annoyance"
+      ],
+      "vexation": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "annoyance"
+      ],
+      "animosity": [
+        "general-dislike",
+        "hostility",
+        "hate",
+        "negative-emotion",
+        "animosity"
+      ],
+      "animus": [
+        "general-dislike",
+        "hostility",
+        "hate",
+        "negative-emotion",
+        "animosity"
+      ],
+      "bad blood": [
+        "general-dislike",
+        "hostility",
+        "hate",
+        "negative-emotion",
+        "animosity"
+      ],
+      "anger": [
+        "general-dislike",
+        "anger",
+        "negative-emotion"
+      ],
+      "choler": [
+        "general-dislike",
+        "negative-emotion",
+        "anger"
+      ],
+      "ire": [
+        "general-dislike",
+        "negative-emotion",
+        "anger"
+      ],
+      "amour propre": [
+        "self-pride",
+        "positive-emotion",
+        "amour-propre"
+      ],
+      "conceit": [
+        "self-pride",
+        "positive-emotion",
+        "amour-propre"
+      ],
+      "self-love": [
+        "self-pride",
+        "positive-emotion",
+        "amour-propre"
+      ],
+      "vanity": [
+        "self-pride",
+        "positive-emotion",
+        "amour-propre"
+      ],
+      "amorousness": [
+        "love",
+        "positive-emotion",
+        "amorousness"
+      ],
+      "enamoredness": [
+        "love",
+        "positive-emotion",
+        "amorousness"
+      ],
+      "amicability": [
+        "friendliness",
+        "liking",
+        "positive-emotion",
+        "amicability"
+      ],
+      "amicableness": [
+        "friendliness",
+        "liking",
+        "positive-emotion",
+        "amicability"
+      ],
+      "alienation": [
+        "general-dislike",
+        "dislike",
+        "negative-emotion",
+        "alienation"
+      ],
+      "disaffection": [
+        "general-dislike",
+        "dislike",
+        "negative-emotion",
+        "alienation"
+      ],
+      "estrangement": [
+        "general-dislike",
+        "dislike",
+        "negative-emotion",
+        "alienation"
+      ],
+      "alarm": [
+        "negative-emotion",
+        "negative-fear"
+      ],
+      "consternation": [
+        "negative-emotion",
+        "negative-fear",
+        "alarm"
+      ],
+      "agitation": [
+        "ambiguous-emotion",
+        "ambiguous-agitation"
+      ],
+      "aggression": [
+        "general-dislike",
+        "hostility",
+        "hate",
+        "negative-emotion",
+        "aggression"
+      ],
+      "aggressiveness": [
+        "general-dislike",
+        "hostility",
+        "hate",
+        "negative-emotion",
+        "aggression"
+      ],
+      "aggravation": [
+        "general-dislike",
+        "anger",
+        "annoyance",
+        "negative-emotion",
+        "aggravation"
+      ],
+      "exasperation": [
+        "general-dislike",
+        "anger",
+        "annoyance",
+        "negative-emotion",
+        "aggravation"
+      ],
+      "affection": [
+        "positive-emotion",
+        "affection"
+      ],
+      "affectionateness": [
+        "positive-emotion",
+        "affection"
+      ],
+      "heart": [
+        "positive-emotion",
+        "affection"
+      ],
+      "esteem": [
+        "liking",
+        "positive-emotion",
+        "admiration"
+      ],
+      "abhorrence": [
+        "general-dislike",
+        "hate",
+        "negative-emotion",
+        "abhorrence"
+      ],
+      "abomination": [
+        "general-dislike",
+        "hate",
+        "negative-emotion",
+        "abhorrence"
+      ],
+      "detestation": [
+        "general-dislike",
+        "hate",
+        "negative-emotion",
+        "abhorrence"
+      ],
+      "execration": [
+        "general-dislike",
+        "hate",
+        "negative-emotion",
+        "abhorrence"
+      ],
+      "loathing": [
+        "general-dislike",
+        "hate",
+        "negative-emotion",
+        "abhorrence"
+      ],
+      "odium": [
+        "general-dislike",
+        "hate",
+        "negative-emotion",
+        "abhorrence"
+      ],
+      "abashment": [
+        "embarrassment",
+        "negative-emotion",
+        "shame",
+        "abashment"
+      ],
+      "bashfulness": [
+        "embarrassment",
+        "negative-emotion",
+        "shame",
+        "abashment"
+      ],
+      "Angst": [
+        "anxiety",
+        "negative-emotion",
+        "angst"
+      ],
+      "impatient": [
+        "anxiety",
+        "fidget",
+        "negative-emotion",
+        "negative-agitation",
+        "impatience"
+      ],
+      "raring": [
+        "anxiety",
+        "fidget",
+        "negative-emotion",
+        "negative-agitation",
+        "impatience"
+      ],
+      "hideous": [
+        "negative-emotion"
+      ],
+      "horrid": [
+        "negative-emotion",
+        "negative-fear",
+        "horror"
+      ],
+      "horrific": [
+        "horror",
+        "negative-emotion",
+        "negative-fear"
+      ],
+      "outrageous": [
+        "negative-emotion",
+        "negative-fear",
+        "horror"
+      ],
+      "self-conscious": [
+        "embarrassment",
+        "negative-emotion",
+        "shame",
+        "self-consciousness"
+      ],
+      "self-deprecating": [
+        "negative-emotion",
+        "humility",
+        "self-depreciation"
+      ],
+      "discredited": [
+        "negative-emotion",
+        "shame"
+      ],
+      "disgraced": [
+        "negative-emotion",
+        "shame"
+      ],
+      "dishonored": [
+        "negative-emotion",
+        "shame"
+      ],
+      "shamed": [
+        "negative-emotion",
+        "shame"
+      ],
+      "cliff-hanging": [
+        "anticipation",
+        "positive-expectation",
+        "positive-emotion",
+        "positive-suspense"
+      ],
+      "suspenseful": [
+        "anticipation",
+        "positive-expectation",
+        "positive-emotion",
+        "positive-suspense"
+      ],
+      "suspensive": [
+        "anticipation",
+        "positive-expectation",
+        "positive-emotion",
+        "positive-suspense"
+      ],
+      "admirable": [
+        "liking",
+        "positive-emotion",
+        "admiration"
+      ],
+      "affectional": [
+        "positive-emotion",
+        "affection"
+      ],
+      "affective": [
+        "positive-emotion",
+        "affection"
+      ],
+      "emotive": [
+        "positive-emotion",
+        "affection"
+      ],
+      "aggravated": [
+        "general-dislike",
+        "anger",
+        "annoyance",
+        "negative-emotion",
+        "aggravation"
+      ],
+      "provoked": [
+        "general-dislike",
+        "anger",
+        "annoyance",
+        "negative-emotion",
+        "aggravation"
+      ],
+      "agitated": [
+        "ambiguous-emotion",
+        "ambiguous-agitation"
+      ],
+      "alarmed": [
+        "negative-emotion",
+        "negative-fear",
+        "alarm"
+      ],
+      "alienated": [
+        "general-dislike",
+        "dislike",
+        "alienation",
+        "negative-emotion"
+      ],
+      "estranged": [
+        "general-dislike",
+        "dislike",
+        "negative-emotion",
+        "alienation"
+      ],
+      "anomic": [
+        "general-dislike",
+        "dislike",
+        "negative-emotion",
+        "alienation"
+      ],
+      "disoriented": [
+        "general-dislike",
+        "dislike",
+        "negative-emotion",
+        "alienation"
+      ],
+      "amicable": [
+        "friendliness",
+        "liking",
+        "positive-emotion",
+        "amicability"
+      ],
+      "amatory": [
+        "love",
+        "positive-emotion",
+        "amorousness"
+      ],
+      "amorous": [
+        "love",
+        "positive-emotion",
+        "amorousness"
+      ],
+      "romantic": [
+        "love",
+        "positive-emotion",
+        "amorousness"
+      ],
+      "amative": [
+        "love",
+        "positive-emotion",
+        "amorousness"
+      ],
+      "angry": [
+        "general-dislike",
+        "negative-emotion",
+        "anger"
+      ],
+      "angered": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "infuriation"
+      ],
+      "enraged": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "infuriation"
+      ],
+      "furious": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "infuriation"
+      ],
+      "infuriated": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "infuriation"
+      ],
+      "maddened": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "infuriation"
+      ],
+      "annoying": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "annoyance"
+      ],
+      "bothersome": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "annoyance"
+      ],
+      "galling": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "annoyance"
+      ],
+      "irritating": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "annoyance"
+      ],
+      "nettlesome": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "annoyance"
+      ],
+      "pesky": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "annoyance"
+      ],
+      "pestering": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "annoyance"
+      ],
+      "pestiferous": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "annoyance"
+      ],
+      "plaguy": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "annoyance"
+      ],
+      "plaguey": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "annoyance"
+      ],
+      "teasing": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "annoyance"
+      ],
+      "vexatious": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "annoyance"
+      ],
+      "vexing": [
+        "general-dislike",
+        "anger",
+        "negative-emotion"
+      ],
+      "annoyed": [
+        "general-dislike",
+        "annoyance",
+        "anger",
+        "negative-emotion"
+      ],
+      "harassed": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "annoyance"
+      ],
+      "harried": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "annoyance"
+      ],
+      "pestered": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "annoyance"
+      ],
+      "vexed": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "annoyance"
+      ],
+      "irritated": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "annoyance"
+      ],
+      "nettled": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "annoyance"
+      ],
+      "peeved": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "annoyance"
+      ],
+      "pissed": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "annoyance"
+      ],
+      "riled": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "annoyance"
+      ],
+      "roiled": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "annoyance"
+      ],
+      "stung": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "annoyance"
+      ],
+      "afraid": [
+        "negative-emotion",
+        "negative-fear"
+      ],
+      "anxious": [
+        "negative-emotion"
+      ],
+      "nervous": [
+        "negative-emotion",
+        "anxiety"
+      ],
+      "uneasy": [
+        "anxiety",
+        "negative-emotion",
+        "anxiousness"
+      ],
+      "unquiet": [
+        "anxiety",
+        "negative-emotion",
+        "anxiousness"
+      ],
+      "apprehensive": [
+        "apprehension",
+        "negative-emotion",
+        "negative-fear"
+      ],
+      "apathetic": [
+        "neutral-emotion"
+      ],
+      "approving": [
+        "liking",
+        "positive-emotion",
+        "approval"
+      ],
+      "approbative": [
+        "liking",
+        "positive-emotion",
+        "approval"
+      ],
+      "approbatory": [
+        "liking",
+        "positive-emotion",
+        "approval"
+      ],
+      "approved": [
+        "liking",
+        "positive-emotion",
+        "approval"
+      ],
+      "astonishing": [
+        "surprise",
+        "astonishment",
+        "ambiguous-emotion"
+      ],
+      "astounding": [
+        "astonishment",
+        "surprise",
+        "ambiguous-emotion",
+        "stupefaction"
+      ],
+      "staggering": [
+        "astonishment",
+        "surprise",
+        "ambiguous-emotion",
+        "stupefaction"
+      ],
+      "stupefying": [
+        "astonishment",
+        "stupefaction",
+        "surprise",
+        "ambiguous-emotion"
+      ],
+      "amazing": [
+        "surprise",
+        "ambiguous-emotion",
+        "astonishment"
+      ],
+      "amazed": [
+        "surprise",
+        "ambiguous-emotion",
+        "astonishment"
+      ],
+      "astonied": [
+        "surprise",
+        "ambiguous-emotion",
+        "astonishment"
+      ],
+      "astonished": [
+        "surprise",
+        "ambiguous-emotion",
+        "astonishment"
+      ],
+      "astounded": [
+        "surprise",
+        "ambiguous-emotion",
+        "astonishment"
+      ],
+      "stunned": [
+        "astonishment",
+        "surprise",
+        "ambiguous-emotion"
+      ],
+      "contrite": [
+        "negative-emotion",
+        "sadness",
+        "regret-sorrow",
+        "sorrow"
+      ],
+      "remorseful": [
+        "sorrow",
+        "negative-emotion",
+        "sadness",
+        "regret-sorrow"
+      ],
+      "rueful": [
+        "sorrow",
+        "negative-emotion",
+        "sadness",
+        "regret-sorrow"
+      ],
+      "sorry": [
+        "negative-emotion",
+        "sadness"
+      ],
+      "awed": [
+        "wonder",
+        "astonishment",
+        "surprise",
+        "awe",
+        "ambiguous-emotion"
+      ],
+      "awestruck": [
+        "wonder",
+        "astonishment",
+        "surprise",
+        "ambiguous-emotion",
+        "awe"
+      ],
+      "awestricken": [
+        "wonder",
+        "astonishment",
+        "surprise",
+        "ambiguous-emotion",
+        "awe"
+      ],
+      "in awe of": [
+        "wonder",
+        "astonishment",
+        "surprise",
+        "ambiguous-emotion",
+        "awe"
+      ],
+      "awful": [
+        "ambiguous-emotion"
+      ],
+      "aggressive": [
+        "general-dislike",
+        "hostility",
+        "hate",
+        "negative-emotion",
+        "belligerence"
+      ],
+      "belligerent": [
+        "general-dislike",
+        "hostility",
+        "hate",
+        "negative-emotion",
+        "belligerence"
+      ],
+      "beneficent": [
+        "love",
+        "benevolence",
+        "positive-emotion",
+        "beneficence"
+      ],
+      "beneficed": [
+        "love",
+        "benevolence",
+        "positive-emotion",
+        "beneficence"
+      ],
+      "benefic": [
+        "love",
+        "benevolence",
+        "positive-emotion",
+        "beneficence"
+      ],
+      "benevolent": [
+        "love",
+        "positive-emotion",
+        "benevolence"
+      ],
+      "good": [
+        "love",
+        "positive-emotion",
+        "benevolence"
+      ],
+      "brotherly": [
+        "friendliness",
+        "liking",
+        "positive-emotion",
+        "brotherhood"
+      ],
+      "brotherlike": [
+        "friendliness",
+        "liking",
+        "positive-emotion",
+        "brotherhood"
+      ],
+      "fraternal": [
+        "friendliness",
+        "liking",
+        "positive-emotion",
+        "brotherhood"
+      ],
+      "assuasive": [
+        "positive-emotion",
+        "calmness"
+      ],
+      "calming": [
+        "calmness",
+        "positive-emotion"
+      ],
+      "pacifying": [
+        "positive-emotion",
+        "calmness"
+      ],
+      "soothing": [
+        "positive-emotion",
+        "calmness"
+      ],
+      "lulling": [
+        "positive-emotion",
+        "calmness"
+      ],
+      "quietening": [
+        "positive-emotion",
+        "calmness"
+      ],
+      "calm": [
+        "calmness",
+        "positive-emotion"
+      ],
+      "serene": [
+        "positive-emotion",
+        "calmness"
+      ],
+      "tranquil": [
+        "positive-emotion",
+        "calmness"
+      ],
+      "beguiled": [
+        "liking",
+        "positive-emotion",
+        "captivation"
+      ],
+      "captivated": [
+        "liking",
+        "positive-emotion",
+        "captivation"
+      ],
+      "charmed": [
+        "liking",
+        "positive-emotion",
+        "captivation"
+      ],
+      "delighted": [
+        "liking",
+        "positive-emotion",
+        "captivation"
+      ],
+      "enthralled": [
+        "liking",
+        "positive-emotion",
+        "captivation"
+      ],
+      "entranced": [
+        "liking",
+        "positive-emotion",
+        "captivation"
+      ],
+      "bewitching": [
+        "liking",
+        "positive-emotion",
+        "captivation"
+      ],
+      "captivating": [
+        "liking",
+        "positive-emotion",
+        "captivation"
+      ],
+      "enchanting": [
+        "liking",
+        "positive-emotion",
+        "captivation"
+      ],
+      "enthralling": [
+        "liking",
+        "positive-emotion",
+        "captivation"
+      ],
+      "entrancing": [
+        "liking",
+        "positive-emotion",
+        "captivation"
+      ],
+      "fascinating": [
+        "liking",
+        "positive-emotion",
+        "captivation"
+      ],
+      "carefree": [
+        "joy",
+        "cheerfulness",
+        "positive-emotion",
+        "carefreeness"
+      ],
+      "unworried": [
+        "joy",
+        "cheerfulness",
+        "positive-emotion",
+        "carefreeness"
+      ],
+      "abashed": [
+        "negative-emotion",
+        "shame",
+        "embarrassment"
+      ],
+      "chagrined": [
+        "negative-emotion",
+        "shame",
+        "embarrassment"
+      ],
+      "embarrassed": [
+        "negative-emotion"
+      ],
+      "cheerful": [
+        "joy",
+        "positive-emotion",
+        "cheerfulness"
+      ],
+      "cheerless": [
+        "negative-emotion",
+        "sadness",
+        "cheerlessness"
+      ],
+      "uncheerful": [
+        "negative-emotion",
+        "sadness",
+        "cheerlessness"
+      ],
+      "chilling": [
+        "negative-emotion",
+        "negative-fear",
+        "scare"
+      ],
+      "scarey": [
+        "negative-emotion",
+        "negative-fear",
+        "scare"
+      ],
+      "scary": [
+        "negative-emotion",
+        "negative-fear",
+        "scare"
+      ],
+      "shivery": [
+        "negative-emotion",
+        "negative-fear",
+        "scare"
+      ],
+      "shuddery": [
+        "negative-emotion",
+        "negative-fear",
+        "scare"
+      ],
+      "close": [
+        "closeness",
+        "joy",
+        "positive-emotion",
+        "belonging"
+      ],
+      "comfortable": [
+        "joy",
+        "positive-emotion",
+        "belonging",
+        "comfortableness"
+      ],
+      "compassionate": [
+        "negative-emotion",
+        "compassion"
+      ],
+      "compatible": [
+        "sympathy",
+        "liking",
+        "positive-emotion",
+        "compatibility"
+      ],
+      "sympathetic": [
+        "liking",
+        "positive-emotion",
+        "sympathy"
+      ],
+      "complacent": [
+        "satisfaction",
+        "contentment",
+        "joy",
+        "positive-emotion",
+        "complacency"
+      ],
+      "self-satisfied": [
+        "satisfaction",
+        "contentment",
+        "joy",
+        "complacency",
+        "positive-emotion"
+      ],
+      "concerned": [
+        "anxiety",
+        "negative-emotion",
+        "negative-concern"
+      ],
+      "convinced": [
+        "security",
+        "fearlessness",
+        "positive-emotion",
+        "confidence"
+      ],
+      "positive": [
+        "security",
+        "fearlessness",
+        "positive-emotion",
+        "confidence"
+      ],
+      "confident": [
+        "security",
+        "fearlessness",
+        "positive-emotion",
+        "confidence"
+      ],
+      "confusing": [
+        "embarrassment",
+        "negative-emotion",
+        "shame",
+        "confusion"
+      ],
+      "broken": [
+        "embarrassment",
+        "negative-emotion",
+        "shame",
+        "confusion"
+      ],
+      "confused": [
+        "embarrassment",
+        "negative-emotion",
+        "shame",
+        "confusion"
+      ],
+      "disordered": [
+        "embarrassment",
+        "negative-emotion",
+        "shame",
+        "confusion"
+      ],
+      "upset": [
+        "negative-emotion"
+      ],
+      "contented": [
+        "joy",
+        "positive-emotion",
+        "contentment"
+      ],
+      "content": [
+        "joy",
+        "positive-emotion",
+        "contentment"
+      ],
+      "happy": [
+        "joy",
+        "positive-emotion"
+      ],
+      "cold": [
+        "calmness",
+        "positive-emotion",
+        "coolness"
+      ],
+      "cool": [
+        "calmness",
+        "positive-emotion",
+        "coolness"
+      ],
+      "avaricious": [
+        "general-dislike",
+        "hostility",
+        "resentment",
+        "hate",
+        "negative-emotion",
+        "envy",
+        "covetousness"
+      ],
+      "covetous": [
+        "general-dislike",
+        "hostility",
+        "resentment",
+        "hate",
+        "negative-emotion",
+        "envy"
+      ],
+      "grabby": [
+        "general-dislike",
+        "hostility",
+        "resentment",
+        "hate",
+        "negative-emotion",
+        "envy",
+        "covetousness"
+      ],
+      "grasping": [
+        "general-dislike",
+        "hostility",
+        "resentment",
+        "hate",
+        "negative-emotion",
+        "envy",
+        "covetousness"
+      ],
+      "greedy": [
+        "general-dislike",
+        "hostility",
+        "resentment",
+        "hate",
+        "negative-emotion",
+        "envy",
+        "covetousness"
+      ],
+      "prehensile": [
+        "general-dislike",
+        "hostility",
+        "resentment",
+        "hate",
+        "negative-emotion",
+        "envy",
+        "covetousness"
+      ],
+      "envious": [
+        "general-dislike",
+        "hostility",
+        "resentment",
+        "hate",
+        "negative-emotion",
+        "envy"
+      ],
+      "jealous": [
+        "general-dislike",
+        "hostility",
+        "resentment",
+        "hate",
+        "negative-emotion",
+        "envy",
+        "jealousy"
+      ],
+      "cruel": [
+        "heartlessness",
+        "negative-unconcern",
+        "negative-emotion",
+        "negative-fear",
+        "cruelty"
+      ],
+      "unkind": [
+        "heartlessness",
+        "negative-unconcern",
+        "negative-emotion",
+        "negative-fear",
+        "cruelty"
+      ],
+      "cynical": [
+        "pessimism",
+        "despair",
+        "negative-emotion",
+        "cynicism"
+      ],
+      "misanthropic": [
+        "negative-emotion"
+      ],
+      "misanthropical": [
+        "negative-emotion"
+      ],
+      "dazzling": [
+        "negative-emotion",
+        "daze"
+      ],
+      "fulgurant": [
+        "negative-emotion",
+        "daze"
+      ],
+      "fulgurous": [
+        "negative-emotion",
+        "daze"
+      ],
+      "dazed": [
+        "astonishment",
+        "surprise",
+        "ambiguous-emotion",
+        "stupefaction"
+      ],
+      "stupefied": [
+        "astonishment",
+        "stupefaction",
+        "surprise",
+        "ambiguous-emotion"
+      ],
+      "stupid": [
+        "astonishment",
+        "surprise",
+        "ambiguous-emotion",
+        "stupefaction"
+      ],
+      "defeated": [
+        "despair",
+        "resignation",
+        "negative-emotion",
+        "defeatism"
+      ],
+      "disappointed": [
+        "despair",
+        "resignation",
+        "negative-emotion",
+        "defeatism"
+      ],
+      "discomfited": [
+        "negative-emotion"
+      ],
+      "foiled": [
+        "despair",
+        "resignation",
+        "negative-emotion",
+        "defeatism"
+      ],
+      "frustrated": [
+        "negative-emotion"
+      ],
+      "thwarted": [
+        "despair",
+        "resignation",
+        "negative-emotion",
+        "defeatism"
+      ],
+      "demoralizing": [
+        "depression",
+        "negative-emotion",
+        "sadness",
+        "demoralization"
+      ],
+      "demoralising": [
+        "depression",
+        "negative-emotion",
+        "sadness",
+        "demoralization"
+      ],
+      "disheartening": [
+        "depression",
+        "negative-emotion",
+        "sadness",
+        "demoralization"
+      ],
+      "dispiriting": [
+        "negative-emotion",
+        "sadness"
+      ],
+      "demoralized": [
+        "despair",
+        "negative-emotion",
+        "discouragement"
+      ],
+      "discouraged": [
+        "negative-emotion"
+      ],
+      "disheartened": [
+        "despair",
+        "negative-emotion",
+        "discouragement"
+      ],
+      "blue": [
+        "negative-emotion",
+        "sadness"
+      ],
+      "depressed": [
+        "negative-emotion",
+        "sadness",
+        "downheartedness"
+      ],
+      "dispirited": [
+        "negative-emotion",
+        "sadness",
+        "downheartedness"
+      ],
+      "down": [
+        "negative-emotion",
+        "sadness",
+        "downheartedness"
+      ],
+      "downcast": [
+        "negative-emotion",
+        "sadness",
+        "downheartedness"
+      ],
+      "downhearted": [
+        "negative-emotion",
+        "sadness",
+        "downheartedness"
+      ],
+      "low": [
+        "negative-emotion",
+        "sadness",
+        "downheartedness"
+      ],
+      "low-spirited": [
+        "negative-emotion",
+        "sadness",
+        "downheartedness"
+      ],
+      "depressing": [
+        "negative-emotion",
+        "sadness",
+        "gloom",
+        "melancholy"
+      ],
+      "depressive": [
+        "negative-emotion",
+        "sadness",
+        "melancholy",
+        "gloom"
+      ],
+      "gloomy": [
+        "negative-emotion",
+        "sadness",
+        "gloom",
+        "melancholy"
+      ],
+      "saddening": [
+        "negative-emotion",
+        "sadness",
+        "melancholy",
+        "gloom"
+      ],
+      "despairing": [
+        "negative-emotion",
+        "despair"
+      ],
+      "desperate": [
+        "negative-emotion",
+        "despair"
+      ],
+      "despondent": [
+        "depression",
+        "negative-emotion",
+        "sadness",
+        "despondency"
+      ],
+      "heartsick": [
+        "depression",
+        "negative-emotion",
+        "sadness",
+        "despondency"
+      ],
+      "devoted": [
+        "love",
+        "positive-emotion",
+        "devotion"
+      ],
+      "diffident": [
+        "negative-emotion",
+        "negative-fear",
+        "timidity"
+      ],
+      "discouraging": [
+        "negative-emotion"
+      ],
+      "disapproving": [
+        "general-dislike",
+        "dislike",
+        "negative-emotion",
+        "disapproval"
+      ],
+      "baffled": [
+        "general-dislike",
+        "anger",
+        "annoyance",
+        "negative-emotion",
+        "frustration"
+      ],
+      "balked": [
+        "general-dislike",
+        "anger",
+        "annoyance",
+        "negative-emotion",
+        "frustration"
+      ],
+      "disgusting": [
+        "general-dislike",
+        "dislike",
+        "negative-emotion",
+        "disgust"
+      ],
+      "disgustful": [
+        "general-dislike",
+        "dislike",
+        "negative-emotion",
+        "disgust"
+      ],
+      "distasteful": [
+        "general-dislike",
+        "dislike",
+        "negative-emotion",
+        "disgust"
+      ],
+      "foul": [
+        "general-dislike",
+        "dislike",
+        "negative-emotion",
+        "disgust"
+      ],
+      "loathly": [
+        "general-dislike",
+        "dislike",
+        "negative-emotion",
+        "disgust"
+      ],
+      "loathsome": [
+        "general-dislike",
+        "disgust",
+        "dislike",
+        "negative-emotion"
+      ],
+      "repellent": [
+        "general-dislike",
+        "dislike",
+        "negative-emotion",
+        "disgust"
+      ],
+      "repellant": [
+        "general-dislike",
+        "dislike",
+        "negative-emotion",
+        "disgust"
+      ],
+      "revolting": [
+        "general-dislike",
+        "dislike",
+        "negative-emotion",
+        "disgust"
+      ],
+      "wicked": [
+        "general-dislike",
+        "dislike",
+        "negative-emotion",
+        "disgust"
+      ],
+      "yucky": [
+        "general-dislike",
+        "dislike",
+        "negative-emotion",
+        "disgust"
+      ],
+      "disgusted": [
+        "general-dislike",
+        "dislike",
+        "negative-emotion",
+        "disgust"
+      ],
+      "fed up": [
+        "general-dislike",
+        "dislike",
+        "negative-emotion",
+        "disgust"
+      ],
+      "sick": [
+        "general-dislike",
+        "dislike",
+        "disgust",
+        "negative-emotion",
+        "nausea"
+      ],
+      "sick of": [
+        "general-dislike",
+        "dislike",
+        "negative-emotion",
+        "disgust"
+      ],
+      "tired of": [
+        "general-dislike",
+        "dislike",
+        "negative-emotion",
+        "disgust"
+      ],
+      "disinclined": [
+        "general-dislike",
+        "dislike",
+        "negative-emotion",
+        "disinclination"
+      ],
+      "dislikable": [
+        "general-dislike",
+        "negative-emotion",
+        "dislike"
+      ],
+      "displeasing": [
+        "general-dislike",
+        "anger",
+        "annoyance",
+        "negative-emotion",
+        "displeasure"
+      ],
+      "displeased": [
+        "general-dislike",
+        "anger",
+        "annoyance",
+        "negative-emotion",
+        "displeasure"
+      ],
+      "distressing": [
+        "anxiety",
+        "negative-emotion",
+        "distress"
+      ],
+      "distressful": [
+        "anxiety",
+        "negative-emotion",
+        "distress"
+      ],
+      "disturbing": [
+        "anxiety",
+        "negative-emotion",
+        "distress"
+      ],
+      "perturbing": [
+        "anxiety",
+        "negative-emotion",
+        "distress"
+      ],
+      "troubling": [
+        "anxiety",
+        "negative-emotion",
+        "distress"
+      ],
+      "worrisome": [
+        "anxiety",
+        "negative-emotion",
+        "distress"
+      ],
+      "worrying": [
+        "anxiety",
+        "negative-emotion",
+        "distress"
+      ],
+      "disquieted": [
+        "anxiety",
+        "negative-emotion",
+        "distress"
+      ],
+      "distressed": [
+        "negative-emotion"
+      ],
+      "disturbed": [
+        "anxiety",
+        "negative-emotion",
+        "distress"
+      ],
+      "worried": [
+        "anxiety",
+        "negative-emotion",
+        "distress"
+      ],
+      "dysphoric": [
+        "depression",
+        "negative-emotion",
+        "sadness",
+        "dysphoria"
+      ],
+      "unhappy": [
+        "negative-emotion",
+        "sadness"
+      ],
+      "doleful": [
+        "sorrow",
+        "lost-sorrow",
+        "negative-emotion",
+        "sadness",
+        "mournfulness"
+      ],
+      "mournful": [
+        "sorrow",
+        "lost-sorrow",
+        "negative-emotion",
+        "sadness",
+        "mournfulness"
+      ],
+      "avid": [
+        "enthusiasm",
+        "positive-emotion",
+        "eagerness"
+      ],
+      "great": [
+        "enthusiasm",
+        "positive-emotion",
+        "eagerness"
+      ],
+      "eager": [
+        "enthusiasm",
+        "positive-emotion",
+        "eagerness"
+      ],
+      "zealous": [
+        "enthusiasm",
+        "positive-emotion",
+        "eagerness"
+      ],
+      "dear": [
+        "gravity",
+        "ambiguous-emotion",
+        "earnestness"
+      ],
+      "devout": [
+        "gravity",
+        "ambiguous-emotion",
+        "earnestness"
+      ],
+      "earnest": [
+        "gravity",
+        "ambiguous-emotion",
+        "earnestness"
+      ],
+      "heartfelt": [
+        "gravity",
+        "ambiguous-emotion",
+        "earnestness"
+      ],
+      "easy": [
+        "positive-emotion",
+        "tranquillity",
+        "calmness",
+        "easiness"
+      ],
+      "at ease": [
+        "calmness",
+        "tranquillity",
+        "positive-emotion",
+        "easiness"
+      ],
+      "edgy": [
+        "anxiety",
+        "negative-emotion",
+        "jitteriness"
+      ],
+      "high-strung": [
+        "anxiety",
+        "negative-emotion",
+        "jitteriness"
+      ],
+      "in suspense": [
+        "anxiety",
+        "negative-emotion",
+        "jitteriness"
+      ],
+      "jittery": [
+        "anxiety",
+        "negative-emotion",
+        "jitteriness"
+      ],
+      "jumpy": [
+        "anxiety",
+        "negative-emotion",
+        "jitteriness"
+      ],
+      "nervy": [
+        "anxiety",
+        "negative-emotion",
+        "jitteriness"
+      ],
+      "overstrung": [
+        "anxiety",
+        "negative-emotion",
+        "jitteriness"
+      ],
+      "restive": [
+        "anxiety",
+        "negative-emotion",
+        "jitteriness"
+      ],
+      "uptight": [
+        "anxiety",
+        "negative-emotion",
+        "jitteriness"
+      ],
+      "elated": [
+        "joy",
+        "positive-emotion"
+      ],
+      "gleeful": [
+        "positive-emotion",
+        "joy"
+      ],
+      "joyful": [
+        "joy",
+        "positive-emotion"
+      ],
+      "jubilant": [
+        "joy",
+        "positive-emotion"
+      ],
+      "elating": [
+        "joy",
+        "positive-emotion",
+        "elation"
+      ],
+      "exhilarating": [
+        "joy",
+        "positive-emotion"
+      ],
+      "electrifying": [
+        "ambiguous-agitation",
+        "stir",
+        "ambiguous-emotion",
+        "electricity"
+      ],
+      "thrilling": [
+        "ambiguous-agitation",
+        "stir",
+        "ambiguous-emotion",
+        "electricity"
+      ],
+      "awkward": [
+        "negative-emotion",
+        "shame",
+        "embarrassment"
+      ],
+      "embarrassing": [
+        "embarrassment",
+        "negative-emotion",
+        "shame"
+      ],
+      "sticky": [
+        "negative-emotion",
+        "shame",
+        "embarrassment"
+      ],
+      "unenviable": [
+        "negative-emotion",
+        "shame",
+        "embarrassment"
+      ],
+      "mortifying": [
+        "negative-emotion"
+      ],
+      "humiliated": [
+        "negative-emotion",
+        "humility"
+      ],
+      "mortified": [
+        "negative-emotion",
+        "humility"
+      ],
+      "emotionless": [
+        "apathy",
+        "neutral-emotion",
+        "emotionlessness"
+      ],
+      "passionless": [
+        "apathy",
+        "neutral-emotion",
+        "emotionlessness"
+      ],
+      "empathic": [
+        "sympathy",
+        "liking",
+        "positive-emotion",
+        "empathy"
+      ],
+      "empathetic": [
+        "sympathy",
+        "liking",
+        "positive-emotion",
+        "empathy"
+      ],
+      "encouraging": [
+        "positive-hope",
+        "positive-emotion",
+        "encouragement"
+      ],
+      "bucked up": [
+        "positive-hope",
+        "positive-emotion",
+        "encouragement"
+      ],
+      "encouraged": [
+        "positive-hope",
+        "positive-emotion",
+        "encouragement"
+      ],
+      "exciting": [
+        "positive-emotion",
+        "enthusiasm"
+      ],
+      "enthusiastic": [
+        "positive-emotion",
+        "enthusiasm"
+      ],
+      "enviable": [
+        "general-dislike",
+        "hostility",
+        "resentment",
+        "hate",
+        "negative-emotion",
+        "envy"
+      ],
+      "begrudging": [
+        "general-dislike",
+        "hostility",
+        "resentment",
+        "hate",
+        "negative-emotion",
+        "envy"
+      ],
+      "grudging": [
+        "general-dislike",
+        "hostility",
+        "resentment",
+        "hate",
+        "negative-emotion",
+        "envy"
+      ],
+      "euphoriant": [
+        "joy",
+        "elation",
+        "positive-emotion",
+        "euphoria"
+      ],
+      "euphoric": [
+        "joy",
+        "positive-emotion",
+        "happiness"
+      ],
+      "gladdened": [
+        "joy",
+        "positive-emotion",
+        "exhilaration"
+      ],
+      "exhilarated": [
+        "joy",
+        "positive-emotion",
+        "exhilaration"
+      ],
+      "stimulating": [
+        "joy",
+        "positive-emotion",
+        "exhilaration"
+      ],
+      "anticipant": [
+        "ambiguous-emotion",
+        "ambiguous-expectation"
+      ],
+      "anticipative": [
+        "ambiguous-emotion",
+        "ambiguous-expectation"
+      ],
+      "expectant": [
+        "ambiguous-emotion",
+        "ambiguous-expectation"
+      ],
+      "exultant": [
+        "joy",
+        "exultation",
+        "positive-emotion",
+        "triumph"
+      ],
+      "exulting": [
+        "joy",
+        "exultation",
+        "positive-emotion",
+        "triumph"
+      ],
+      "prideful": [
+        "joy",
+        "exultation",
+        "positive-emotion",
+        "triumph"
+      ],
+      "triumphal": [
+        "joy",
+        "exultation",
+        "positive-emotion",
+        "triumph"
+      ],
+      "triumphant": [
+        "joy",
+        "exultation",
+        "positive-emotion",
+        "triumph"
+      ],
+      "favorable": [
+        "approval",
+        "liking",
+        "positive-emotion",
+        "favor"
+      ],
+      "favourable": [
+        "approval",
+        "liking",
+        "positive-emotion",
+        "favor"
+      ],
+      "fearful": [
+        "negative-emotion",
+        "negative-fear"
+      ],
+      "frightful": [
+        "negative-emotion",
+        "negative-fear"
+      ],
+      "terrible": [
+        "negative-emotion",
+        "negative-fear"
+      ],
+      "dire": [
+        "negative-emotion",
+        "negative-fear",
+        "horror"
+      ],
+      "direful": [
+        "negative-emotion",
+        "negative-fear",
+        "horror"
+      ],
+      "dreaded": [
+        "negative-emotion",
+        "negative-fear",
+        "horror"
+      ],
+      "dreadful": [
+        "negative-emotion",
+        "negative-fear",
+        "horror"
+      ],
+      "fearsome": [
+        "negative-emotion",
+        "negative-fear",
+        "horror"
+      ],
+      "frightening": [
+        "negative-emotion",
+        "negative-fear",
+        "horror"
+      ],
+      "horrendous": [
+        "negative-emotion",
+        "negative-fear",
+        "horror"
+      ],
+      "doughty": [
+        "positive-emotion",
+        "fearlessness"
+      ],
+      "fearless": [
+        "positive-emotion",
+        "fearlessness"
+      ],
+      "hardy": [
+        "positive-emotion",
+        "fearlessness"
+      ],
+      "unafraid": [
+        "positive-emotion",
+        "fearlessness"
+      ],
+      "feverish": [
+        "ambiguous-expectation",
+        "ambiguous-emotion",
+        "fever"
+      ],
+      "hectic": [
+        "ambiguous-expectation",
+        "ambiguous-emotion",
+        "fever"
+      ],
+      "fevered": [
+        "ambiguous-expectation",
+        "ambiguous-emotion",
+        "fever"
+      ],
+      "fidgety": [
+        "anxiety",
+        "negative-emotion",
+        "negative-agitation",
+        "fidget"
+      ],
+      "fretful": [
+        "anxiety",
+        "negative-emotion",
+        "negative-agitation",
+        "fidget"
+      ],
+      "itchy": [
+        "anxiety",
+        "negative-emotion",
+        "negative-agitation",
+        "fidget"
+      ],
+      "restless": [
+        "anxiety",
+        "negative-emotion",
+        "negative-agitation",
+        "fidget"
+      ],
+      "affectionate": [
+        "compassion",
+        "negative-emotion",
+        "tenderness"
+      ],
+      "fond": [
+        "compassion",
+        "negative-emotion",
+        "tenderness"
+      ],
+      "lovesome": [
+        "compassion",
+        "negative-emotion",
+        "tenderness"
+      ],
+      "tender": [
+        "negative-emotion",
+        "tenderness",
+        "compassion"
+      ],
+      "warm": [
+        "compassion",
+        "negative-emotion",
+        "tenderness"
+      ],
+      "excusable": [
+        "compassion",
+        "mercifulness",
+        "negative-emotion",
+        "forgiveness"
+      ],
+      "forgivable": [
+        "compassion",
+        "mercifulness",
+        "negative-emotion",
+        "forgiveness"
+      ],
+      "venial": [
+        "compassion",
+        "mercifulness",
+        "negative-emotion",
+        "forgiveness"
+      ],
+      "forlorn": [
+        "forlornness",
+        "negative-emotion",
+        "sadness"
+      ],
+      "desolate": [
+        "negative-emotion",
+        "sadness",
+        "forlornness"
+      ],
+      "godforsaken": [
+        "negative-emotion",
+        "sadness",
+        "forlornness"
+      ],
+      "lorn": [
+        "negative-emotion",
+        "sadness",
+        "forlornness"
+      ],
+      "friendly": [
+        "liking",
+        "positive-emotion",
+        "friendliness"
+      ],
+      "frustrating": [
+        "general-dislike",
+        "anger",
+        "annoyance",
+        "negative-emotion",
+        "frustration"
+      ],
+      "exasperating": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "infuriation"
+      ],
+      "infuriating": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "infuriation"
+      ],
+      "maddening": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "infuriation"
+      ],
+      "gala": [
+        "levity",
+        "positive-emotion",
+        "playfulness"
+      ],
+      "gay": [
+        "positive-emotion"
+      ],
+      "festal": [
+        "levity",
+        "positive-emotion",
+        "playfulness"
+      ],
+      "festive": [
+        "levity",
+        "positive-emotion",
+        "playfulness"
+      ],
+      "merry": [
+        "positive-emotion"
+      ],
+      "jocund": [
+        "merriment",
+        "joy",
+        "positive-emotion",
+        "jollity"
+      ],
+      "jolly": [
+        "joy",
+        "positive-emotion",
+        "merriment",
+        "jollity"
+      ],
+      "jovial": [
+        "merriment",
+        "joy",
+        "positive-emotion",
+        "jollity"
+      ],
+      "mirthful": [
+        "merriment",
+        "joy",
+        "positive-emotion",
+        "jollity"
+      ],
+      "cheery": [
+        "levity",
+        "positive-emotion",
+        "playfulness"
+      ],
+      "sunny": [
+        "levity",
+        "positive-emotion",
+        "playfulness"
+      ],
+      "gladsome": [
+        "joy",
+        "positive-emotion",
+        "gladness"
+      ],
+      "beaming": [
+        "joy",
+        "positive-emotion",
+        "gladness"
+      ],
+      "glad": [
+        "joy",
+        "positive-emotion",
+        "gladness"
+      ],
+      "dark": [
+        "negative-emotion",
+        "sadness",
+        "melancholy",
+        "gloom"
+      ],
+      "disconsolate": [
+        "negative-emotion",
+        "sadness",
+        "melancholy",
+        "gloom"
+      ],
+      "dismal": [
+        "negative-emotion",
+        "sadness",
+        "gloom",
+        "melancholy"
+      ],
+      "grim": [
+        "negative-emotion",
+        "sadness",
+        "gloom",
+        "melancholy"
+      ],
+      "glum": [
+        "negative-emotion",
+        "sadness",
+        "melancholy",
+        "gloom"
+      ],
+      "long-faced": [
+        "negative-emotion",
+        "sadness",
+        "melancholy",
+        "gloom"
+      ],
+      "dingy": [
+        "negative-emotion",
+        "sadness",
+        "melancholy",
+        "gloom"
+      ],
+      "drab": [
+        "negative-emotion",
+        "sadness",
+        "melancholy",
+        "gloom"
+      ],
+      "drear": [
+        "negative-emotion",
+        "sadness",
+        "melancholy",
+        "gloom"
+      ],
+      "dreary": [
+        "negative-emotion",
+        "sadness",
+        "melancholy",
+        "gloom"
+      ],
+      "glooming": [
+        "negative-emotion",
+        "sadness",
+        "melancholy",
+        "gloom"
+      ],
+      "gloomful": [
+        "negative-emotion",
+        "sadness",
+        "melancholy",
+        "gloom"
+      ],
+      "grateful": [
+        "positive-emotion",
+        "gratitude"
+      ],
+      "thankful": [
+        "positive-emotion",
+        "gratitude"
+      ],
+      "grievous": [
+        "sorrow",
+        "lost-sorrow",
+        "negative-emotion",
+        "sadness",
+        "grief"
+      ],
+      "heartbreaking": [
+        "sorrow",
+        "lost-sorrow",
+        "negative-emotion",
+        "sadness",
+        "grief"
+      ],
+      "heartrending": [
+        "sorrow",
+        "lost-sorrow",
+        "negative-emotion",
+        "sadness",
+        "grief"
+      ],
+      "bereaved": [
+        "sorrow",
+        "negative-emotion",
+        "sadness",
+        "lost-sorrow"
+      ],
+      "bereft": [
+        "sorrow",
+        "negative-emotion",
+        "sadness",
+        "lost-sorrow"
+      ],
+      "grief-stricken": [
+        "sorrow",
+        "negative-emotion",
+        "sadness",
+        "lost-sorrow"
+      ],
+      "grieving": [
+        "sorrow",
+        "negative-emotion",
+        "sadness",
+        "lost-sorrow"
+      ],
+      "mourning": [
+        "sorrow",
+        "negative-emotion",
+        "sadness",
+        "lost-sorrow"
+      ],
+      "sorrowing": [
+        "sorrow",
+        "negative-emotion",
+        "sadness",
+        "lost-sorrow"
+      ],
+      "guilty": [
+        "embarrassment",
+        "negative-emotion",
+        "shame",
+        "shamefacedness"
+      ],
+      "hangdog": [
+        "negative-emotion"
+      ],
+      "shamefaced": [
+        "embarrassment",
+        "negative-emotion",
+        "shamefacedness",
+        "shame"
+      ],
+      "pleased": [
+        "joy",
+        "positive-emotion",
+        "happiness"
+      ],
+      "hateful": [
+        "general-dislike",
+        "negative-emotion",
+        "hate"
+      ],
+      "hardhearted": [
+        "negative-unconcern",
+        "negative-emotion",
+        "negative-fear",
+        "heartlessness"
+      ],
+      "heartless": [
+        "negative-unconcern",
+        "negative-emotion",
+        "negative-fear",
+        "heartlessness"
+      ],
+      "heavyhearted": [
+        "negative-emotion",
+        "sadness",
+        "melancholy",
+        "heavyheartedness"
+      ],
+      "hilarious": [
+        "merriment",
+        "joy",
+        "positive-emotion",
+        "hilarity"
+      ],
+      "screaming": [
+        "merriment",
+        "joy",
+        "positive-emotion",
+        "hilarity"
+      ],
+      "uproarious": [
+        "merriment",
+        "joy",
+        "positive-emotion",
+        "hilarity"
+      ],
+      "hopeful": [
+        "positive-hope",
+        "positive-emotion",
+        "hopefulness"
+      ],
+      "hopeless": [
+        "despair",
+        "negative-emotion",
+        "hopelessness"
+      ],
+      "atrocious": [
+        "negative-emotion",
+        "negative-fear",
+        "horror"
+      ],
+      "horrifying": [
+        "negative-emotion",
+        "negative-fear",
+        "horror"
+      ],
+      "horrible": [
+        "negative-emotion",
+        "negative-fear",
+        "horror"
+      ],
+      "ugly": [
+        "negative-emotion",
+        "negative-fear",
+        "horror"
+      ],
+      "horrified": [
+        "negative-emotion",
+        "negative-fear",
+        "horror"
+      ],
+      "horror-stricken": [
+        "negative-emotion",
+        "negative-fear",
+        "horror"
+      ],
+      "horror-struck": [
+        "negative-emotion",
+        "negative-fear",
+        "horror"
+      ],
+      "hostile": [
+        "general-dislike",
+        "hostility",
+        "negative-emotion",
+        "hate"
+      ],
+      "huffish": [
+        "general-dislike",
+        "hostility",
+        "resentment",
+        "hate",
+        "negative-emotion",
+        "sulkiness"
+      ],
+      "sulky": [
+        "general-dislike",
+        "hostility",
+        "resentment",
+        "hate",
+        "negative-emotion",
+        "sulkiness"
+      ],
+      "huffy": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "huffiness"
+      ],
+      "mad": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "huffiness"
+      ],
+      "sore": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "huffiness"
+      ],
+      "demeaning": [
+        "negative-emotion",
+        "humility"
+      ],
+      "humbling": [
+        "negative-emotion",
+        "humility"
+      ],
+      "humiliating": [
+        "negative-emotion",
+        "humility"
+      ],
+      "hysterical": [
+        "negative-emotion",
+        "negative-fear",
+        "hysteria"
+      ],
+      "indifferent": [
+        "neutral-unconcern",
+        "indifference",
+        "neutral-emotion"
+      ],
+      "indignant": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "umbrage"
+      ],
+      "incensed": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "umbrage"
+      ],
+      "outraged": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "umbrage"
+      ],
+      "umbrageous": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "umbrage"
+      ],
+      "insecure": [
+        "anxiety",
+        "negative-emotion",
+        "insecurity"
+      ],
+      "browbeaten": [
+        "negative-emotion",
+        "negative-fear",
+        "fear-intimidation"
+      ],
+      "bullied": [
+        "negative-emotion",
+        "negative-fear",
+        "fear-intimidation"
+      ],
+      "cowed": [
+        "negative-emotion",
+        "negative-fear",
+        "fear-intimidation"
+      ],
+      "intimidated": [
+        "negative-emotion",
+        "fear-intimidation",
+        "negative-fear"
+      ],
+      "choleric": [
+        "general-dislike",
+        "anger",
+        "bad-temper",
+        "negative-emotion",
+        "irascibility"
+      ],
+      "irascible": [
+        "general-dislike",
+        "anger",
+        "bad-temper",
+        "negative-emotion",
+        "irascibility"
+      ],
+      "detached": [
+        "general-dislike",
+        "dislike",
+        "negative-emotion",
+        "alienation",
+        "isolation"
+      ],
+      "isolated": [
+        "general-dislike",
+        "dislike",
+        "negative-emotion",
+        "alienation",
+        "isolation"
+      ],
+      "separated": [
+        "general-dislike",
+        "dislike",
+        "negative-emotion",
+        "alienation",
+        "isolation"
+      ],
+      "set-apart": [
+        "general-dislike",
+        "dislike",
+        "negative-emotion",
+        "alienation",
+        "isolation"
+      ],
+      "green-eyed": [
+        "general-dislike",
+        "hostility",
+        "resentment",
+        "hate",
+        "negative-emotion",
+        "envy",
+        "jealousy"
+      ],
+      "overjealous": [
+        "general-dislike",
+        "hostility",
+        "resentment",
+        "hate",
+        "negative-emotion",
+        "envy",
+        "jealousy"
+      ],
+      "joyous": [
+        "positive-emotion",
+        "joy"
+      ],
+      "joyless": [
+        "cheerlessness",
+        "negative-emotion",
+        "sadness",
+        "joylessness"
+      ],
+      "kindhearted": [
+        "sympathy",
+        "liking",
+        "positive-emotion",
+        "kindheartedness"
+      ],
+      "dreamy": [
+        "apathy",
+        "neutral-emotion",
+        "neutral-languor"
+      ],
+      "lackadaisical": [
+        "apathy",
+        "neutral-emotion",
+        "neutral-languor"
+      ],
+      "languid": [
+        "apathy",
+        "neutral-emotion",
+        "neutral-languor"
+      ],
+      "languorous": [
+        "apathy",
+        "neutral-emotion",
+        "neutral-languor"
+      ],
+      "likable": [
+        "positive-emotion",
+        "liking"
+      ],
+      "likeable": [
+        "positive-emotion",
+        "liking"
+      ],
+      "livid": [
+        "general-dislike",
+        "anger",
+        "fury",
+        "negative-emotion",
+        "lividity"
+      ],
+      "loving": [
+        "positive-emotion",
+        "love"
+      ],
+      "malefic": [
+        "general-dislike",
+        "malevolence",
+        "hate",
+        "negative-emotion",
+        "maleficence"
+      ],
+      "malevolent": [
+        "general-dislike",
+        "malevolence",
+        "negative-emotion",
+        "hate"
+      ],
+      "malign": [
+        "general-dislike",
+        "malevolence",
+        "hate",
+        "negative-emotion",
+        "maleficence"
+      ],
+      "evil": [
+        "general-dislike",
+        "malevolence",
+        "hate",
+        "negative-emotion",
+        "maleficence"
+      ],
+      "malicious": [
+        "general-dislike",
+        "malevolence",
+        "hate",
+        "negative-emotion",
+        "malice"
+      ],
+      "melancholic": [
+        "negative-emotion",
+        "sadness",
+        "melancholy"
+      ],
+      "merciful": [
+        "compassion",
+        "negative-emotion",
+        "mercifulness"
+      ],
+      "hapless": [
+        "negative-emotion",
+        "sadness",
+        "misery"
+      ],
+      "miserable": [
+        "negative-emotion",
+        "sadness"
+      ],
+      "misfortunate": [
+        "negative-emotion",
+        "sadness",
+        "misery"
+      ],
+      "pathetic": [
+        "negative-emotion",
+        "sadness",
+        "misery"
+      ],
+      "piteous": [
+        "negative-emotion",
+        "sadness",
+        "misery"
+      ],
+      "pitiable": [
+        "negative-emotion",
+        "sadness",
+        "misery"
+      ],
+      "pitiful": [
+        "negative-emotion",
+        "sadness",
+        "misery"
+      ],
+      "poor": [
+        "negative-emotion",
+        "sadness",
+        "misery"
+      ],
+      "wretched": [
+        "negative-emotion",
+        "sadness"
+      ],
+      "suffering": [
+        "negative-emotion",
+        "sadness",
+        "misery"
+      ],
+      "misogynic": [
+        "general-dislike",
+        "hate",
+        "negative-emotion",
+        "misogyny"
+      ],
+      "plaintive": [
+        "sorrow",
+        "lost-sorrow",
+        "negative-emotion",
+        "sadness",
+        "mournfulness",
+        "plaintiveness"
+      ],
+      "nauseating": [
+        "general-dislike",
+        "dislike",
+        "disgust",
+        "negative-emotion",
+        "nausea"
+      ],
+      "nauseous": [
+        "general-dislike",
+        "dislike",
+        "disgust",
+        "negative-emotion",
+        "nausea"
+      ],
+      "noisome": [
+        "general-dislike",
+        "dislike",
+        "disgust",
+        "negative-emotion",
+        "nausea"
+      ],
+      "offensive": [
+        "general-dislike",
+        "dislike",
+        "disgust",
+        "negative-emotion",
+        "nausea"
+      ],
+      "sickening": [
+        "general-dislike",
+        "dislike",
+        "disgust",
+        "negative-emotion",
+        "nausea"
+      ],
+      "vile": [
+        "general-dislike",
+        "dislike",
+        "disgust",
+        "negative-emotion",
+        "nausea"
+      ],
+      "nauseated": [
+        "general-dislike",
+        "dislike",
+        "disgust",
+        "negative-emotion",
+        "nausea"
+      ],
+      "queasy": [
+        "general-dislike",
+        "dislike",
+        "disgust",
+        "negative-emotion",
+        "nausea"
+      ],
+      "sickish": [
+        "general-dislike",
+        "dislike",
+        "disgust",
+        "negative-emotion",
+        "nausea"
+      ],
+      "oppressive": [
+        "depression",
+        "negative-emotion",
+        "sadness",
+        "oppression"
+      ],
+      "tyrannical": [
+        "depression",
+        "negative-emotion",
+        "sadness",
+        "oppression"
+      ],
+      "tyrannous": [
+        "depression",
+        "negative-emotion",
+        "sadness",
+        "oppression"
+      ],
+      "laden": [
+        "depression",
+        "negative-emotion",
+        "sadness",
+        "oppression"
+      ],
+      "oppressed": [
+        "negative-emotion",
+        "oppression",
+        "sadness",
+        "depression"
+      ],
+      "downtrodden": [
+        "depression",
+        "negative-emotion",
+        "sadness",
+        "oppression"
+      ],
+      "persecuted": [
+        "depression",
+        "negative-emotion",
+        "sadness",
+        "oppression"
+      ],
+      "optimistic": [
+        "positive-hope",
+        "positive-emotion",
+        "optimism"
+      ],
+      "panicky": [
+        "negative-emotion",
+        "negative-fear",
+        "panic"
+      ],
+      "panicked": [
+        "negative-emotion",
+        "negative-fear",
+        "panic"
+      ],
+      "panic-stricken": [
+        "negative-emotion",
+        "negative-fear",
+        "panic"
+      ],
+      "panic-struck": [
+        "negative-emotion",
+        "negative-fear",
+        "panic"
+      ],
+      "terrified": [
+        "negative-emotion",
+        "negative-fear",
+        "panic"
+      ],
+      "frightened": [
+        "negative-emotion",
+        "negative-fear"
+      ],
+      "peaceable": [
+        "calmness",
+        "tranquillity",
+        "positive-emotion",
+        "peace"
+      ],
+      "peace-loving": [
+        "calmness",
+        "tranquillity",
+        "positive-emotion",
+        "peace"
+      ],
+      "pensive": [
+        "pensiveness",
+        "ambiguous-emotion"
+      ],
+      "wistful": [
+        "ambiguous-emotion",
+        "pensiveness"
+      ],
+      "broody": [
+        "ambiguous-emotion",
+        "pensiveness"
+      ],
+      "contemplative": [
+        "ambiguous-emotion",
+        "pensiveness"
+      ],
+      "meditative": [
+        "ambiguous-emotion",
+        "pensiveness"
+      ],
+      "musing": [
+        "ambiguous-emotion",
+        "pensiveness"
+      ],
+      "pondering": [
+        "ambiguous-emotion",
+        "pensiveness"
+      ],
+      "reflective": [
+        "ambiguous-emotion",
+        "pensiveness"
+      ],
+      "ruminative": [
+        "ambiguous-emotion",
+        "pensiveness"
+      ],
+      "pessimistic": [
+        "despair",
+        "negative-emotion",
+        "pessimism"
+      ],
+      "placid": [
+        "calmness",
+        "positive-emotion",
+        "placidity"
+      ],
+      "quiet": [
+        "calmness",
+        "positive-emotion"
+      ],
+      "still": [
+        "calmness",
+        "positive-emotion"
+      ],
+      "unruffled": [
+        "calmness",
+        "positive-emotion",
+        "placidity"
+      ],
+      "proud": [
+        "satisfaction",
+        "contentment",
+        "joy",
+        "positive-emotion",
+        "satisfaction-pride"
+      ],
+      "protective": [
+        "affection",
+        "positive-emotion",
+        "protectiveness"
+      ],
+      "penitent": [
+        "sorrow",
+        "compunction",
+        "regret-sorrow",
+        "negative-emotion",
+        "sadness",
+        "repentance"
+      ],
+      "repentant": [
+        "sorrow",
+        "compunction",
+        "regret-sorrow",
+        "negative-emotion",
+        "sadness",
+        "repentance"
+      ],
+      "repulsive": [
+        "general-dislike",
+        "dislike",
+        "disgust",
+        "repugnance",
+        "negative-emotion"
+      ],
+      "abhorrent": [
+        "general-dislike",
+        "dislike",
+        "disgust",
+        "negative-emotion",
+        "repugnance"
+      ],
+      "detestable": [
+        "general-dislike",
+        "dislike",
+        "disgust",
+        "negative-emotion",
+        "repugnance"
+      ],
+      "obscene": [
+        "general-dislike",
+        "dislike",
+        "disgust",
+        "negative-emotion",
+        "repugnance"
+      ],
+      "repugnant": [
+        "general-dislike",
+        "dislike",
+        "disgust",
+        "negative-emotion",
+        "repugnance"
+      ],
+      "resentful": [
+        "general-dislike",
+        "hostility",
+        "hate",
+        "negative-emotion",
+        "resentment"
+      ],
+      "abject": [
+        "despair",
+        "negative-emotion",
+        "resignation"
+      ],
+      "resigned": [
+        "despair",
+        "negative-emotion",
+        "resignation"
+      ],
+      "unhopeful": [
+        "despair",
+        "negative-emotion",
+        "resignation"
+      ],
+      "reverent": [
+        "ambiguous-fear",
+        "ambiguous-emotion",
+        "reverence"
+      ],
+      "sad": [
+        "negative-emotion",
+        "sadness"
+      ],
+      "sanguine": [
+        "positive-hope",
+        "optimism",
+        "positive-emotion",
+        "sanguinity"
+      ],
+      "comforting": [
+        "contentment",
+        "joy",
+        "positive-emotion",
+        "satisfaction"
+      ],
+      "cheering": [
+        "contentment",
+        "joy",
+        "positive-emotion",
+        "satisfaction"
+      ],
+      "satisfying": [
+        "satisfaction",
+        "joy",
+        "positive-emotion",
+        "contentment"
+      ],
+      "appreciated": [
+        "contentment",
+        "joy",
+        "positive-emotion",
+        "satisfaction"
+      ],
+      "gratifying": [
+        "contentment",
+        "joy",
+        "positive-emotion",
+        "satisfaction"
+      ],
+      "pleasing": [
+        "contentment",
+        "joy",
+        "positive-emotion",
+        "satisfaction"
+      ],
+      "satisfied": [
+        "contentment",
+        "joy",
+        "positive-emotion",
+        "satisfaction"
+      ],
+      "satiable": [
+        "contentment",
+        "joy",
+        "positive-emotion",
+        "satisfaction"
+      ],
+      "satisfiable": [
+        "contentment",
+        "joy",
+        "positive-emotion",
+        "satisfaction"
+      ],
+      "satisfactory": [
+        "contentment",
+        "joy",
+        "positive-emotion",
+        "satisfaction"
+      ],
+      "scared": [
+        "negative-emotion",
+        "negative-fear",
+        "scare"
+      ],
+      "reassuring": [
+        "fearlessness",
+        "positive-emotion",
+        "security"
+      ],
+      "reassured": [
+        "fearlessness",
+        "positive-emotion",
+        "security"
+      ],
+      "scandalmongering": [
+        "ambiguous-agitation",
+        "stir",
+        "ambiguous-emotion",
+        "sensation"
+      ],
+      "sensationalistic": [
+        "ambiguous-agitation",
+        "stir",
+        "ambiguous-emotion",
+        "sensation"
+      ],
+      "yellow": [
+        "ambiguous-agitation",
+        "stir",
+        "ambiguous-emotion",
+        "sensation"
+      ],
+      "sensational": [
+        "ambiguous-agitation",
+        "stir",
+        "ambiguous-emotion",
+        "sensation"
+      ],
+      "disgraceful": [
+        "negative-emotion",
+        "shame"
+      ],
+      "scandalous": [
+        "negative-emotion",
+        "shame"
+      ],
+      "shameful": [
+        "negative-emotion",
+        "shame"
+      ],
+      "shocking": [
+        "negative-emotion",
+        "shame"
+      ],
+      "black": [
+        "negative-emotion",
+        "shame"
+      ],
+      "ignominious": [
+        "negative-emotion",
+        "shame"
+      ],
+      "inglorious": [
+        "negative-emotion",
+        "shame"
+      ],
+      "opprobrious": [
+        "negative-emotion",
+        "shame"
+      ],
+      "sheepish": [
+        "embarrassment",
+        "negative-emotion",
+        "shame",
+        "shamefacedness"
+      ],
+      "ashamed": [
+        "negative-emotion",
+        "shame"
+      ],
+      "shy": [
+        "negative-emotion",
+        "negative-fear",
+        "timidity"
+      ],
+      "timid": [
+        "negative-emotion",
+        "negative-fear",
+        "timidity"
+      ],
+      "unsure": [
+        "negative-emotion",
+        "negative-fear",
+        "timidity"
+      ],
+      "smug": [
+        "satisfaction",
+        "contentment",
+        "joy",
+        "complacency",
+        "positive-emotion",
+        "smugness"
+      ],
+      "softhearted": [
+        "sympathy",
+        "positive-concern",
+        "liking",
+        "positive-emotion",
+        "softheartedness"
+      ],
+      "soft-boiled": [
+        "sympathy",
+        "positive-concern",
+        "liking",
+        "positive-emotion",
+        "softheartedness"
+      ],
+      "solicitous": [
+        "anxiety",
+        "negative-emotion",
+        "solicitude"
+      ],
+      "sorrowful": [
+        "sorrow",
+        "negative-emotion",
+        "sadness",
+        "lost-sorrow"
+      ],
+      "bad": [
+        "sorrow",
+        "negative-emotion",
+        "sadness",
+        "lost-sorrow"
+      ],
+      "pitying": [
+        "sorrow",
+        "negative-emotion",
+        "sadness",
+        "lost-sorrow"
+      ],
+      "sorry for": [
+        "sorrow",
+        "negative-emotion",
+        "sadness",
+        "lost-sorrow"
+      ],
+      "regretful": [
+        "sorrow",
+        "negative-emotion",
+        "sadness",
+        "regret-sorrow"
+      ],
+      "dumbfounded": [
+        "astonishment",
+        "surprise",
+        "ambiguous-emotion",
+        "stupefaction"
+      ],
+      "dumfounded": [
+        "astonishment",
+        "surprise",
+        "ambiguous-emotion",
+        "stupefaction"
+      ],
+      "flabbergasted": [
+        "astonishment",
+        "surprise",
+        "ambiguous-emotion",
+        "stupefaction"
+      ],
+      "thunderstruck": [
+        "astonishment",
+        "surprise",
+        "ambiguous-emotion",
+        "stupefaction"
+      ],
+      "surprising": [
+        "astonishment",
+        "surprise",
+        "ambiguous-emotion",
+        "surprise"
+      ],
+      "surprised": [
+        "astonishment",
+        "surprise",
+        "ambiguous-emotion",
+        "surprise"
+      ],
+      "charitable": [
+        "liking",
+        "positive-emotion",
+        "sympathy"
+      ],
+      "kindly": [
+        "liking",
+        "positive-emotion",
+        "sympathy"
+      ],
+      "titillating": [
+        "exhilaration",
+        "joy",
+        "positive-emotion",
+        "titillation"
+      ],
+      "teased": [
+        "exhilaration",
+        "joy",
+        "positive-emotion",
+        "titillation"
+      ],
+      "titillated": [
+        "exhilaration",
+        "joy",
+        "positive-emotion",
+        "titillation"
+      ],
+      "unagitated": [
+        "calmness",
+        "positive-emotion",
+        "tranquillity"
+      ],
+      "timorous": [
+        "apprehension",
+        "negative-emotion",
+        "negative-fear",
+        "trepidation"
+      ],
+      "trepid": [
+        "apprehension",
+        "negative-emotion",
+        "negative-fear",
+        "trepidation"
+      ],
+      "unassertive": [
+        "diffidence",
+        "timidity",
+        "negative-emotion",
+        "negative-fear",
+        "unassertiveness"
+      ],
+      "unconcerned": [
+        "neutral-emotion",
+        "neutral-unconcern"
+      ],
+      "unfriendly": [
+        "general-dislike",
+        "unfriendliness",
+        "dislike",
+        "negative-emotion"
+      ],
+      "inimical": [
+        "general-dislike",
+        "dislike",
+        "negative-emotion",
+        "unfriendliness"
+      ],
+      "despiteful": [
+        "general-dislike",
+        "malevolence",
+        "hate",
+        "negative-emotion",
+        "vindictiveness"
+      ],
+      "spiteful": [
+        "general-dislike",
+        "malevolence",
+        "hate",
+        "negative-emotion",
+        "vindictiveness"
+      ],
+      "vindictive": [
+        "general-dislike",
+        "malevolence",
+        "hate",
+        "negative-emotion",
+        "vindictiveness"
+      ],
+      "warmhearted": [
+        "lovingness",
+        "love",
+        "positive-emotion",
+        "warmheartedness"
+      ],
+      "dolorous": [
+        "negative-emotion",
+        "sadness",
+        "weepiness"
+      ],
+      "dolourous": [
+        "negative-emotion",
+        "sadness",
+        "weepiness"
+      ],
+      "lachrymose": [
+        "negative-emotion",
+        "sadness",
+        "weepiness"
+      ],
+      "tearful": [
+        "negative-emotion",
+        "sadness",
+        "weepiness"
+      ],
+      "weeping": [
+        "negative-emotion",
+        "sadness",
+        "weepiness"
+      ],
+      "deplorable": [
+        "sorrow",
+        "lost-sorrow",
+        "negative-emotion",
+        "sadness",
+        "mournfulness",
+        "woe"
+      ],
+      "execrable": [
+        "sorrow",
+        "lost-sorrow",
+        "negative-emotion",
+        "sadness",
+        "mournfulness",
+        "woe"
+      ],
+      "woeful": [
+        "sorrow",
+        "lost-sorrow",
+        "negative-emotion",
+        "sadness",
+        "woe",
+        "mournfulness"
+      ],
+      "woebegone": [
+        "sorrow",
+        "lost-sorrow",
+        "negative-emotion",
+        "sadness",
+        "mournfulness",
+        "woe"
+      ],
+      "fantastic": [
+        "astonishment",
+        "surprise",
+        "ambiguous-emotion",
+        "wonder"
+      ],
+      "howling": [
+        "astonishment",
+        "surprise",
+        "ambiguous-emotion",
+        "wonder"
+      ],
+      "marvelous": [
+        "astonishment",
+        "surprise",
+        "ambiguous-emotion",
+        "wonder"
+      ],
+      "rattling": [
+        "astonishment",
+        "surprise",
+        "ambiguous-emotion",
+        "wonder"
+      ],
+      "terrific": [
+        "astonishment",
+        "surprise",
+        "ambiguous-emotion",
+        "wonder"
+      ],
+      "tremendous": [
+        "astonishment",
+        "surprise",
+        "ambiguous-emotion",
+        "wonder"
+      ],
+      "wonderful": [
+        "astonishment",
+        "surprise",
+        "ambiguous-emotion",
+        "wonder"
+      ],
+      "wondrous": [
+        "wonder",
+        "astonishment",
+        "surprise",
+        "ambiguous-emotion"
+      ],
+      "bored": [
+        "negative-emotion",
+        "sadness",
+        "melancholy",
+        "world-weariness"
+      ],
+      "world-weary": [
+        "negative-emotion",
+        "sadness",
+        "melancholy",
+        "world-weariness"
+      ],
+      "adoring": [
+        "love",
+        "positive-emotion",
+        "worship"
+      ],
+      "worshipful": [
+        "love",
+        "positive-emotion",
+        "worship"
+      ],
+      "wrathful": [
+        "general-dislike",
+        "anger",
+        "fury",
+        "negative-emotion",
+        "wrath"
+      ],
+      "wroth": [
+        "general-dislike",
+        "anger",
+        "fury",
+        "negative-emotion",
+        "wrath"
+      ],
+      "wrothful": [
+        "general-dislike",
+        "anger",
+        "fury",
+        "negative-emotion",
+        "wrath"
+      ],
+      "abhor": [
+        "general-dislike",
+        "hate",
+        "negative-emotion",
+        "abhorrence"
+      ],
+      "loathe": [
+        "general-dislike",
+        "hate",
+        "negative-emotion",
+        "abhorrence"
+      ],
+      "abominate": [
+        "general-dislike",
+        "hate",
+        "negative-emotion",
+        "abhorrence"
+      ],
+      "execrate": [
+        "general-dislike",
+        "hate",
+        "negative-emotion",
+        "abhorrence"
+      ],
+      "admire": [
+        "liking",
+        "positive-emotion",
+        "admiration"
+      ],
+      "look up to": [
+        "liking",
+        "positive-emotion",
+        "admiration"
+      ],
+      "affect": [
+        "positive-emotion",
+        "affection"
+      ],
+      "impress": [
+        "positive-emotion",
+        "affection"
+      ],
+      "move": [
+        "positive-emotion",
+        "affection"
+      ],
+      "strike": [
+        "positive-emotion",
+        "affection"
+      ],
+      "exacerbate": [
+        "general-dislike",
+        "anger",
+        "annoyance",
+        "negative-emotion",
+        "aggravation"
+      ],
+      "exasperate": [
+        "general-dislike",
+        "anger",
+        "negative-emotion"
+      ],
+      "aggravate": [
+        "general-dislike",
+        "anger",
+        "annoyance",
+        "negative-emotion",
+        "aggravation"
+      ],
+      "agitate": [
+        "ambiguous-emotion",
+        "ambiguous-agitation"
+      ],
+      "foment": [
+        "ambiguous-emotion",
+        "ambiguous-agitation"
+      ],
+      "stir up": [
+        "ambiguous-emotion",
+        "ambiguous-agitation"
+      ],
+      "alert": [
+        "negative-emotion",
+        "negative-fear",
+        "alarm"
+      ],
+      "appal": [
+        "negative-emotion",
+        "negative-fear",
+        "horror"
+      ],
+      "appall": [
+        "negative-emotion",
+        "negative-fear",
+        "horror"
+      ],
+      "horrify": [
+        "horror",
+        "negative-emotion",
+        "negative-fear"
+      ],
+      "estrange": [
+        "general-dislike",
+        "dislike",
+        "negative-emotion",
+        "alienation"
+      ],
+      "alienate": [
+        "general-dislike",
+        "dislike",
+        "negative-emotion",
+        "alienation"
+      ],
+      "alien": [
+        "general-dislike",
+        "dislike",
+        "negative-emotion",
+        "alienation"
+      ],
+      "disaffect": [
+        "general-dislike",
+        "dislike",
+        "negative-emotion",
+        "alienation"
+      ],
+      "see red": [
+        "general-dislike",
+        "negative-emotion",
+        "anger"
+      ],
+      "annoy": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "annoyance"
+      ],
+      "rag": [
+        "general-dislike",
+        "negative-emotion",
+        "anger",
+        "annoyance"
+      ],
+      "get to": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "annoyance"
+      ],
+      "bother": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "annoyance"
+      ],
+      "get at": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "annoyance"
+      ],
+      "irritate": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "annoyance"
+      ],
+      "rile": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "annoyance"
+      ],
+      "nark": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "annoyance"
+      ],
+      "nettle": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "annoyance"
+      ],
+      "gravel": [
+        "ambiguous-emotion"
+      ],
+      "vex": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "annoyance"
+      ],
+      "devil": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "annoyance"
+      ],
+      "anticipate": [
+        "ambiguous-emotion"
+      ],
+      "look for": [
+        "positive-expectation",
+        "positive-emotion",
+        "anticipation"
+      ],
+      "look to": [
+        "positive-expectation",
+        "positive-emotion",
+        "anticipation"
+      ],
+      "approve": [
+        "liking",
+        "positive-emotion",
+        "approval"
+      ],
+      "amaze": [
+        "astonishment",
+        "surprise",
+        "ambiguous-emotion"
+      ],
+      "astonish": [
+        "surprise",
+        "ambiguous-emotion",
+        "astonishment"
+      ],
+      "astound": [
+        "surprise",
+        "ambiguous-emotion",
+        "astonishment"
+      ],
+      "repent": [
+        "sorrow",
+        "compunction",
+        "regret-sorrow",
+        "negative-emotion",
+        "sadness",
+        "repentance"
+      ],
+      "rue": [
+        "sorrow",
+        "compunction",
+        "regret-sorrow",
+        "negative-emotion",
+        "sadness",
+        "repentance"
+      ],
+      "calm down": [
+        "positive-emotion",
+        "calmness"
+      ],
+      "tranquilize": [
+        "positive-emotion",
+        "calmness"
+      ],
+      "tranquillize": [
+        "positive-emotion",
+        "calmness"
+      ],
+      "quieten": [
+        "positive-emotion",
+        "calmness"
+      ],
+      "lull": [
+        "positive-emotion",
+        "calmness"
+      ],
+      "capture": [
+        "liking",
+        "positive-emotion",
+        "captivation"
+      ],
+      "enamour": [
+        "liking",
+        "positive-emotion",
+        "captivation"
+      ],
+      "trance": [
+        "liking",
+        "positive-emotion",
+        "captivation"
+      ],
+      "catch": [
+        "liking",
+        "positive-emotion",
+        "captivation"
+      ],
+      "becharm": [
+        "liking",
+        "positive-emotion",
+        "captivation"
+      ],
+      "enamor": [
+        "liking",
+        "positive-emotion",
+        "captivation"
+      ],
+      "captivate": [
+        "liking",
+        "positive-emotion",
+        "captivation"
+      ],
+      "beguile": [
+        "liking",
+        "positive-emotion",
+        "captivation"
+      ],
+      "charm": [
+        "liking",
+        "positive-emotion",
+        "captivation"
+      ],
+      "fascinate": [
+        "liking",
+        "positive-emotion",
+        "captivation"
+      ],
+      "bewitch": [
+        "liking",
+        "positive-emotion",
+        "captivation"
+      ],
+      "entrance": [
+        "liking",
+        "positive-emotion",
+        "captivation"
+      ],
+      "enchant": [
+        "liking",
+        "positive-emotion",
+        "captivation"
+      ],
+      "humiliate": [
+        "negative-emotion",
+        "humility"
+      ],
+      "mortify": [
+        "negative-emotion",
+        "humility"
+      ],
+      "humble": [
+        "negative-emotion",
+        "humility"
+      ],
+      "abase": [
+        "negative-emotion",
+        "humility"
+      ],
+      "cheer": [
+        "joy",
+        "positive-emotion",
+        "cheerfulness"
+      ],
+      "inspire": [
+        "joy",
+        "positive-emotion",
+        "cheerfulness"
+      ],
+      "urge": [
+        "joy",
+        "positive-emotion",
+        "cheerfulness"
+      ],
+      "barrack": [
+        "joy",
+        "positive-emotion",
+        "cheerfulness"
+      ],
+      "urge on": [
+        "joy",
+        "positive-emotion",
+        "cheerfulness"
+      ],
+      "exhort": [
+        "joy",
+        "positive-emotion",
+        "cheerfulness"
+      ],
+      "pep up": [
+        "joy",
+        "positive-emotion",
+        "cheerfulness"
+      ],
+      "hearten": [
+        "joy",
+        "positive-emotion",
+        "cheerfulness"
+      ],
+      "recreate": [
+        "joy",
+        "positive-emotion",
+        "cheerfulness"
+      ],
+      "embolden": [
+        "joy",
+        "positive-emotion",
+        "cheerfulness"
+      ],
+      "cheer up": [
+        "joy",
+        "positive-emotion",
+        "cheerfulness"
+      ],
+      "chirk up": [
+        "joy",
+        "positive-emotion",
+        "cheerfulness"
+      ],
+      "jolly along": [
+        "joy",
+        "positive-emotion",
+        "cheerfulness"
+      ],
+      "jolly up": [
+        "joy",
+        "positive-emotion",
+        "cheerfulness"
+      ],
+      "comfort": [
+        "joy",
+        "positive-emotion",
+        "belonging",
+        "comfortableness"
+      ],
+      "soothe": [
+        "joy",
+        "positive-emotion",
+        "belonging",
+        "comfortableness"
+      ],
+      "console": [
+        "joy",
+        "positive-emotion",
+        "belonging",
+        "comfortableness"
+      ],
+      "solace": [
+        "joy",
+        "positive-emotion",
+        "belonging",
+        "comfortableness"
+      ],
+      "commiserate": [
+        "compassion",
+        "negative-emotion",
+        "commiseration"
+      ],
+      "sympathize": [
+        "compassion",
+        "negative-emotion",
+        "commiseration"
+      ],
+      "feel for": [
+        "negative-emotion",
+        "compassion"
+      ],
+      "condole with": [
+        "negative-emotion",
+        "compassion"
+      ],
+      "sympathize with": [
+        "negative-emotion",
+        "compassion"
+      ],
+      "interest": [
+        "sympathy",
+        "liking",
+        "positive-emotion",
+        "positive-concern"
+      ],
+      "occupy": [
+        "sympathy",
+        "liking",
+        "positive-emotion",
+        "positive-concern"
+      ],
+      "confuse": [
+        "embarrassment",
+        "negative-emotion",
+        "shame",
+        "confusion"
+      ],
+      "flurry": [
+        "embarrassment",
+        "negative-emotion",
+        "shame",
+        "confusion"
+      ],
+      "consternate": [
+        "embarrassment",
+        "negative-emotion",
+        "shame",
+        "confusion"
+      ],
+      "disconcert": [
+        "negative-emotion"
+      ],
+      "put off": [
+        "embarrassment",
+        "negative-emotion",
+        "shame",
+        "confusion"
+      ],
+      "contemn": [
+        "general-dislike",
+        "hate",
+        "negative-emotion",
+        "despisal"
+      ],
+      "despise": [
+        "general-dislike",
+        "hate",
+        "negative-emotion",
+        "despisal"
+      ],
+      "cool down": [
+        "calmness",
+        "positive-emotion",
+        "coolness"
+      ],
+      "covet": [
+        "general-dislike",
+        "hostility",
+        "resentment",
+        "hate",
+        "negative-emotion",
+        "envy",
+        "covetousness"
+      ],
+      "fawn": [
+        "negative-emotion",
+        "negative-fear",
+        "creeps"
+      ],
+      "crawl": [
+        "negative-emotion",
+        "negative-fear",
+        "creeps"
+      ],
+      "creep": [
+        "negative-emotion",
+        "negative-fear",
+        "creeps"
+      ],
+      "cringe": [
+        "negative-emotion",
+        "negative-fear",
+        "creeps"
+      ],
+      "cower": [
+        "negative-emotion",
+        "negative-fear",
+        "creeps"
+      ],
+      "grovel": [
+        "negative-emotion",
+        "negative-fear",
+        "creeps"
+      ],
+      "stun": [
+        "ambiguous-emotion"
+      ],
+      "bedaze": [
+        "negative-emotion",
+        "daze"
+      ],
+      "overcome": [
+        "despair",
+        "resignation",
+        "negative-emotion",
+        "defeatism"
+      ],
+      "defeat": [
+        "despair",
+        "resignation",
+        "negative-emotion",
+        "defeatism"
+      ],
+      "depress": [
+        "negative-emotion",
+        "sadness",
+        "depression"
+      ],
+      "deject": [
+        "negative-emotion",
+        "sadness",
+        "depression"
+      ],
+      "cast down": [
+        "negative-emotion",
+        "sadness",
+        "depression"
+      ],
+      "get down": [
+        "negative-emotion",
+        "sadness",
+        "depression"
+      ],
+      "dispirit": [
+        "negative-emotion",
+        "sadness",
+        "depression"
+      ],
+      "demoralize": [
+        "negative-emotion",
+        "sadness",
+        "depression"
+      ],
+      "disapprove": [
+        "general-dislike",
+        "dislike",
+        "negative-emotion",
+        "disapproval"
+      ],
+      "reject": [
+        "general-dislike",
+        "dislike",
+        "negative-emotion",
+        "disapproval"
+      ],
+      "discompose": [
+        "anxiety",
+        "negative-emotion",
+        "discomfiture"
+      ],
+      "untune": [
+        "anxiety",
+        "negative-emotion",
+        "discomfiture"
+      ],
+      "discomfit": [
+        "anxiety",
+        "negative-emotion",
+        "discomfiture"
+      ],
+      "discourage": [
+        "despair",
+        "negative-emotion",
+        "discouragement"
+      ],
+      "revolt": [
+        "general-dislike",
+        "disgust",
+        "dislike",
+        "negative-emotion"
+      ],
+      "nauseate": [
+        "general-dislike",
+        "dislike",
+        "disgust",
+        "nausea",
+        "negative-emotion"
+      ],
+      "sicken": [
+        "general-dislike",
+        "dislike",
+        "disgust",
+        "nausea",
+        "negative-emotion"
+      ],
+      "churn up": [
+        "general-dislike",
+        "dislike",
+        "disgust",
+        "negative-emotion",
+        "nausea"
+      ],
+      "turn off": [
+        "general-dislike",
+        "dislike",
+        "disgust",
+        "negative-emotion",
+        "repugnance"
+      ],
+      "repel": [
+        "general-dislike",
+        "dislike",
+        "disgust",
+        "repugnance",
+        "negative-emotion"
+      ],
+      "indispose": [
+        "general-dislike",
+        "dislike",
+        "negative-emotion",
+        "disinclination"
+      ],
+      "disincline": [
+        "general-dislike",
+        "dislike",
+        "negative-emotion",
+        "disinclination"
+      ],
+      "displease": [
+        "general-dislike",
+        "anger",
+        "annoyance",
+        "negative-emotion",
+        "displeasure"
+      ],
+      "brood": [
+        "negative-emotion"
+      ],
+      "dwell": [
+        "anxiety",
+        "negative-emotion",
+        "distress"
+      ],
+      "allay": [
+        "calmness",
+        "tranquillity",
+        "positive-emotion",
+        "easiness"
+      ],
+      "relieve": [
+        "calmness",
+        "tranquillity",
+        "positive-emotion",
+        "easiness"
+      ],
+      "ease": [
+        "calmness",
+        "tranquillity",
+        "positive-emotion",
+        "easiness"
+      ],
+      "elate": [
+        "joy",
+        "positive-emotion",
+        "elation"
+      ],
+      "lift up": [
+        "joy",
+        "positive-emotion",
+        "elation"
+      ],
+      "uplift": [
+        "joy",
+        "positive-emotion",
+        "elation"
+      ],
+      "pick up": [
+        "joy",
+        "positive-emotion",
+        "elation"
+      ],
+      "intoxicate": [
+        "joy",
+        "positive-emotion",
+        "elation"
+      ],
+      "embarrass": [
+        "negative-emotion",
+        "shame",
+        "embarrassment"
+      ],
+      "abash": [
+        "negative-emotion",
+        "shame",
+        "embarrassment"
+      ],
+      "encourage": [
+        "positive-hope",
+        "positive-emotion",
+        "encouragement"
+      ],
+      "begrudge": [
+        "general-dislike",
+        "hostility",
+        "resentment",
+        "hate",
+        "negative-emotion",
+        "envy"
+      ],
+      "exhilarate": [
+        "joy",
+        "positive-emotion",
+        "exhilaration"
+      ],
+      "exalt": [
+        "joy",
+        "positive-emotion",
+        "exhilaration"
+      ],
+      "expect": [
+        "ambiguous-emotion",
+        "ambiguous-expectation"
+      ],
+      "exult": [
+        "joy",
+        "positive-emotion",
+        "exultation"
+      ],
+      "rejoice": [
+        "joy",
+        "positive-emotion"
+      ],
+      "jubilate": [
+        "joy",
+        "exultation",
+        "positive-emotion",
+        "triumph"
+      ],
+      "walk on air": [
+        "joy",
+        "positive-emotion",
+        "exultation"
+      ],
+      "be on cloud nine": [
+        "joy",
+        "positive-emotion",
+        "exultation"
+      ],
+      "jump for joy": [
+        "joy",
+        "positive-emotion",
+        "exultation"
+      ],
+      "forgive": [
+        "compassion",
+        "mercifulness",
+        "negative-emotion",
+        "forgiveness"
+      ],
+      "tantalize": [
+        "general-dislike",
+        "anger",
+        "annoyance",
+        "negative-emotion",
+        "frustration"
+      ],
+      "bedevil": [
+        "general-dislike",
+        "anger",
+        "annoyance",
+        "negative-emotion",
+        "frustration"
+      ],
+      "crucify": [
+        "general-dislike",
+        "anger",
+        "annoyance",
+        "negative-emotion",
+        "frustration"
+      ],
+      "dun": [
+        "general-dislike",
+        "anger",
+        "annoyance",
+        "negative-emotion",
+        "frustration"
+      ],
+      "frustrate": [
+        "general-dislike",
+        "anger",
+        "annoyance",
+        "negative-emotion",
+        "frustration"
+      ],
+      "satisfy": [
+        "satisfaction",
+        "joy",
+        "positive-emotion",
+        "contentment"
+      ],
+      "fulfill": [
+        "satisfaction",
+        "contentment",
+        "joy",
+        "positive-emotion",
+        "fulfillment"
+      ],
+      "fulfil": [
+        "satisfaction",
+        "contentment",
+        "joy",
+        "positive-emotion",
+        "fulfillment"
+      ],
+      "live up to": [
+        "satisfaction",
+        "contentment",
+        "joy",
+        "positive-emotion",
+        "fulfillment"
+      ],
+      "enfuriate": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "infuriation"
+      ],
+      "infuriate": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "infuriation"
+      ],
+      "incense": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "infuriation"
+      ],
+      "gladden": [
+        "joy",
+        "positive-emotion"
+      ],
+      "grieve": [
+        "negative-emotion",
+        "sadness",
+        "sorrow"
+      ],
+      "aggrieve": [
+        "sorrow",
+        "lost-sorrow",
+        "negative-emotion",
+        "sadness",
+        "grief"
+      ],
+      "stew": [
+        "general-dislike",
+        "hostility",
+        "resentment",
+        "hate",
+        "negative-emotion"
+      ],
+      "persecute": [
+        "depression",
+        "negative-emotion",
+        "sadness",
+        "oppression"
+      ],
+      "oppress": [
+        "depression",
+        "negative-emotion",
+        "sadness",
+        "oppression"
+      ],
+      "harass": [
+        "depression",
+        "negative-emotion",
+        "sadness",
+        "oppression"
+      ],
+      "detest": [
+        "general-dislike",
+        "negative-emotion",
+        "hate"
+      ],
+      "trust": [
+        "ambiguous-expectation",
+        "ambiguous-emotion",
+        "ambiguous-hope"
+      ],
+      "desire": [
+        "ambiguous-expectation",
+        "ambiguous-emotion",
+        "ambiguous-hope"
+      ],
+      "identify": [
+        "sympathy",
+        "empathy",
+        "liking",
+        "positive-emotion",
+        "identification"
+      ],
+      "intimidate": [
+        "negative-emotion",
+        "negative-fear",
+        "fear-intimidation"
+      ],
+      "kid": [
+        "merriment",
+        "joy",
+        "positive-emotion",
+        "jollity"
+      ],
+      "chaff": [
+        "merriment",
+        "joy",
+        "positive-emotion",
+        "jollity"
+      ],
+      "banter": [
+        "merriment",
+        "joy",
+        "positive-emotion",
+        "jollity"
+      ],
+      "like": [
+        "liking",
+        "positive-emotion"
+      ],
+      "enjoy": [
+        "positive-emotion",
+        "love"
+      ],
+      "offend": [
+        "general-dislike",
+        "anger",
+        "annoyance",
+        "negative-emotion",
+        "pique"
+      ],
+      "plume": [
+        "satisfaction",
+        "contentment",
+        "joy",
+        "positive-emotion",
+        "satisfaction-pride"
+      ],
+      "congratulate": [
+        "satisfaction",
+        "satisfaction-pride",
+        "contentment",
+        "joy",
+        "positive-emotion"
+      ],
+      "preen": [
+        "satisfaction",
+        "contentment",
+        "joy",
+        "positive-emotion",
+        "satisfaction-pride"
+      ],
+      "revel": [
+        "joy",
+        "exultation",
+        "positive-emotion",
+        "triumph"
+      ],
+      "wallow": [
+        "joy",
+        "exultation",
+        "positive-emotion",
+        "triumph"
+      ],
+      "repulse": [
+        "general-dislike",
+        "dislike",
+        "disgust",
+        "negative-emotion",
+        "repugnance"
+      ],
+      "resign": [
+        "despair",
+        "negative-emotion",
+        "resignation"
+      ],
+      "reconcile": [
+        "despair",
+        "negative-emotion",
+        "resignation"
+      ],
+      "submit": [
+        "despair",
+        "negative-emotion",
+        "resignation"
+      ],
+      "idolize": [
+        "ambiguous-fear",
+        "ambiguous-emotion",
+        "reverence"
+      ],
+      "hero-worship": [
+        "ambiguous-fear",
+        "ambiguous-emotion",
+        "reverence"
+      ],
+      "revere": [
+        "reverence",
+        "ambiguous-emotion",
+        "ambiguous-fear"
+      ],
+      "venerate": [
+        "ambiguous-fear",
+        "ambiguous-emotion",
+        "reverence"
+      ],
+      "sadden": [
+        "negative-emotion",
+        "sadness"
+      ],
+      "gratify": [
+        "contentment",
+        "joy",
+        "positive-emotion",
+        "satisfaction"
+      ],
+      "daunt": [
+        "negative-emotion",
+        "negative-fear",
+        "scare"
+      ],
+      "dash": [
+        "negative-emotion",
+        "negative-fear",
+        "scare"
+      ],
+      "scare off": [
+        "negative-emotion",
+        "negative-fear",
+        "scare"
+      ],
+      "frighten off": [
+        "negative-emotion",
+        "negative-fear",
+        "scare"
+      ],
+      "scare away": [
+        "negative-emotion",
+        "negative-fear",
+        "scare"
+      ],
+      "frighten away": [
+        "negative-emotion",
+        "negative-fear",
+        "scare"
+      ],
+      "frighten": [
+        "negative-emotion",
+        "negative-fear",
+        "scare"
+      ],
+      "affright": [
+        "negative-emotion",
+        "negative-fear",
+        "scare"
+      ],
+      "reassure": [
+        "positive-emotion",
+        "security",
+        "fearlessness"
+      ],
+      "assure": [
+        "fearlessness",
+        "positive-emotion",
+        "security"
+      ],
+      "touch": [
+        "ambiguous-agitation",
+        "ambiguous-emotion",
+        "stir"
+      ],
+      "stimulate": [
+        "ambiguous-agitation",
+        "ambiguous-emotion",
+        "stir"
+      ],
+      "shake": [
+        "ambiguous-agitation",
+        "ambiguous-emotion",
+        "stir"
+      ],
+      "shake up": [
+        "ambiguous-agitation",
+        "ambiguous-emotion",
+        "stir"
+      ],
+      "excite": [
+        "ambiguous-agitation",
+        "ambiguous-emotion",
+        "stir"
+      ],
+      "incite": [
+        "ambiguous-agitation",
+        "ambiguous-emotion",
+        "stir"
+      ],
+      "instigate": [
+        "ambiguous-agitation",
+        "ambiguous-emotion",
+        "stir"
+      ],
+      "set off": [
+        "ambiguous-agitation",
+        "ambiguous-emotion",
+        "stir"
+      ],
+      "inflame": [
+        "ambiguous-agitation",
+        "ambiguous-emotion",
+        "stir"
+      ],
+      "ignite": [
+        "ambiguous-agitation",
+        "ambiguous-emotion",
+        "stir"
+      ],
+      "heat": [
+        "ambiguous-agitation",
+        "ambiguous-emotion",
+        "stir"
+      ],
+      "fire up": [
+        "ambiguous-agitation",
+        "ambiguous-emotion",
+        "stir"
+      ],
+      "stupefy": [
+        "astonishment",
+        "stupefaction",
+        "surprise",
+        "ambiguous-emotion"
+      ],
+      "stupify": [
+        "astonishment",
+        "stupefaction",
+        "surprise",
+        "ambiguous-emotion"
+      ],
+      "perplex": [
+        "astonishment",
+        "surprise",
+        "ambiguous-emotion",
+        "stupefaction"
+      ],
+      "get": [
+        "astonishment",
+        "surprise",
+        "ambiguous-emotion",
+        "stupefaction"
+      ],
+      "puzzle": [
+        "astonishment",
+        "surprise",
+        "ambiguous-emotion",
+        "stupefaction"
+      ],
+      "mystify": [
+        "astonishment",
+        "surprise",
+        "ambiguous-emotion",
+        "stupefaction"
+      ],
+      "baffle": [
+        "astonishment",
+        "surprise",
+        "ambiguous-emotion",
+        "stupefaction"
+      ],
+      "beat": [
+        "astonishment",
+        "surprise",
+        "ambiguous-emotion",
+        "stupefaction"
+      ],
+      "bewilder": [
+        "astonishment",
+        "surprise",
+        "ambiguous-emotion",
+        "stupefaction"
+      ],
+      "flummox": [
+        "astonishment",
+        "surprise",
+        "ambiguous-emotion",
+        "stupefaction"
+      ],
+      "nonplus": [
+        "astonishment",
+        "surprise",
+        "ambiguous-emotion",
+        "stupefaction"
+      ],
+      "dumbfound": [
+        "astonishment",
+        "surprise",
+        "ambiguous-emotion",
+        "stupefaction"
+      ],
+      "trounce": [
+        "astonishment",
+        "surprise",
+        "ambiguous-emotion",
+        "stupefaction"
+      ],
+      "besot": [
+        "astonishment",
+        "surprise",
+        "ambiguous-emotion",
+        "stupefaction"
+      ],
+      "sulk": [
+        "general-dislike",
+        "hostility",
+        "resentment",
+        "hate",
+        "sulkiness",
+        "negative-emotion"
+      ],
+      "pout": [
+        "general-dislike",
+        "hostility",
+        "resentment",
+        "hate",
+        "negative-emotion",
+        "sulkiness"
+      ],
+      "grizzle": [
+        "general-dislike",
+        "hostility",
+        "resentment",
+        "hate",
+        "negative-emotion",
+        "sulkiness"
+      ],
+      "tickle": [
+        "exhilaration",
+        "joy",
+        "positive-emotion",
+        "titillation"
+      ],
+      "titillate": [
+        "exhilaration",
+        "joy",
+        "positive-emotion",
+        "titillation"
+      ],
+      "marvel": [
+        "astonishment",
+        "surprise",
+        "ambiguous-emotion",
+        "wonder"
+      ],
+      "admirably": [
+        "liking",
+        "positive-emotion",
+        "admiration"
+      ],
+      "laudably": [
+        "liking",
+        "positive-emotion",
+        "admiration"
+      ],
+      "praiseworthily": [
+        "liking",
+        "positive-emotion",
+        "admiration"
+      ],
+      "commendable": [
+        "liking",
+        "positive-emotion",
+        "admiration"
+      ],
+      "amicably": [
+        "friendliness",
+        "liking",
+        "positive-emotion",
+        "amicability"
+      ],
+      "angrily": [
+        "general-dislike",
+        "negative-emotion",
+        "anger"
+      ],
+      "anxiously": [
+        "negative-emotion",
+        "negative-fear",
+        "apprehension"
+      ],
+      "uneasily": [
+        "negative-emotion",
+        "negative-fear",
+        "apprehension"
+      ],
+      "apprehensively": [
+        "negative-emotion",
+        "negative-fear",
+        "apprehension"
+      ],
+      "apathetically": [
+        "neutral-emotion",
+        "apathy"
+      ],
+      "ruefully": [
+        "sorrow",
+        "regret-sorrow",
+        "negative-emotion",
+        "sadness",
+        "attrition"
+      ],
+      "contritely": [
+        "sorrow",
+        "regret-sorrow",
+        "negative-emotion",
+        "sadness",
+        "attrition"
+      ],
+      "remorsefully": [
+        "sorrow",
+        "regret-sorrow",
+        "negative-emotion",
+        "sadness",
+        "attrition"
+      ],
+      "belligerently": [
+        "general-dislike",
+        "hate",
+        "negative-emotion",
+        "hostility"
+      ],
+      "hostilely": [
+        "general-dislike",
+        "hate",
+        "negative-emotion",
+        "hostility"
+      ],
+      "with hostility": [
+        "general-dislike",
+        "hate",
+        "negative-emotion",
+        "hostility"
+      ],
+      "beneficially": [
+        "love",
+        "benevolence",
+        "positive-emotion",
+        "beneficence"
+      ],
+      "benevolently": [
+        "love",
+        "positive-emotion",
+        "benevolence"
+      ],
+      "calmly": [
+        "positive-emotion",
+        "calmness"
+      ],
+      "cheerfully": [
+        "joy",
+        "positive-emotion",
+        "cheerfulness"
+      ],
+      "cheerlessly": [
+        "negative-emotion",
+        "sadness",
+        "cheerlessness"
+      ],
+      "near": [
+        "joy",
+        "positive-emotion",
+        "belonging",
+        "closeness"
+      ],
+      "nigh": [
+        "joy",
+        "positive-emotion",
+        "belonging",
+        "closeness"
+      ],
+      "comfortably": [
+        "joy",
+        "positive-emotion",
+        "belonging",
+        "comfortableness"
+      ],
+      "compatibly": [
+        "sympathy",
+        "liking",
+        "positive-emotion",
+        "compatibility"
+      ],
+      "confusedly": [
+        "embarrassment",
+        "negative-emotion",
+        "shame",
+        "confusion"
+      ],
+      "enviously": [
+        "general-dislike",
+        "hostility",
+        "resentment",
+        "hate",
+        "negative-emotion",
+        "envy",
+        "jealousy"
+      ],
+      "covetously": [
+        "general-dislike",
+        "hostility",
+        "resentment",
+        "hate",
+        "negative-emotion",
+        "envy",
+        "jealousy"
+      ],
+      "jealously": [
+        "general-dislike",
+        "hostility",
+        "resentment",
+        "hate",
+        "negative-emotion",
+        "envy",
+        "jealousy"
+      ],
+      "cruelly": [
+        "heartlessness",
+        "negative-unconcern",
+        "negative-emotion",
+        "negative-fear",
+        "cruelty"
+      ],
+      "dazzlingly": [
+        "negative-emotion",
+        "daze"
+      ],
+      "despairingly": [
+        "depression",
+        "negative-emotion",
+        "sadness",
+        "despondency"
+      ],
+      "despondently": [
+        "depression",
+        "negative-emotion",
+        "sadness",
+        "despondency"
+      ],
+      "diffidently": [
+        "timidity",
+        "negative-emotion",
+        "negative-fear",
+        "diffidence"
+      ],
+      "disgustedly": [
+        "general-dislike",
+        "disgust",
+        "dislike",
+        "negative-emotion"
+      ],
+      "disgustingly": [
+        "general-dislike",
+        "dislike",
+        "negative-emotion",
+        "disgust"
+      ],
+      "distastefully": [
+        "general-dislike",
+        "dislike",
+        "negative-emotion",
+        "disgust"
+      ],
+      "revoltingly": [
+        "general-dislike",
+        "dislike",
+        "negative-emotion",
+        "disgust"
+      ],
+      "sickeningly": [
+        "general-dislike",
+        "dislike",
+        "negative-emotion",
+        "disgust"
+      ],
+      "displeasingly": [
+        "general-dislike",
+        "anger",
+        "annoyance",
+        "negative-emotion",
+        "displeasure"
+      ],
+      "worryingly": [
+        "anxiety",
+        "negative-emotion",
+        "distress"
+      ],
+      "painfully": [
+        "anxiety",
+        "negative-emotion",
+        "distress"
+      ],
+      "distressingly": [
+        "anxiety",
+        "negative-emotion",
+        "distress"
+      ],
+      "distressfully": [
+        "anxiety",
+        "negative-emotion",
+        "distress"
+      ],
+      "dolefully": [
+        "sorrow",
+        "negative-emotion",
+        "sadness",
+        "regret-sorrow"
+      ],
+      "sorrowfully": [
+        "negative-emotion",
+        "sadness",
+        "regret-sorrow",
+        "sorrow"
+      ],
+      "eagerly": [
+        "enthusiasm",
+        "positive-emotion",
+        "eagerness"
+      ],
+      "thirstily": [
+        "enthusiasm",
+        "positive-emotion",
+        "eagerness"
+      ],
+      "seriously": [
+        "gravity",
+        "ambiguous-emotion",
+        "earnestness"
+      ],
+      "earnestly": [
+        "gravity",
+        "ambiguous-emotion",
+        "earnestness"
+      ],
+      "in earnest": [
+        "gravity",
+        "ambiguous-emotion",
+        "earnestness"
+      ],
+      "easily": [
+        "calmness",
+        "tranquillity",
+        "positive-emotion",
+        "easiness"
+      ],
+      "embarrassingly": [
+        "negative-emotion",
+        "shame",
+        "embarrassment"
+      ],
+      "sympathetically": [
+        "liking",
+        "positive-emotion",
+        "sympathy"
+      ],
+      "empathetically": [
+        "liking",
+        "positive-emotion",
+        "sympathy"
+      ],
+      "with sympathy": [
+        "liking",
+        "positive-emotion",
+        "sympathy"
+      ],
+      "with empathy": [
+        "liking",
+        "positive-emotion",
+        "sympathy"
+      ],
+      "encouragingly": [
+        "positive-hope",
+        "positive-emotion",
+        "encouragement"
+      ],
+      "enthusiastically": [
+        "positive-emotion",
+        "enthusiasm"
+      ],
+      "enviably": [
+        "general-dislike",
+        "hostility",
+        "resentment",
+        "hate",
+        "negative-emotion",
+        "envy"
+      ],
+      "expectantly": [
+        "ambiguous-emotion",
+        "ambiguous-expectation"
+      ],
+      "ebulliently": [
+        "enthusiasm",
+        "positive-emotion",
+        "exuberance"
+      ],
+      "exuberantly": [
+        "exuberance",
+        "positive-emotion",
+        "enthusiasm"
+      ],
+      "expansively": [
+        "enthusiasm",
+        "positive-emotion",
+        "exuberance"
+      ],
+      "riotously": [
+        "enthusiasm",
+        "positive-emotion",
+        "exuberance"
+      ],
+      "exultantly": [
+        "joy",
+        "positive-emotion",
+        "exultation"
+      ],
+      "exultingly": [
+        "joy",
+        "positive-emotion",
+        "exultation"
+      ],
+      "favorably": [
+        "approval",
+        "liking",
+        "positive-emotion",
+        "favor"
+      ],
+      "favourably": [
+        "approval",
+        "liking",
+        "positive-emotion",
+        "favor"
+      ],
+      "fearfully": [
+        "negative-emotion",
+        "negative-fear"
+      ],
+      "fearlessly": [
+        "positive-emotion",
+        "fearlessness"
+      ],
+      "dauntlessly": [
+        "positive-emotion",
+        "fearlessness"
+      ],
+      "intrepidly": [
+        "positive-emotion",
+        "fearlessness"
+      ],
+      "feverishly": [
+        "ambiguous-expectation",
+        "ambiguous-emotion",
+        "fever"
+      ],
+      "forlornly": [
+        "negative-emotion",
+        "sadness",
+        "forlornness"
+      ],
+      "furiously": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "infuriation"
+      ],
+      "gloatingly": [
+        "satisfaction",
+        "contentment",
+        "joy",
+        "positive-emotion",
+        "gloat"
+      ],
+      "gloomily": [
+        "negative-emotion",
+        "sadness",
+        "melancholy",
+        "gloom"
+      ],
+      "appreciatively": [
+        "positive-emotion",
+        "gratitude"
+      ],
+      "gratefully": [
+        "positive-emotion",
+        "gratitude"
+      ],
+      "grievously": [
+        "sorrow",
+        "lost-sorrow",
+        "negative-emotion",
+        "sadness",
+        "grief"
+      ],
+      "happily": [
+        "joy",
+        "positive-emotion",
+        "happiness"
+      ],
+      "merrily": [
+        "joy",
+        "positive-emotion",
+        "happiness"
+      ],
+      "mirthfully": [
+        "joy",
+        "positive-emotion",
+        "happiness"
+      ],
+      "gayly": [
+        "joy",
+        "positive-emotion",
+        "happiness"
+      ],
+      "blithely": [
+        "joy",
+        "positive-emotion",
+        "happiness"
+      ],
+      "jubilantly": [
+        "joy",
+        "positive-emotion",
+        "happiness"
+      ],
+      "with happiness": [
+        "joy",
+        "positive-emotion",
+        "happiness"
+      ],
+      "hatefully": [
+        "general-dislike",
+        "negative-emotion",
+        "hate"
+      ],
+      "heartlessly": [
+        "negative-unconcern",
+        "negative-emotion",
+        "negative-fear",
+        "heartlessness"
+      ],
+      "hesitantly": [
+        "diffidence",
+        "timidity",
+        "negative-emotion",
+        "negative-fear",
+        "hesitance"
+      ],
+      "hesitatingly": [
+        "diffidence",
+        "timidity",
+        "negative-emotion",
+        "negative-fear",
+        "hesitance"
+      ],
+      "hilariously": [
+        "merriment",
+        "joy",
+        "positive-emotion",
+        "hilarity"
+      ],
+      "uproariously": [
+        "merriment",
+        "joy",
+        "positive-emotion",
+        "hilarity"
+      ],
+      "hopefully": [
+        "positive-emotion",
+        "positive-hope",
+        "hopefulness"
+      ],
+      "dispiritedly": [
+        "despair",
+        "negative-emotion",
+        "hopelessness"
+      ],
+      "hopelessly": [
+        "negative-emotion",
+        "despair",
+        "hopelessness"
+      ],
+      "horrifyingly": [
+        "negative-emotion",
+        "negative-fear",
+        "horror"
+      ],
+      "dreadfully": [
+        "negative-emotion",
+        "negative-fear",
+        "horror"
+      ],
+      "awfully": [
+        "negative-emotion",
+        "negative-fear",
+        "horror"
+      ],
+      "horribly": [
+        "negative-emotion",
+        "negative-fear",
+        "horror"
+      ],
+      "hideously": [
+        "negative-emotion",
+        "negative-fear",
+        "horror"
+      ],
+      "horridly": [
+        "negative-emotion",
+        "negative-fear",
+        "horror"
+      ],
+      "monstrously": [
+        "negative-emotion",
+        "negative-fear",
+        "horror"
+      ],
+      "huffily": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "huffiness"
+      ],
+      "humiliatingly": [
+        "negative-emotion",
+        "humility"
+      ],
+      "demeaningly": [
+        "negative-emotion",
+        "humility"
+      ],
+      "hysterically": [
+        "negative-emotion",
+        "negative-fear",
+        "hysteria"
+      ],
+      "impatiently": [
+        "anxiety",
+        "fidget",
+        "negative-emotion",
+        "negative-agitation",
+        "impatience"
+      ],
+      "with impatience": [
+        "anxiety",
+        "fidget",
+        "negative-emotion",
+        "negative-agitation",
+        "impatience"
+      ],
+      "indifferently": [
+        "neutral-unconcern",
+        "neutral-emotion",
+        "indifference"
+      ],
+      "indignantly": [
+        "general-dislike",
+        "anger",
+        "negative-emotion",
+        "indignation"
+      ],
+      "insecurely": [
+        "anxiety",
+        "negative-emotion",
+        "insecurity"
+      ],
+      "gleefully": [
+        "positive-emotion",
+        "joy"
+      ],
+      "joyously": [
+        "positive-emotion",
+        "joy"
+      ],
+      "joyfully": [
+        "positive-emotion",
+        "joy"
+      ],
+      "joylessly": [
+        "cheerlessness",
+        "negative-emotion",
+        "sadness",
+        "joylessness"
+      ],
+      "languorously": [
+        "apathy",
+        "neutral-emotion",
+        "neutral-languor"
+      ],
+      "lividly": [
+        "general-dislike",
+        "anger",
+        "fury",
+        "negative-emotion",
+        "lividity"
+      ],
+      "fondly": [
+        "positive-emotion",
+        "love"
+      ],
+      "lovingly": [
+        "positive-emotion",
+        "love"
+      ],
+      "adorably": [
+        "positive-emotion",
+        "love"
+      ],
+      "endearingly": [
+        "positive-emotion",
+        "love"
+      ],
+      "malevolently": [
+        "general-dislike",
+        "hate",
+        "negative-emotion",
+        "malevolence"
+      ],
+      "maliciously": [
+        "general-dislike",
+        "malevolence",
+        "hate",
+        "negative-emotion",
+        "malice"
+      ],
+      "mercifully": [
+        "compassion",
+        "negative-emotion",
+        "mercifulness"
+      ],
+      "with mercy": [
+        "compassion",
+        "negative-emotion",
+        "mercifulness"
+      ],
+      "showing mercy": [
+        "compassion",
+        "negative-emotion",
+        "mercifulness"
+      ],
+      "miserably": [
+        "negative-emotion",
+        "sadness",
+        "misery"
+      ],
+      "mournfully": [
+        "sorrow",
+        "lost-sorrow",
+        "negative-emotion",
+        "sadness",
+        "mournfulness"
+      ],
+      "amok": [
+        "general-dislike",
+        "hate",
+        "negative-emotion",
+        "murderousness"
+      ],
+      "amuck": [
+        "general-dislike",
+        "hate",
+        "negative-emotion",
+        "murderousness"
+      ],
+      "murderously": [
+        "general-dislike",
+        "hate",
+        "negative-emotion",
+        "murderousness"
+      ],
+      "oppressively": [
+        "depression",
+        "negative-emotion",
+        "sadness",
+        "oppression"
+      ],
+      "optimistically": [
+        "positive-hope",
+        "positive-emotion",
+        "optimism"
+      ],
+      "peaceably": [
+        "calmness",
+        "tranquillity",
+        "positive-emotion",
+        "peace"
+      ],
+      "pacifically": [
+        "calmness",
+        "tranquillity",
+        "positive-emotion",
+        "peace"
+      ],
+      "pensively": [
+        "ambiguous-emotion",
+        "pensiveness"
+      ],
+      "pessimistically": [
+        "despair",
+        "negative-emotion",
+        "pessimism"
+      ],
+      "placidly": [
+        "calmness",
+        "positive-emotion",
+        "placidity"
+      ],
+      "plaintively": [
+        "sorrow",
+        "lost-sorrow",
+        "negative-emotion",
+        "sadness",
+        "mournfulness",
+        "plaintiveness"
+      ],
+      "proudly": [
+        "satisfaction",
+        "contentment",
+        "joy",
+        "positive-emotion",
+        "satisfaction-pride"
+      ],
+      "with pride": [
+        "satisfaction",
+        "contentment",
+        "joy",
+        "positive-emotion",
+        "satisfaction-pride"
+      ],
+      "protectively": [
+        "affection",
+        "positive-emotion",
+        "protectiveness"
+      ],
+      "giving protection": [
+        "affection",
+        "positive-emotion",
+        "protectiveness"
+      ],
+      "offering protection": [
+        "affection",
+        "positive-emotion",
+        "protectiveness"
+      ],
+      "penitently": [
+        "sorrow",
+        "compunction",
+        "regret-sorrow",
+        "negative-emotion",
+        "sadness",
+        "repentance"
+      ],
+      "penitentially": [
+        "sorrow",
+        "compunction",
+        "regret-sorrow",
+        "negative-emotion",
+        "sadness",
+        "repentance"
+      ],
+      "repentantly": [
+        "sorrow",
+        "compunction",
+        "regret-sorrow",
+        "negative-emotion",
+        "sadness",
+        "repentance"
+      ],
+      "detestably": [
+        "general-dislike",
+        "dislike",
+        "disgust",
+        "negative-emotion",
+        "repugnance"
+      ],
+      "repulsively": [
+        "general-dislike",
+        "dislike",
+        "disgust",
+        "negative-emotion",
+        "repugnance"
+      ],
+      "abominably": [
+        "general-dislike",
+        "dislike",
+        "disgust",
+        "negative-emotion",
+        "repugnance"
+      ],
+      "odiously": [
+        "general-dislike",
+        "dislike",
+        "disgust",
+        "negative-emotion",
+        "repugnance"
+      ],
+      "resentfully": [
+        "general-dislike",
+        "hostility",
+        "hate",
+        "negative-emotion",
+        "resentment"
+      ],
+      "abjectly": [
+        "despair",
+        "negative-emotion",
+        "resignation"
+      ],
+      "resignedly": [
+        "negative-emotion",
+        "despair",
+        "resignation"
+      ],
+      "reverentially": [
+        "ambiguous-fear",
+        "ambiguous-emotion",
+        "reverence"
+      ],
+      "reverently": [
+        "ambiguous-fear",
+        "ambiguous-emotion",
+        "reverence"
+      ],
+      "deplorably": [
+        "sorrow",
+        "lost-sorrow",
+        "negative-emotion",
+        "sadness",
+        "mournfulness",
+        "woe"
+      ],
+      "lamentably": [
+        "sorrow",
+        "lost-sorrow",
+        "negative-emotion",
+        "sadness",
+        "mournfulness",
+        "woe"
+      ],
+      "sadly": [
+        "negative-emotion",
+        "sadness"
+      ],
+      "woefully": [
+        "sorrow",
+        "lost-sorrow",
+        "negative-emotion",
+        "sadness",
+        "mournfulness",
+        "woe"
+      ],
+      "gratifyingly": [
+        "contentment",
+        "joy",
+        "positive-emotion",
+        "satisfaction"
+      ],
+      "satisfyingly": [
+        "contentment",
+        "joy",
+        "positive-emotion",
+        "satisfaction"
+      ],
+      "satisfactorily": [
+        "contentment",
+        "joy",
+        "positive-emotion",
+        "satisfaction"
+      ],
+      "frighteningly": [
+        "negative-emotion",
+        "negative-fear",
+        "scare"
+      ],
+      "scarily": [
+        "negative-emotion",
+        "negative-fear",
+        "scare"
+      ],
+      "reassuringly": [
+        "fearlessness",
+        "positive-emotion",
+        "security"
+      ],
+      "self-consciously": [
+        "embarrassment",
+        "negative-emotion",
+        "shame",
+        "self-consciousness"
+      ],
+      "sensationally": [
+        "ambiguous-agitation",
+        "stir",
+        "ambiguous-emotion",
+        "sensation"
+      ],
+      "disgracefully": [
+        "negative-emotion",
+        "shame"
+      ],
+      "ingloriously": [
+        "negative-emotion",
+        "shame"
+      ],
+      "ignominiously": [
+        "negative-emotion",
+        "shame"
+      ],
+      "discreditably": [
+        "negative-emotion",
+        "shame"
+      ],
+      "shamefully": [
+        "negative-emotion",
+        "shame"
+      ],
+      "dishonorably": [
+        "negative-emotion",
+        "shame"
+      ],
+      "dishonourably": [
+        "negative-emotion",
+        "shame"
+      ],
+      "shamefacedly": [
+        "embarrassment",
+        "negative-emotion",
+        "shame",
+        "shamefacedness"
+      ],
+      "solicitously": [
+        "anxiety",
+        "negative-emotion",
+        "solicitude"
+      ],
+      "amazingly": [
+        "astonishment",
+        "surprise",
+        "ambiguous-emotion",
+        "surprise"
+      ],
+      "surprisingly": [
+        "astonishment",
+        "surprise",
+        "ambiguous-emotion"
+      ],
+      "astonishingly": [
+        "astonishment",
+        "surprise",
+        "ambiguous-emotion",
+        "surprise"
+      ],
+      "surprisedly": [
+        "astonishment",
+        "surprise",
+        "ambiguous-emotion",
+        "surprise"
+      ],
+      "tenderly": [
+        "compassion",
+        "negative-emotion",
+        "tenderness"
+      ],
+      "shyly": [
+        "negative-emotion",
+        "negative-fear",
+        "timidity"
+      ],
+      "timidly": [
+        "negative-emotion",
+        "negative-fear",
+        "timidity"
+      ],
+      "bashfully": [
+        "negative-emotion",
+        "negative-fear",
+        "timidity"
+      ],
+      "tranquilly": [
+        "calmness",
+        "positive-emotion",
+        "tranquillity"
+      ],
+      "timorously": [
+        "apprehension",
+        "negative-emotion",
+        "negative-fear",
+        "trepidation"
+      ],
+      "trepidly": [
+        "apprehension",
+        "negative-emotion",
+        "negative-fear",
+        "trepidation"
+      ],
+      "triumphantly": [
+        "joy",
+        "exultation",
+        "positive-emotion",
+        "triumph"
+      ],
+      "unassertively": [
+        "diffidence",
+        "timidity",
+        "negative-emotion",
+        "negative-fear",
+        "unassertiveness"
+      ],
+      "unconcernedly": [
+        "neutral-emotion",
+        "neutral-unconcern"
+      ],
+      "revengefully": [
+        "general-dislike",
+        "malevolence",
+        "hate",
+        "negative-emotion",
+        "vindictiveness"
+      ],
+      "vengefully": [
+        "general-dislike",
+        "malevolence",
+        "hate",
+        "negative-emotion",
+        "vindictiveness"
+      ],
+      "vindictively": [
+        "general-dislike",
+        "malevolence",
+        "hate",
+        "negative-emotion",
+        "vindictiveness"
+      ],
+      "wonderfully": [
+        "astonishment",
+        "surprise",
+        "ambiguous-emotion",
+        "wonder"
+      ],
+      "wondrously": [
+        "astonishment",
+        "surprise",
+        "ambiguous-emotion",
+        "wonder"
+      ],
+      "superbly": [
+        "astonishment",
+        "surprise",
+        "ambiguous-emotion",
+        "wonder"
+      ],
+      "toppingly": [
+        "astonishment",
+        "surprise",
+        "ambiguous-emotion",
+        "wonder"
+      ],
+      "marvellously": [
+        "astonishment",
+        "surprise",
+        "ambiguous-emotion",
+        "wonder"
+      ],
+      "terrifically": [
+        "astonishment",
+        "surprise",
+        "ambiguous-emotion",
+        "wonder"
+      ],
+      "marvelously": [
+        "astonishment",
+        "surprise",
+        "ambiguous-emotion",
+        "wonder"
+      ],
+      "wrathfully": [
+        "general-dislike",
+        "anger",
+        "fury",
+        "negative-emotion",
+        "wrath"
+      ]
+    }
+  }
+}

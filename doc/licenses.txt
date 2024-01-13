@@ -67,8 +67,7 @@ https://sraf.nd.edu/loughranmcdonald-master-dictionary/
 #OpinionLexicon (Hu and Liu, 2004)
 
 Custom License 
-; This file and the papers can all be downloaded from 
-;    http://www.cs.uic.edu/~liub/FBS/sentiment-analysis.html
+; This file and the papers can all be downloaded from http://www.cs.uic.edu/~liub/FBS/sentiment-analysis.html.
 ;
 ; If you use this list, please cite the following paper:
 ;
