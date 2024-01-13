@@ -8,14 +8,14 @@
 
 ## Overview 
 
-Sentiment analysis is the automated process of identifying and extracting subjective information such as opinions, emotions, and attitudes from textual data. It has become an increasingly critical technique across many social science domains such as business, politics, and economics. 
+Sentiment analysis, the automated process of identifying and extracting subjective information like opinions, emotions, and attitudes from text data, has become an increasingly critical technique across social science domains. In particular, rule-based sentiment analysis relies on expert-curated lexicons containing words with pre-assigned sentiment scores.
 
-However, sentiment analysis today faces key challenges:
+However, creating effective rule-based systems faces several challenges::
 - Disparate, fragmented resources requiring laborious integration
 - Lack of verified, high-quality lexicons spanning domains
 - Inaccessibility limiting transparency and advancement
 
-**`sentibank` tackles these issues by consolidating lexicons into an integrated, open-source database**
+**`sentibank` tackles these issues by consolidating lexicons into an integrated, open-source database**. With a unified library of expert-curated lexicons consolidated into a single open database, this knowledge base empowers more effective rule-based sentiment analysis. Additionally, the open access fosters ongoing quality improvement through community participation.
 
 ## Key Capabilities 
 
@@ -46,7 +46,7 @@ load = archive.load()
 vader = load.dict("VADER_v2014") 
 ```
 
-The predefined lexicon identifiers follow the convention {NAME}_{VERSION} - for example, "VADER_v2014". This naming structure indicates the lexicon name and its version for easy recognition and selection. 
+The predefined lexicon identifiers follow either a `{NAME}_{VERSION}` convention, meaning only compulsory processing was completed on the base lexicon, or a `{NAME}_{VERSION}_{refined}` structure specifying additional transformations that represent discretionary refinements. For example, `NoVAD_v2013_adjusted` applies arousal-based adjustments to intensify extreme valence values and dampen neutral ones, providing a richness-preserving single score.
 
 See below for the available predefined lexicon identifier.
 
@@ -55,12 +55,12 @@ See below for the available predefined lexicon identifier.
 |**AFINN** <br> (Nielsen, 2011)| General purpose lexicon with sentiment ratings for common emotion words. |Social Media|General| `AFINN_v2009`, `AFINN_v2011`, `AFINN_v2015` |
 |**Aigents+** <br> (Raheman et al., 2022)| Lexicon optimised for social media posts related to cryptocurrencies. |Social Media|Cryptocurrency| `Aigents+_v2022`|
 |**ANEW** <br> (Bradley and Lang, 1999)| Provides normative emotional ratings across pleasure, arousal, and dominance dimensions.|General|Psychology|`ANEW_v1999_simple`, `ANEW_v1999_weighted`|
-|**Dictionary of Affect in Language (DAL)** <br> (Whissell, 1989; Whissell, 2009)| Lexicon designed to quantify pleasantness, activation, and imagery dimensions across diverse everyday English words. | General | General | `DAL_v2009_boosted`, `DAL_v2009_norm` |
+|**Dictionary of Affect in Language (DAL)** <br> (Whissell, 1989; Whissell, 2009)| Lexicon designed to quantify pleasantness, activation, and imagery dimensions across diverse everyday English words. | Vernacular (Day-to-Day Expression) | General | `DAL_v2009_boosted`, `DAL_v2009_norm` |
 |**Discrete Emotions Dictionary (DED)** <br> (Fioroni et al., 2022)| Lexicon focused on precisely distinguishing four key discrete emotions in political communication | News | Political Science | `DED_v2022` |
 |**General Inquirer** <br> (Stone et al., 1962)| Lexicon capturing broad psycholinguistic dimensions across semantics, values and motivations.  |General|Psychology, Political Science| `HarvardGI_v2000`|
 |**Henry** <br> (Henry, 2006) | Leixcon designed for analysing tone in earnings press releases. |Corporate Communication (Earnings Press Releases)|Finance| `Henry_v2006`|
 |**MASTER** <br> (Loughran and McDonland, 2011; Bodnaruk, Loughran and McDonald, 2015)| Financial lexicons covering expressions common in business writing. |Regulatory Filings (10-K)|Finance| `MASTER_v2022`|
-|**Norms of Valence, Arousal and Dominance (NoVAD)** <br> (Warriner, Kuperman and Brysbaert, 2013; Warriner and Kuperman, 2014)| A lexicon of 14,000 common English lemmas across valence, arousal, and dominance dimensions.  | General | Psychology |  `NoVAD_v2013_adjusted`, `NoVAD_v2013_bidimensional`|
+|**Norms of Valence, Arousal and Dominance (NoVAD)** <br> (Warriner, Kuperman and Brysbaert, 2013; Warriner and Kuperman, 2014)| A lexicon of 14,000 common English lemmas across valence, arousal, and dominance dimensions.  | Vernacular (Day-to-Day Expression) | General, Psychology |  `NoVAD_v2013_adjusted`, `NoVAD_v2013_bidimensional`|
 |**OpinionLexicon** <br> (Hu and Liu, 2004)| Opinion words tailored for sentiment analysis of product reviews.|Product Reviews|Consumer Products|`OpinionLexicon_v2004`|
 |**SenticNet** <br> (Cambria et al., 2010; Cambria, Havasi and Hussain, 2012; Cambria, Olsher and Rajagopal, 2014; Cambria et al., 2016; Cambria et al., 2018; Cambria et al., 2020; Cambria et al., 2022) | Conceptual lexicon providing multidimensional sentiment analysis for commonsense concepts and expressions. | General | General | `SenticNet_v2010`, `SenticNet_v2012`, `SenticNet_v2012_attributes`, `SenticNet_v2012_semantics`, `SenticNet_v2014`, `SenticNet_v2014_attributes`, `SenticNet_v2014_semantics`, `SenticNet_v2016`, `SenticNet_v2016_attributes`, `SenticNet_v2016_mood`, `SenticNet_v2016_semantics`, `SenticNet_v2018`, `SenticNet_v2018_attributes`, `SenticNet_v2018_mood`, `SenticNet_v2018_semantics`, `SenticNet_v2020`, `SenticNet_v2020_attributes`, `SenticNet_v2020_mood`, `SenticNet_v2020_semantics`, `SenticNet_v2022`, `SenticNet_v2022_attributes`, `SenticNet_v2022_mood`, `SenticNet_v2022_semantics` |
 |**SentiWordNet** <br> (Esuli and Sebastiani, 2006; Baccianella, Esuli and Sebastiani, 2010)| Lexicon associating WordNet synsets with positive, negative, and objective scores. |General|General| `SentiWordNet_v2010_logtransform`, `SentiWordNet_v2010_simple`|
