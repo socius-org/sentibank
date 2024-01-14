@@ -19,7 +19,7 @@ However, creating effective rule-based systems faces several challenges::
 
 ## Key Capabilities 
 
-- **14+ (and counting) sentiment dictionaries** spanning domains and use cases
+- **15+ (and counting) sentiment dictionaries** spanning domains and use cases
 - Curation of dictionaries provided by **leading experts** in sentiment analysis
 - Access **original lexicons** and **preprocessed versions**
 - Customise existing dictionaries or contribute new ones
@@ -64,6 +64,7 @@ See below for the available predefined lexicon identifier.
 |**OpinionLexicon** <br> (Hu and Liu, 2004)| Opinion words tailored for sentiment analysis of product reviews.|Product Reviews|Consumer Products|`OpinionLexicon_v2004`|
 |**SenticNet** <br> (Cambria et al., 2010; Cambria, Havasi and Hussain, 2012; Cambria, Olsher and Rajagopal, 2014; Cambria et al., 2016; Cambria et al., 2018; Cambria et al., 2020; Cambria et al., 2022) | Conceptual lexicon providing multidimensional sentiment analysis for commonsense concepts and expressions. | General | General | `SenticNet_v2010`, `SenticNet_v2012`, `SenticNet_v2012_attributes`, `SenticNet_v2012_semantics`, `SenticNet_v2014`, `SenticNet_v2014_attributes`, `SenticNet_v2014_semantics`, `SenticNet_v2016`, `SenticNet_v2016_attributes`, `SenticNet_v2016_mood`, `SenticNet_v2016_semantics`, `SenticNet_v2018`, `SenticNet_v2018_attributes`, `SenticNet_v2018_mood`, `SenticNet_v2018_semantics`, `SenticNet_v2020`, `SenticNet_v2020_attributes`, `SenticNet_v2020_mood`, `SenticNet_v2020_semantics`, `SenticNet_v2022`, `SenticNet_v2022_attributes`, `SenticNet_v2022_mood`, `SenticNet_v2022_semantics` |
 |**SentiWordNet** <br> (Esuli and Sebastiani, 2006; Baccianella, Esuli and Sebastiani, 2010)| Lexicon associating WordNet synsets with positive, negative, and objective scores. |General|General| `SentiWordNet_v2010_logtransform`, `SentiWordNet_v2010_simple`|
+| **SO-CAL** <br> (Taboada et al., 2011) | Lexicon designed for domain-independent sentiment analysis. | General | General | `SO-CAL_v2011` |
 |**VADER** <br> (Hutto and Gilbert, 2014)| General purpose lexicon optimised for social media and microblogs. |Social Media|General| `VADER_v2014`|
 |**WordNet-Affect** <br> (Strapparava and Valitutti, 2004; Valitutti, Strapparava and Stock, 2004; Strapparava, Valitutti and Stock, 2006)| Hierarchically organised affective labels providing a  granular emotional dimension. |General|Psychology| `WordNet-Affect_v2006`|
 
