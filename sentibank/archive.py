@@ -85,6 +85,7 @@ class load:
             "SenticNet_v2022_attributes": "SenticNet",
             "SenticNet_v2022_mood": "SenticNet",
             "SenticNet_v2022_semantics": "SenticNet",
+            "SO-CAL_v2011": "SO_CAL"
         }
         
         if idx in lexicon_paths:
@@ -155,6 +156,7 @@ class load:
             "SenticNet_v2022_attributes": "SenticNet",
             "SenticNet_v2022_mood": "SenticNet",
             "SenticNet_v2022_semantics": "SenticNet",
+            "SO-CAL_v2011": "SO_CAL"
         }
         
         if idx in lexicon_paths:
@@ -208,6 +210,8 @@ class load:
             )
             if idx == "ANEW_v1999":
                 self.origin_df = pd.read_csv(file_path, index_col=['Word', 'Gender'])
+            elif idx == "SO-CAL_v2011": 
+                self.origin_df = pd.read_csv(file_path, index_col=['word', 'pos'])
             else:
                 self.origin_df = pd.read_csv(file_path)
         else:
