@@ -29,6 +29,7 @@
   ],
   "dateCreated": "2006",
   "dateModified": "2024",
+  "processed": "From the original word lists, no notable changes were made except removing the duplicate “leading” in the `Positive_Tone` word list.", 
   "data": {
     "@type": "Dictionary",
     "sentiment": {

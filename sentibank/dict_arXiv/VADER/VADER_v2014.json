@@ -35,6 +35,7 @@
   ],
   "dateCreated": "2014",
   "dateModified": "2024",
+  "processed": "The original VADER lexicon contained 15 duplicate entries. For most duplicates, such as 'fav' and 'lmao', we calculated average sample scores. However, the entries 'd:' and 'd=' had contradictory valence ratings: (i) 'd:' had scores of 1.2 (positive) and -2.9 (negative); (ii) 'd=' had scores of 1.5 (positive) and -3.0 (negative). Since both terms lean toward negative sentiment polarity, we removed the positive scores for 'd:' ('D:') and 'd=' ('D=') from the final lexicon. In general, averaging the duplicate ratings created a unified score. But with clear polarity conflicts like 'd:' and 'd=', we deferred to the predominant negative rating based on the term's apparent sentiment leaning. We also removed redundant uppercase emoticons and substituted two uncommon variants with their lowercase forms. This accounts for VADER comparing tokens in lowercase, ensuring consistency with the lexicon dictionary format: (i) VADER compares tokens in lowercase form. So we removed 7 uppercase emoticons ('-:O', '(:O', ':-D', ':D', ';D', '=-D', '=D') since their lowercase versions (':-o', '(:o', ':-d', ':d', ';d', '=-d', '=d') already existedl; and (ii) We substituted ':-Þ' and ':Þ' with their lowercase versions ':-þ' and ':þ' for consistency, since VADER checks the lowercase form. As a result, the first-pass processed VADER dictionary has 7,495 lexicons instead of 7,517.", 
   "data": {
     "@type": "Dictionary",
     "sentiment": {

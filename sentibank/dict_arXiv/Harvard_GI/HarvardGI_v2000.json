@@ -47,6 +47,7 @@
   ],
   "dateCreated": "2000",
   "dateModified": "2024",
+  "processed": "Drawing on the three resources, the General Inquirer introduced a new category called ‘Valence’, which provides positive and negative classifications to enable simple sentiment analysis. The Positive category contains 1,915 entries compiled from the source dictionaries, while the Negative category has 2,291 entries. By aggregating multiple existing lexicons, the Valence category offers broad coverage for classifying sentiment. From the 4,206 lexicons, there were 381 unigrams with duplicate entries. The majority of duplicates displayed consistent sentiment labels, allowing them to be consolidated into a single entry. However, 16 entries with conflicting labels were deleted due to their contextual ambiguation with sentiment signals. Consequently, the refined dictionary now comprises 3,610 entries.",
   "data": {
     "@type": "Dictionary",
     "sentiment": {

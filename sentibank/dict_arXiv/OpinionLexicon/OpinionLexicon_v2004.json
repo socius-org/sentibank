@@ -35,6 +35,7 @@
   ],
   "dateCreated": "2004",
   "dateModified": "2024",
+  "processed": "The original OpinionLexicon dictionary contained three duplicates - 'envious', 'enviously', and 'enviousness.' These words can convey both positive and negative sentiment depending on the context. As the orientation of these ambiguous terms depends on their usage, the duplicate entries were simply removed, resulting in a processed dictionary of 6,786 entries. It is notable that the authors intentionally included misspelt words in their dictionary. They observed such informal spellings frequently appear in social media content. By incorporating commonly used misspellings, the dictionary is tailored to analyse such informal texts.",
   "data": {
     "@type": "Dictionary",
     "sentiment": {
