@@ -1,4 +1,5 @@
 # sentibank
+[![DOI](https://zenodo.org/badge/673006895.svg)](https://zenodo.org/doi/10.5281/zenodo.10514542)
 [![License](https://img.shields.io/badge/License-CC--BY--NC--SA--4.0-green.svg?style=flat-square)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 [![Github Stars](https://img.shields.io/github/stars/socius-org/sentibank?style=flat-square&logo=github)](https://github.com/socius-org/sentibank)
 [![Github Watchers](https://img.shields.io/github/watchers/socius-org/sentibank?style=flat-square&logo=github)](https://github.com/socius-org/sentibank)
