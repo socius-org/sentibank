@@ -69,8 +69,6 @@ See below for the available predefined lexicon identifier.
 |**VADER** <br> (Hutto and Gilbert, 2014)| General purpose lexicon optimised for social media and microblogs. |Social Media|General| `VADER_v2014`|
 |**WordNet-Affect** <br> (Strapparava and Valitutti, 2004; Valitutti, Strapparava and Stock, 2004; Strapparava, Valitutti and Stock, 2006)| Hierarchically organised affective labels providing a  granular emotional dimension. |General|Psychology| `WordNet-Affect_v2006`|
 
-Refer [documentation](docs_link) for details on usage.
-
 ### Analyse Dictionaries
 
 Once you've loaded the sentiment dictionaries using `sentibank`, you can perform various analyses on them. The `lexical_overview` module provides insights into the structure and content of sentiment lexicons. Here's a quick example:
