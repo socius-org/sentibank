@@ -44,7 +44,7 @@ Contributions should meet the following criteria.
 > 
 > If any part of the process seem unclear, let us know. We're glad to advise on effective instructions, corpus creation, quality control, and any other annotation needs.
 > 
-> Feel free to reach out through nick.sh.oh@gmail.com to discuss best practices tailored to your goals. We look forward to hearing your ideas and providing customised support to make them a reality.
+> Feel free to reach out through research@socius.org to discuss best practices tailored to your goals. We look forward to hearing your ideas and providing customised support to make them a reality.
 > 
 > Our hope is for the criteria to inspire creative solutions, not deter participation. We're here to lower barriers and see new lexicons brought to life through thoughtful partnership.
 
