@@ -69,24 +69,6 @@ See below for the available predefined lexicon identifier.
 |**VADER** <br> (Hutto and Gilbert, 2014)| General purpose lexicon optimised for social media and microblogs. |Social Media|General| `VADER_v2014`|
 |**WordNet-Affect** <br> (Strapparava and Valitutti, 2004; Valitutti, Strapparava and Stock, 2004; Strapparava, Valitutti and Stock, 2006)| Hierarchically organised affective labels providing a  granular emotional dimension. |General|Psychology| `WordNet-Affect_v2006`|
 
-### Analyse Dictionaries
-
-Once you've loaded the sentiment dictionaries using `sentibank`, you can perform various analyses on them. The `lexical_overview` module provides insights into the structure and content of sentiment lexicons. Here's a quick example:
-
-```python
-from sentibank import archive
-from sentibank.utils import lexical_overview
-
-# Load dictionaries
-load = archive.load()
-vader = load.dict("VADER_v2014")
-
-# Analyse the loaded dictionary
-lexical_overview(vader)
-```
-
-This will provide you with a summary of the sentiment scores and lexicon structure. You can further explore and analyse other sentiment dictionaries using the same approach.
-
 ### Load Original Dictionaries
 
 In addition to preprocessed sentiment dictionaries, `sentibank` provides the capability to load the original datasets sourced directly from the authors, which were used in the creation of these sentiment dictionaries. These original datasets offer valuable insights into the raw sentiment data as originally curated by the authors and can be particularly beneficial for in-depth research and analysis.
@@ -102,6 +84,46 @@ vader_original = load.origin("VADER_v2014")
 ```
 
 This will load the original dataset associated with the VADER sentiment dictionary. You can replace "VADER_v2014" with other original dictionary identifiers. The loaded data will allow you to explore and analyse the original sentiment data directly.
+
+### Analyse Dictionaries
+
+The `analyze().dictionary` module provides insights into the structure and content of sentiment lexicons. Here's a quick example:
+
+```python
+from sentibank.utils import analyze
+
+# Analyse the dictionary
+analyze = analyze()
+analyze.dictionary(dictionary="WordNet-Affect_v2006")
+```
+
+This will provide you with a summary of the sentiment scores and lexicon structure. You can further explore and analyse other sentiment dictionaries using the same approach.
+
+### Analyse Sentiment
+
+The `analyze().sentiment` module performs sentiment analysis on text using the specified lexicon dictionary. It utilises a bag-of-words approach, analyzing the occurrence of terms without considering their order.
+
+For score-based lexicons like `VADER_v2014`, it sums the scores of matched terms and returns a single float/integer value reflecting overall sentiment. Higher scores indicate more positive/negative sentiment.
+
+```python
+from sentibank.utils import analyze
+
+# Analyse the dictionary
+analyze = analyze()
+text = "I am excited and happy about the new anouncement!"
+result = analyze.sentiment(text=text, dictionary="VADER_v2014")
+# The result would be +4.1
+```
+
+For label-based dictionaries like `HarvardGI_v2000`, it counts matched terms per sentiment category and returns a dictionary of those label counts. The category with the most matches indicates the dominant overall sentiment.
+
+```python
+text = "I am excited and happy to make this anouncement to our shareholders."
+result = analyze.sentiment(text=text, dictionary="MASTER_v2022")
+# The result would be {'Negative': 0,'Uncertainty': 0,'Constraining': 0,'Positive': 2,'Litigious': 0,'Weak_Modal': 0,'Strong_Modal': 0}
+```
+
+This allows flexible sentiment analysis tailored to different dictionary representations. Score-based lexicons provide a sentiment intensity metric, while label-based ones give a breakdown of sentiment types. The bag-of-words approach offers efficient broad-stroke analysis without syntactical sensitivity.
 
 ## Contributing 
 
