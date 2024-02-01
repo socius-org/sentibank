@@ -361,16 +361,42 @@ class analyze:
         pass
     
     def dictionary(self, dictionary: dict or str = None): 
-         if dictionary is None: 
+        """
+        Summarises sentiment information based on the provided lexicon dictionary.
+
+        Parameters:
+            dictionary (Union[dict, str]): The lexicon dictionary to be analyzed.
+                If a string, it loads the dictionary using the 'sentibank.archive.load().dict' method.
+
+        Raises:
+            ValueError: If 'dictionary' parameter is not provided.
+
+        Returns:
+            None
+        """
+        if dictionary is None: 
              raise ValueError("The 'dictionary' parameter must be provided.")
-         else: 
+        else: 
             if isinstance(dictionary, str): 
                 loaded_dictionary = load.dict(dictionary)
                 analysis().summarise_lex_dict(loaded_dictionary)
             elif isinstance(dictionary, dict): 
                 analysis().summarise_lex_dict(dictionary)
     
-    def sentiment(self, text: str, dictionary: str = None): 
+    def sentiment(self, text: str, dictionary: str = None):
+        """
+        Performs bag-of-words sentiment analysis on the given text using the specified lexicon dictionary.
+
+        Parameters:
+            text (str): The input text for sentiment analysis.
+            dictionary (str): The lexicon dictionary to be used for sentiment analysis.
+                Should be selected from the list of available options.
+
+        Returns:
+            Union[float, Dict[str, int]]: 
+                If the lexicon dictionary is score-based, returns the total sentiment score as a float.
+                If the lexicon dictionary is label-based, returns a dictionary with sentiment class counts.
+        """
         avaliable_dictionary = [
             "MASTER_v2022",
             "VADER_v2014",
@@ -459,7 +485,6 @@ class analyze:
             else:
                 lex_dict_type = "unknown"
         
-        pprint(lex_dict_type)
         # If score-based, calculate sentiment
         if lex_dict_type == "discrete" or lex_dict_type == "continuous":
             total_score = 0
@@ -469,7 +494,6 @@ class analyze:
                 )
                 if pattern.search(text.lower()):
                     total_score += value
-            pprint(total_score)
             return round(total_score, 4)
 
         # Else if label based, collect sentiment        
@@ -493,15 +517,12 @@ class analyze:
                 if pattern.search(text.lower()):
                     total_sentiment.append(value)
             
-            pprint(total_sentiment)
             class_counts = {word: 0 for word in sentiment_labels}
-            pprint(class_counts)
 
             # Count occurrences of each class in the list
             for class_name in total_sentiment:
                 class_counts[class_name] += 1
             
-            pprint(class_counts)
             return class_counts
         
         elif lex_dict_type == "categorical (multi-label)": 
@@ -855,15 +876,12 @@ class analyze:
                 if pattern.search(text.lower()):
                     total_sentiment.extend(value)
             
-            pprint(total_sentiment)
             class_counts = {word: 0 for word in sentiment_labels}
-            pprint(class_counts)
 
             # Count occurrences of each class in the list
             for class_name in total_sentiment:
                 class_counts[class_name] += 1
             
-            pprint(class_counts)
             return class_counts
         
 
