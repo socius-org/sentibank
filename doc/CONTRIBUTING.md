@@ -10,7 +10,7 @@ Contributions should meet the following criteria.
   - Determine the domain (i.e Psychology, Economics, Politics) or genre (i.e News, Social Media, Academic) 
   - Refer to existing lexicons to identify gaps to fill  
 
-> ``ℹ️`` Before dedicating resources to creating new dictionary, please open an [issue](https://github.com/socius-org/sentibank/issues) outlining your proposed lexicon. This can serve as a transparent public record on how lexicons are created, processed and enhanced. We expect this record to: Allow all sentibank users to better understand the composition and quality of included dictionaries; Enable substantive community discussion; and Provide a learning opportunity for those developing lexicons in the future.
+> ``ℹ️`` Before dedicating resources to creating new dictionary, please open an [issue](https://github.com/socius-org/sentibank/issues) outlining your proposed lexicon. This can serve as a transparent public record on how lexicons are created, processed and enhanced. We expect this record to: (i) Allow all sentibank users to better understand the composition and quality of included dictionaries; (ii) Enable substantive community discussion; and (iii) Provide a learning opportunity for those developing lexicons in the future.
 
 ## 📝 Composition 
 - Contains a minimum of 100 labeled sentiment terms/phrases. Smaller sample sizes tend not over-index specific sources.
@@ -30,7 +30,7 @@ Contributions should meet the following criteria.
 
 ## ⚖️ Licensing 
 - Lexicon is under a permissive open license compatible with CC-BY-SA 4.0 or public domain.
-- Sources allow free re-use, re-distribution, and commercial use. Proprietary datasets cannot be accepted.
+- Sources allow free re-use and re-distribution for non-commercial use. Proprietary datasets cannot be accepted.
 
 ## 🗂️ Format 
 - Submitted as a CSV file with column headers specifying key attributes of each entry.
@@ -38,15 +38,6 @@ Contributions should meet the following criteria.
 - Contains no personally identifiable or otherwise confidential information.
 
 
->  ``ℹ️`` We understand sentiment annotation can be new territory for many. Please don't hesitate to reach out - we're happy to provide guidance each step of the way.
+>  ``ℹ️`` We understand sentiment annotation can be new territory for many. Please don't hesitate to reach out - we're happy to provide guidance each step of the way. Our team has experience developing guidelines, training annotators, measuring agreement, and related tasks. We can lend our knowledge to ensure your project goes smoothly.
 > 
-> Our team has experience developing guidelines, training annotators, measuring agreement, and related tasks. We can lend our knowledge to ensure your project goes smoothly.
-> 
-> If any part of the process seem unclear, let us know. We're glad to advise on effective instructions, corpus creation, quality control, and any other annotation needs.
-> 
-> Feel free to reach out through research@socius.org to discuss best practices tailored to your goals. We look forward to hearing your ideas and providing customised support to make them a reality.
-> 
-> Our hope is for the criteria to inspire creative solutions, not deter participation. We're here to lower barriers and see new lexicons brought to life through thoughtful partnership.
-
-
-By pooling our talents, we can transform sentibank into an even more powerful tool. Join us in unlocking sentibank's full potential through shared knowledge!
+> If any part of the process seem unclear, let us know. We're glad to advise on effective instructions, corpus creation, quality control, and any other annotation needs. Feel free to reach out through research@socius.org to discuss best practices tailored to your goals. We look forward to hearing your ideas and providing customised support to make them a reality.
