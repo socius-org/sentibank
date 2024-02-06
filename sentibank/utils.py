@@ -442,6 +442,7 @@ class analyze:
             "SenticNet_v2022_semantics",
             "SO-CAL_v2011",
         ]
+        # Add functions to analyse bidimensional dictionaries 
         if dictionary in avaliable_dictionary:
             if (
                 dictionary == "NoVAD_v2013_bidimensional"
@@ -488,12 +489,20 @@ class analyze:
         # If score-based, calculate sentiment
         if lex_dict_type == "discrete" or lex_dict_type == "continuous":
             total_score = 0
+            matched_positions = set()
             for key, value in loaded_dictionary.items():
                 pattern = re.compile(
                     r"\b" + re.escape(key) + r"\b", flags=re.IGNORECASE
                 )
-                if pattern.search(text.lower()):
+                matches = pattern.finditer(text.lower())
+                for match in matches:
+                    start, end = match.span()
+                    # Check if there is any overlapping match
+                    if any(start < pos < end for pos in matched_positions):
+                        continue
                     total_score += value
+                    # Add the positions of the current match to the set
+                    matched_positions.update(range(start, end))
             return round(total_score, 4)
 
         # Else if label based, collect sentiment        
@@ -510,12 +519,21 @@ class analyze:
                 sentiment_labels = ["anger", "anxiety", "optimism", "sadness"]
             
             total_sentiment = []
+            matched_positions = set()
+            
             for key, value in loaded_dictionary.items():
                 pattern = re.compile(
                     r"\b" + re.escape(key) + r"\b", flags=re.IGNORECASE
                 )
-                if pattern.search(text.lower()):
+                matches = pattern.finditer(text.lower())
+                for match in matches: 
+                    start, end = match.span()
+                    # Check if there is any overlapping match
+                    if any(start < pos < end for pos in matched_positions):
+                        continue
                     total_sentiment.append(value)
+                    # Add the positions of the current match to the set
+                    matched_positions.update(range(start, end))
             
             class_counts = {word: 0 for word in sentiment_labels}
 
@@ -869,12 +887,21 @@ class analyze:
                 ]
 
             total_sentiment = []
+            matched_positions = set()
+            
             for key, value in loaded_dictionary.items():
                 pattern = re.compile(
                     r"\b" + re.escape(key) + r"\b", flags=re.IGNORECASE
                 )
-                if pattern.search(text.lower()):
+                matches = pattern.finditer(text.lower())
+                for match in matches:
+                    start, end = match.span()
+                    # Check if there is any overlapping match
+                    if any(start < pos < end for pos in matched_positions):
+                        continue
                     total_sentiment.extend(value)
+                    # Add the positions of the current match to the set
+                    matched_positions.update(range(start, end))
             
             class_counts = {word: 0 for word in sentiment_labels}
 
