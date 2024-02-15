@@ -219,3 +219,7 @@ class load:
             raise ValueError(f"Unknown index: {idx}")
 
         return self.origin_df
+    
+    def benchmark(self,): 
+        #load benchmark datasets from data_arXiv/. 
+        return 
