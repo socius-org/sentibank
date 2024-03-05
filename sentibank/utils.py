@@ -8,6 +8,7 @@ import spacy
 from spacymoji import Emoji
 from sentibank.dict_arXiv import emos
 import re
+import enchant 
 from sentibank import archive
 
 load = archive.load()
@@ -339,7 +340,82 @@ class analysis:
 
         return pprint(summary)
 
+class spellcheck:
+    """
+    A class for spell-checking sentences.
 
+    Attributes:
+        spellchecker (enchant.Dict): An enchant dictionary for English.
+
+    Methods:
+        shorten_word(self, word: str) -> str:
+            Shortens words with three or more consecutive identical alphabets to two consecutive identical alphabets.
+
+        sentence(self, sentence: str) -> str:
+            Spell-checks the given sentence, correcting misspelled words. Shortens words with three or more consecutive identical alphabets before spell-checking.
+            Returns the spell-checked sentence in lowercase.
+
+    Example:
+        spellchecker = spellcheck()
+        corrected_sentence = spellchecker.sentence("I am sooooo happppyyyy")
+        print(corrected_sentence)
+    """
+    def __init__(self): 
+        self.spellchecker = enchant.Dict("en_US")
+    
+    def shorten_word(self, word:str):
+        """
+        Shortens words with three or more consecutive identical alphabets to two consecutive identical alphabets.
+
+        Args:
+            word (str): The word to be shortened.
+
+        Returns:
+            str: The shortened word.
+        """
+        # Find sections with three or more consecutive identical alphabets
+        matches = re.findall(r'(\w)\1{2,}', word)
+        
+        # Shorten each section to two alphabets
+        for match in matches:
+            replacement = match[:2]
+            word = re.sub(r'(\w)\1{2,}', replacement * 2, word, count=1)
+        
+        return word 
+    
+    def sentence(self, sentence:str):
+        """
+        Spell-checks the given sentence, correcting misspelled words. 
+        Shortens words with three or more consecutive identical alphabets before spell-checking.
+        Returns the spell-checked sentence in lowercase.
+
+        Args:
+            sentence (str): The sentence to be spell-checked.
+
+        Returns:
+            str: The spell-checked sentence.
+        """
+        words = sentence.split()
+        spellchecked_words = []
+
+        for word in words:
+            # Shorten word if it has three consecutive identical alphabets
+            if re.search(r'(\w)\1{2,}', word):
+                word = self.shorten_word(word)
+                print(word)
+                if word == "soo": #Add more words that enchant wrongly spell checks 
+                    suggestions = ["so"]
+                else: 
+                    # Spell check the word
+                    suggestions = self.spellchecker.suggest(word)
+                if suggestions:
+                    spellchecked_words.append(suggestions[0])
+                else:
+                    spellchecked_words.append(word)
+            else:
+                spellchecked_words.append(word)
+
+        return ' '.join(spellchecked_words).lower()
 class analyze: 
     """
     A class for sentiment analysis with lexicon dictionaries.
@@ -358,7 +434,7 @@ class analyze:
             Returns a summary of sentiment scores or labels depending on the dictionary used.
     """
     def __init__(self):
-        pass
+        self.spellcheck = spellcheck()
     
     def dictionary(self, dictionary: dict or str = None): 
         """
@@ -386,6 +462,7 @@ class analyze:
     def sentiment(self, text: str, dictionary: str = None):
         """
         Performs bag-of-words sentiment analysis on the given text using the specified lexicon dictionary.
+        It checks spelling of words if a word has three consecutive identical alphabets (e.g. "happppyyyy")
 
         Parameters:
             text (str): The input text for sentiment analysis.
@@ -397,6 +474,8 @@ class analyze:
                 If the lexicon dictionary is score-based, returns the total sentiment score as a float.
                 If the lexicon dictionary is label-based, returns a dictionary with sentiment class counts.
         """
+        text = self.spellcheck.sentence(text)
+        
         avaliable_dictionary = [
             "MASTER_v2022",
             "VADER_v2014",
