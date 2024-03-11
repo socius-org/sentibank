@@ -6,19 +6,20 @@ import sys
 class CustomInstallCommand(install):
     def run(self):
         install.run(self)
-        subprocess.check_call([sys.executable, "-m", "spacy", "download", "en_core_web_sm"])
+        if 'en_core_web_sm' not in spacy.util.get_installed_models():
+            subprocess.check_call([sys.executable, "-m", "spacy", "download", "en_core_web_sm"])
 
 setup(
     name='sentibank',
     packages=['sentibank'],
     package_data={'sentibank': ['dict_arXiv/*.csv', 'dict_arXiv/*.pickle', 'dict_arXiv/*.json']}, 
-    version='0.2.2',
+    version='0.2.2.1',
     license='CC BY-NC-SA 4.0',
     description='Unifying sentiment lexicons and dictionaries into an accessible open python package',
     author='Nick S.H Oh',
     author_email='research@socius.org',
     url='https://github.com/socius-org/sentibank',
-    download_url='https://github.com/socius-org/sentibank/archive/refs/tags/0.2.2.tar.gz',
+    download_url='https://github.com/socius-org/sentibank/archive/refs/tags/0.2.2.1.tar.gz',
     keywords=[
         'AI', 
         'Social Science', 
