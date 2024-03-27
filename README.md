@@ -6,6 +6,10 @@
 [![Downloads](https://static.pepy.tech/badge/sentibank)](https://pypistats.org/packages/sentibank)
 [![PyPI - Downloads](https://img.shields.io/pypi/dm/sentibank?style=flat-square&logo=python)](https://pypistats.org/packages/sentibank)
 
+> **<picture><source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f38a/512.webp" type="image/webp"><img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f38a/512.gif" alt="🎊" width="20" height="20"></picture> ANNOUNCEMENT <picture><source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f38a/512.webp" type="image/webp"><img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f38a/512.gif" alt="🎊" width="20" height="20"></picture>**
+> 
+> **We are delighted to announce that our paper "sentibank: A Unified Resource of Sentiment Lexicons and Dictionaries" has been accepted at [the 18th International AAAI Conference on Web and Social Media](https://icwsm.org/2024/index.html/#tutorials-schedule) Datasets Track.**
+
 **`sentibank`** is a comprehensive, open database of expert-curated sentiment dictionaries and lexicons to power sentiment analysis.
 
 ## Overview 
