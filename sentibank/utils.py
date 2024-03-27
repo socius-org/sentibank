@@ -494,8 +494,8 @@ class analyze:
             "DED_v2022",
             "DAL_v2009_norm",
             "DAL_v2009_boosted",
-            "NoVAD_v2013_bidimensional",
-            "NoVAD_v2013_adjusted",
+            "NoVAD_v2013_norm",
+            "NoVAD_v2013_boosted",
             "SenticNet_v2010",
             "SenticNet_v2012",
             "SenticNet_v2012_attributes",
@@ -524,8 +524,7 @@ class analyze:
         # Add functions to analyse bidimensional dictionaries 
         if dictionary in avaliable_dictionary:
             if (
-                dictionary == "NoVAD_v2013_bidimensional"
-                or dictionary == "SenticNet_v2012_attributes"
+                dictionary == "SenticNet_v2012_attributes"
                 or dictionary == "SenticNet_v2014_attributes"
                 or dictionary == "SenticNet_v2016_attributes"
                 or dictionary == "SenticNet_v2018_attributes"
@@ -590,10 +589,9 @@ class analyze:
                 dictionary == "Aigents+_v2022"
                 or dictionary == "Henry_v2006"
                 or dictionary == "OpinionLexicon_v2004"
+                or dictionary == "GeneralInquirer_v2000"
             ):
                 sentiment_labels = ["positive", "negative"]
-            elif dictionary == "HarvardGI_v2000":
-                sentiment_labels = ["Positive", "Negative"]
             elif dictionary == "DED_v2022":
                 sentiment_labels = ["anger", "anxiety", "optimism", "sadness"]
             

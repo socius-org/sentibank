@@ -6,8 +6,11 @@ import sys
 class CustomInstallCommand(install):
     def run(self):
         install.run(self)
-        if 'en_core_web_sm' not in spacy.util.get_installed_models():
-            subprocess.check_call([sys.executable, "-m", "spacy", "download", "en_core_web_sm"])
+        subprocess.check_call([sys.executable, "-m", "spacy", "download", "en_core_web_sm"])
+    # def run(self):
+    #     install.run(self)
+    #     if 'en_core_web_sm' not in spacy.util.get_installed_models():
+    #         subprocess.check_call([sys.executable, "-m", "spacy", "download", "en_core_web_sm"])
 
 setup(
     name='sentibank',
@@ -32,7 +35,8 @@ setup(
         'spacy == 3.7.2',
         'spacymoji == 3.1.0',
         'rich == 13.4.2',
-        'pandas == 2.1.4'
+        'pandas == 2.1.4', 
+        'pyenchant == 3.2.2'
     ],
     include_package_data=True,
     cmdclass={
