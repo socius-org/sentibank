@@ -1,0 +1,27 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: Introduction
+parts: 
+  - caption: sentibank 
+    chapters: 
+    - file: Getting_Started
+    - file: archive/intro
+      sections: 
+      - file: archive/AFINN
+      - file: archive/Aigents
+      - file: archive/ANEW
+      - file: archive/DAL
+      - file: archive/DED
+      - file: archive/General Inquirer
+      - file: archive/Henry 
+      - file: archive/MASTER
+      - file: archive/NoVAD
+      - file: archive/OpinionLexicon
+      - file: archive/SenticNet
+      - file: archive/SentiWordNet
+      - file: archive/SO-CAL
+      - file: archive/VADER
+      - file: archive/WordNet-Affect
+    - file: Contributions
