@@ -52,7 +52,7 @@ load = archive.load()
 vader = load.dict("VADER_v2014") 
 ```
 
-The predefined lexicon identifiers follow either a `{NAME}_{VERSION}` convention, meaning only compulsory processing was completed on the base lexicon, or a `{NAME}_{VERSION}_{refined}` structure specifying additional transformations that represent discretionary refinements. For example, `NoVAD_v2013_adjusted` applies arousal-based adjustments to intensify extreme valence values and dampen neutral ones, providing a richness-preserving single score.
+The predefined lexicon identifiers follow either a `{NAME}_{VERSION}` convention, meaning only compulsory processing was completed on the base lexicon, or a `{NAME}_{VERSION}_{refined}` structure specifying additional transformations that represent discretionary refinements. For example, `NoVAD_v2013_boosted` applies arousal-based adjustments to intensify extreme valence values and dampen neutral ones, providing a richness-preserving single score.
 
 See below for the available predefined lexicon identifier.
 
@@ -113,7 +113,7 @@ For score-based lexicons like `VADER_v2014`, it sums the scores of matched terms
 ```python
 from sentibank.utils import analyze
 
-# Analyse the dictionary
+# Analyse the sentiment
 analyze = analyze()
 text = "I am excited and happy about the new anouncement!"
 result = analyze.sentiment(text=text, dictionary="VADER_v2014")

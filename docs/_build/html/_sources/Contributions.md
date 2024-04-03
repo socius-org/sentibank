@@ -1,4 +1,4 @@
-# Contributions
+# <picture><source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/270f_fe0f/512.webp" type="image/webp"><img src="https://fonts.gstatic.com/s/e/notoemoji/latest/270f_fe0f/512.gif" alt="✏" width="32" height="32"></picture> Open Collaboration 
 
 Open collaboration with the community is at the core of our vision. We firmly believe that the power of collective intelligence can drive transformative progress in sentiment analysis. We value the insights and expertise of the wider community, and we actively encourage contributions from researchers, scholars, and practitioners alike.
 
@@ -10,7 +10,7 @@ This section provides guidelines for contributing new lexicons, requesting modif
 
 ## Sharing New Lexicons
 
-Creating high-quality sentiment lexicons requires careful consideration of the scope, data sources, annotation process, and format. We welcome new lexicons that meet our [contribution criteria](https://github.com/socius-org/sentibank/blob/main/doc/CONTRIBUTING.md). 
+Creating high-quality sentiment lexicons requires careful consideration of the scope, data sources, annotation process, and format. We welcome new lexicons that meet our [contribution criteria](https://github.com/socius-org/sentibank/blob/main/.github/CONTRIBUTING.md). 
 
 > 💡We are currently collaborating with domain experts to create a new *gold-standard* sentiment dictionaries on various social science topics, including `ideology`, `current_affairs`, `market`, `cryptocurrency`, `politics`, `activism_reform`, `academic`, `esg`, and `society`.  If you are a researcher willing to lend your expertise in our progress, please reach out to research@socius.org.  
 

@@ -4,24 +4,30 @@
 format: jb-book
 root: Introduction
 parts: 
-  - caption: sentibank 
+  - caption: Getting Started  
     chapters: 
-    - file: Getting_Started
+    - file: getting_started/installation
+    - file: getting_started/load
+    - file: getting_started/analyze_dict 
+    - file: getting_started/analyze_senti
+  - caption: Archive 
+    chapters: 
     - file: archive/intro
-      sections: 
-      - file: archive/AFINN
-      - file: archive/Aigents
-      - file: archive/ANEW
-      - file: archive/DAL
-      - file: archive/DED
-      - file: archive/General Inquirer
-      - file: archive/Henry 
-      - file: archive/MASTER
-      - file: archive/NoVAD
-      - file: archive/OpinionLexicon
-      - file: archive/SenticNet
-      - file: archive/SentiWordNet
-      - file: archive/SO-CAL
-      - file: archive/VADER
-      - file: archive/WordNet-Affect
+    - file: archive/AFINN
+    - file: archive/Aigents
+    - file: archive/ANEW
+    - file: archive/DAL
+    - file: archive/DED
+    - file: archive/General Inquirer
+    - file: archive/Henry 
+    - file: archive/MASTER
+    - file: archive/NoVAD
+    - file: archive/OpinionLexicon
+    - file: archive/SenticNet
+    - file: archive/SentiWordNet
+    - file: archive/SO-CAL
+    - file: archive/VADER
+    - file: archive/WordNet-Affect
+  - caption: Contributions
+    chapters:
     - file: Contributions

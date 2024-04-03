@@ -1,14 +1,19 @@
-# Introduction
+# About 
 
-## Overview of Sentiment Analysis
+## We introduce 🗃️ sentibank, **a large-scale unified database consolidating 15 original sentiment dictionaries and 43 preprocessed dictionaries, spanning 7 genres and 6 domains**.
+
+## Overview 
+
+### Sentiment Analysis
 
 Sentiment analysis is the automated process of identifying and extracting subjective information such as opinions, emotions, and attitudes from textual data. It has become an increasingly critical technique across many social science domains such as business, politics, and economics. 
 
-By unlocking the sentiment embedded in textual data from social media posts, product reviews, and survey responses, organisations can gain invaluable insights into public perceptions, customer preferences, and even voter attitudes. The ability to systematically understand affective states from text has vast potential to inform impactful decisions.
+While deep learning models have excelled in achieving high accuracy, often surpassing simpler lexicon models in sentiment analysis tasks (Al-Qablan
+et al. 2023), their inherently opaque nature poses challenges for applications in high-stakes domains like government policy making or mental health diagnosis, where transparent and interpretable decision-making is crucial (Rudin 2019). Recognising the continued importance of rule-based sentiment analysis, particularly in computational social science fields where interpretability is paramount, improving rule-based SA remains vital. 
 
-## About sentibank
+### sentibank
 
-sentibank aims to provide the most comprehensive open database of expert-curated sentiment dictionaries and lexicons to power sentiment analysis. It addresses key challenges in the sentiment analysis landscape:
+Rule-based sentiment analysis relies on expert-curated lexicons containing words with pre-assigned sentiment scores, as human expertise is required to accurately annotate the sentiment of words across contexts. However, effectively applying these lexicons in rule-based systems faces several challenges:
 
 - Disparate, fragmented resources requiring laborious integration
 - Lack of verified, high-quality lexicons spanning domains 
@@ -18,10 +23,10 @@ By consolidating lexicons into an open and public platform, sentibank enables us
 
 ## Navigating the Documentation
 
-This guide provides researchers, data scientists, and developers with both conceptual and practical knowledge to effectively leverage sentibank. Key sections include:
+This documentation provides researchers, data scientists, and developers with both conceptual and practical knowledge to effectively leverage sentibank. Key sections include:
 
-- **[Getting Started](../Getting_Started.ipynb)** - Installation, basic usage, and quickstart examples
+- **[Getting Started](../getting_started/installation.ipynb)** - Installation, basic usage, and quickstart examples
 - **[Archive](../archive/intro.md)** - In-depth documentation on included lexicons 
 - **[Contributions](../Contributions.md)** - Instructions for contributing new lexicons
 
-Whether you're looking for overviews, implementation details, or contributing guidance, our comprehensive docs aim to illuminate both the possibilities and practicalities of integrating sentibank into your work.
+Whether you're looking for overviews, implementation details, or contributing guidance, our comprehensive documentation aim to illuminate both the possibilities and practicalities of integrating sentibank into your work.
