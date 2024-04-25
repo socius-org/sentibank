@@ -1,4 +1,4 @@
-# <picture><source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/270f_fe0f/512.webp" type="image/webp"><img src="https://fonts.gstatic.com/s/e/notoemoji/latest/270f_fe0f/512.gif" alt="✏" width="32" height="32"></picture> Open Collaboration 
+# Open Collaboration 
 
 Open collaboration with the community is at the core of our vision. We firmly believe that the power of collective intelligence can drive transformative progress in sentiment analysis. We value the insights and expertise of the wider community, and we actively encourage contributions from researchers, scholars, and practitioners alike.
 

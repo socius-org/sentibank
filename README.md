@@ -21,15 +21,13 @@ However, creating effective rule-based systems faces several challenges::
 - Lack of verified, high-quality lexicons spanning domains
 - Inaccessibility limiting transparency and advancement
 
-**`sentibank` tackles these issues by consolidating lexicons into an integrated, open-source database**. With a unified library of expert-curated lexicons consolidated into a single open database, this knowledge base empowers more effective rule-based sentiment analysis. Additionally, the open access fosters ongoing quality improvement through community participation.
+**`sentibank` tackles these issues by consolidating lexicons into an integrated, open-source database**. Here's some of the key capabilities: 
 
-## Key Capabilities 
-
-- **15+ (and counting) sentiment dictionaries** spanning domains and use cases
-- Curation of dictionaries provided by **leading experts** in sentiment analysis
-- Access **original lexicons** and **preprocessed versions**
-- Customise existing dictionaries or contribute new ones
-- Production-ready for integration into analyses
+- 🗃️ **15+ (and counting) sentiment dictionaries** spanning domains and use cases
+- 🧠 Curation of dictionaries provided by **leading experts** in sentiment analysis
+- 📖 Access **original lexicons** and **preprocessed versions**
+- ✏️ Customise existing dictionaries or contribute new ones
+- 🚀 Production-ready for integration into analyses
 
 ## Getting Started 
 

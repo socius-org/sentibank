@@ -3,6 +3,9 @@ from setuptools.command.install import install
 import subprocess
 import sys
 
+with open('README.md') as f:
+    long_description = f.read()
+
 class CustomInstallCommand(install):
     def run(self):
         install.run(self)
@@ -19,13 +22,13 @@ setup(
     version='0.2.3',
     license='CC BY-NC-SA 4.0',
     description='Unifying sentiment lexicons and dictionaries into an accessible open python package',
+    long_description=long_description,
+    long_description_content_type='text/markdown', 
     author='Nick S.H Oh',
     author_email='research@socius.org',
     url='https://github.com/socius-org/sentibank',
     download_url='https://github.com/socius-org/sentibank/archive/refs/tags/0.2.3.tar.gz',
     keywords=[
-        'AI', 
-        'Social Science', 
         'Sentiment Analysis', 
         'Sentiment Dictionary', 
         'Sentiment Lexicon', 

@@ -1,4 +1,4 @@
-# <picture><source srcset="https://images.emojiterra.com/google/noto-emoji/unicode-15.1/color/1024px/1f5c3.png" type="image/png"><img src="https://images.emojiterra.com/google/noto-emoji/unicode-15.1/color/1024px/1f5c3.png" alt="🗃️" height="32"></picture> Introduction
+# Introduction
 
 The Archive provides in-depth documentation on all dictionaries currently included in `sentibank`. This enables users to evaluate and select the optimal lexicons for their use case. 
 
@@ -12,3 +12,4 @@ After the summary, you'll find a comprehensive literature review style documenta
 
 By reviewing both the summaries and detailed documentations, you can thoroughly compare options and determine which resources best fit your needs.
 
+<!-- <picture><source srcset="https://images.emojiterra.com/google/noto-emoji/unicode-15.1/color/1024px/1f5c3.png" type="image/png"><img src="https://images.emojiterra.com/google/noto-emoji/unicode-15.1/color/1024px/1f5c3.png" alt="🗃️" height="32"></picture> -->
