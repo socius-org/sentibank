@@ -13,10 +13,10 @@ class load:
         origin_df (pd.DataFrame): Loaded origin dataset.
 
     Methods:
-        load_dict(idx: str) -> dict:
+        load.dict(idx: str) -> dict:
             Load sentiment lexicon dictionary based on the provided index.
 
-        load_origin(idx: str) -> pd.DataFrame:
+        load.origin(idx: str) -> pd.DataFrame:
             Load the origin dataset based on the provided index.
     """
     def __init__(self):
