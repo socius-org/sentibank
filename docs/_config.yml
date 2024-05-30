@@ -3,7 +3,7 @@
 
 title: sentibank documentation  
 author: socius
-logo: images/socius_logo.png
+logo: sentibank/images/socius_logo.png
 copyright: "2024"
 
 # Force re-execution of notebooks on each build.
@@ -29,7 +29,7 @@ repository:
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
-  favicon: images/socius_logo.png
+  favicon: sentibank/images/socius_logo.png
   use_issues_button: true
   use_repository_button: true
   google_analytics_id: "G-6LC6EQ23NF"
