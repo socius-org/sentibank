@@ -10,6 +10,8 @@ from sentibank.dict_arXiv import emos
 import re
 import enchant 
 from sentibank import archive
+import subprocess
+import sys
 
 load = archive.load()
 
@@ -26,10 +28,37 @@ class analysis:
         """
         Initializes the Analysis class by loading the Spacy NLP pipeline with emoji detection.
         """
-        self.spacy_nlp = spacy.load(
-            "en_core_web_sm",
-            exclude=["parser", "senter", "attribute_ruler", "lemmatizer", "ner"],
-        )
+        try:
+            self.spacy_nlp = spacy.load(
+                "en_core_web_sm",
+                exclude=["parser", "senter", "attribute_ruler", "lemmatizer", "ner"],
+            )
+        except OSError:
+            # Model not found, attempt to download it
+            import subprocess
+            import sys
+            
+            print("SpaCy model 'en_core_web_sm' not found. Downloading...")
+            try:
+                subprocess.check_call(
+                    [sys.executable, "-m", "spacy", "download", "en_core_web_sm"],
+                    stdout=subprocess.DEVNULL,  # Suppress output for cleaner experience
+                    stderr=subprocess.STDOUT
+                )
+                # Try loading again after download
+                self.spacy_nlp = spacy.load(
+                    "en_core_web_sm",
+                    exclude=["parser", "senter", "attribute_ruler", "lemmatizer", "ner"],
+                )
+                print("Successfully downloaded and loaded en_core_web_sm")
+            except subprocess.CalledProcessError:
+                raise RuntimeError(
+                    "Failed to download spaCy model automatically.\n"
+                    "Please install it manually by running:\n"
+                    "    python -m spacy download en_core_web_sm"
+                )
+        
+        # Add emoji detection pipeline (this stays the same)
         # self.spacy_nlp.add_pipe("sentencizer")
         self.spacy_nlp.add_pipe("emoji", first=True)
 
