@@ -2,32 +2,32 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: sentibank/about
+root: about
 parts: 
   - caption: Getting Started  
     chapters: 
-    - file: sentibank/getting_started/installation
-    - file: sentibank/getting_started/load
-    - file: sentibank/getting_started/analyze_dict 
-    - file: sentibank/getting_started/analyze_senti
+    - file: getting_started/installation
+    - file: getting_started/load
+    - file: getting_started/analyze_dict 
+    - file: getting_started/analyze_senti
   - caption: Archive 
     chapters: 
-    - file: sentibank/archive/intro
-    - file: sentibank/archive/AFINN
-    - file: sentibank/archive/Aigents
-    - file: sentibank/archive/ANEW
-    - file: sentibank/archive/DAL
-    - file: sentibank/archive/DED
-    - file: sentibank/archive/General Inquirer
-    - file: sentibank/archive/Henry 
-    - file: sentibank/archive/MASTER
-    - file: sentibank/archive/NoVAD
-    - file: sentibank/archive/OpinionLexicon
-    - file: sentibank/archive/SenticNet
-    - file: sentibank/archive/SentiWordNet
-    - file: sentibank/archive/SO-CAL
-    - file: sentibank/archive/VADER
-    - file: sentibank/archive/WordNet-Affect
+    - file: archive/intro
+    - file: archive/AFINN
+    - file: archive/Aigents
+    - file: archive/ANEW
+    - file: archive/DAL
+    - file: archive/DED
+    - file: archive/General Inquirer
+    - file: archive/Henry 
+    - file: archive/MASTER
+    - file: archive/NoVAD
+    - file: archive/OpinionLexicon
+    - file: archive/SenticNet
+    - file: archive/SentiWordNet
+    - file: archive/SO-CAL
+    - file: archive/VADER
+    - file: archive/WordNet-Affect
   - caption: Contributions
     chapters:
-    - file: sentibank/Contributions
+    - file: Contributions

@@ -3,13 +3,16 @@
 
 title: sentibank documentation  
 author: socius
-logo: sentibank/images/socius_logo.png
+logo: images/socius_logo.png
 copyright: "2024"
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
 execute:
-  execute_notebooks: force
+  execute_notebooks: "auto"
+  timeout: 600  # Increase timeout to 600 seconds (default is 30)
+  run_in_temp: false
+  allow_errors: false
 
 # Define the name of the latex output file for PDF builds
 latex:
@@ -29,7 +32,7 @@ repository:
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
-  favicon: sentibank/images/socius_logo.png
+  favicon: images/socius_logo.png
   use_issues_button: true
   use_repository_button: true
   google_analytics_id: "G-6LC6EQ23NF"

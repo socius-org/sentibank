@@ -92,3 +92,5 @@ cython_debug/
 
 # test.py (for local testing)
 test.py
+
+docs/_build
