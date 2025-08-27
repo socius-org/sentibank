@@ -5,12 +5,14 @@
 [![Github Watchers](https://img.shields.io/github/watchers/socius-org/sentibank?style=flat-square&logo=github)](https://github.com/socius-org/sentibank)
 [![Downloads](https://static.pepy.tech/badge/sentibank)](https://pypistats.org/packages/sentibank)
 [![PyPI - Downloads](https://img.shields.io/pypi/dm/sentibank?style=flat-square&logo=python)](https://pypistats.org/packages/sentibank)
+[![CI](https://github.com/socius-org/sentibank/workflows/CI/badge.svg)](https://github.com/socius-org/sentibank/actions)
+[![Coverage](https://codecov.io/gh/socius-org/sentibank/branch/main/graph/badge.svg)](https://codecov.io/gh/socius-org/sentibank)
 
 > **[📝 Read the Paper](https://ojs.aaai.org/index.php/ICWSM/article/view/31443)**
 > 
 > **[📄 Read the Docs](https://doc.socius.org/sentibank/about.html)** 
 
-**`sentibank`** is a comprehensive, open database of expert-curated sentiment dictionaries and lexicons to power sentiment analysis.
+**`sentibank`** is a comprehensive, open database of expert-curated sentiment dictionaries and lexicons to power sentiment analysis. Now with enhanced performance, type safety, CLI tools, and production-ready features!
 
 ## Overview 
 
@@ -28,6 +30,32 @@ However, creating effective rule-based systems faces several challenges::
 - 📖 Access **original lexicons** and **preprocessed versions**
 - ✏️ Customise existing dictionaries or contribute new ones
 - 🚀 Production-ready for integration into analyses
+
+## ✨ What's New in v1.0.0
+
+### 🛠️ Enhanced Developer Experience
+- **🔧 Full Type Safety**: Complete type annotations for better IDE support
+- **⚡ Performance Caching**: Built-in dictionary caching for faster loading
+- **🛡️ Robust Error Handling**: Comprehensive exception handling and logging
+- **🧪 Comprehensive Testing**: Full pytest suite with 90%+ coverage
+
+### 🖥️ Command Line Interface
+```bash
+# List available dictionaries
+sentibank list
+
+# Analyze sentiment with rich formatting
+sentibank analyze VADER_v2014 "I love this product!"
+
+# Export dictionaries to multiple formats
+sentibank export VADER_v2014 --format json
+```
+
+### 🏗️ Modern Python Packaging
+- **📦 pyproject.toml**: Modern packaging standards
+- **🔄 CI/CD Pipeline**: Automated testing and publishing
+- **📚 Enhanced Documentation**: Examples and comprehensive guides
+- **🎨 Code Quality**: Black, isort, flake8, mypy integration
 
 ## Getting Started 
 
@@ -127,6 +155,93 @@ result = analyze.sentiment(text=text, dictionary="MASTER_v2022")
 ```
 
 This allows flexible sentiment analysis tailored to different dictionary representations. Score-based lexicons provide a sentiment intensity metric, while label-based ones give a breakdown of sentiment types. The bag-of-words approach offers efficient broad-stroke analysis without syntactical sensitivity.
+
+## 🖥️ Command Line Usage
+
+Sentibank now includes a powerful CLI for quick sentiment analysis:
+
+### Quick Start
+```bash
+# List all available dictionaries
+sentibank list
+
+# Analyze sentiment of text
+sentibank analyze VADER_v2014 "This product is absolutely amazing!"
+
+# Get detailed dictionary information
+sentibank info VADER_v2014
+
+# Export a dictionary to JSON
+sentibank export VADER_v2014 --format json --output my_vader.json
+```
+
+### Advanced CLI Usage
+```bash
+# Analyze text from a file
+sentibank analyze VADER_v2014 --file reviews.txt
+
+# Get JSON output for programmatic use
+sentibank analyze AFINN_v2015 "Great experience!" --json
+
+# Export to different formats
+sentibank export SO-CAL_v2011 --format csv --output socal.csv
+```
+
+## 🔧 New API Features
+
+### Enhanced Dictionary Loading
+```python
+from sentibank import archive
+
+loader = archive.load()
+
+# List available dictionaries and origins
+available = loader.list_available()
+print(f"Available: {len(available['dictionaries'])} dictionaries")
+
+# Built-in caching for better performance
+vader1 = loader.dict("VADER_v2014")  # Loads from disk
+vader2 = loader.dict("VADER_v2014")  # Loads from cache (faster!)
+
+# Clear cache when needed
+loader.clear_cache()
+```
+
+### Type-Safe Development
+```python
+from sentibank import archive
+from typing import Dict, Any
+
+loader: archive.load = archive.load()
+sentiment_dict: Dict[str, Any] = loader.dict("VADER_v2014")
+```
+
+## 🔄 Migration Guide
+
+### Upgrading from v0.x to v1.0.0
+
+The v1.0.0 release maintains backward compatibility for basic usage:
+
+```python
+# ✅ This still works exactly the same
+from sentibank import archive
+load = archive.load()
+vader = load.dict("VADER_v2014")
+```
+
+### New Features Available
+- Enhanced error messages with specific exception types
+- Built-in caching (automatic - no code changes needed)
+- New utility methods: `list_available()`, `clear_cache()`
+- CLI tools available after installation
+
+## 📊 Examples
+
+Check out the [`examples/`](examples/) directory for:
+- **Basic Usage**: Getting started guide
+- **Dictionary Comparison**: Comparing multiple dictionaries
+- **CLI Examples**: Command-line usage demonstrations
+- **Advanced Features**: Caching, logging, and more
 
 ## Contributing 
 

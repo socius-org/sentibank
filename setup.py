@@ -4,7 +4,7 @@ setup(
     name='sentibank',
     packages=['sentibank'],
     package_data={'sentibank': ['dict_arXiv/*.csv', 'dict_arXiv/*.pickle', 'dict_arXiv/*.json']}, 
-    version='1.0', 
+    version='1.0.0', 
     license='CC BY-NC-SA 4.0',
     description='Unifying sentiment lexicons and dictionaries into an accessible open python package',
     author='Nick Oh',

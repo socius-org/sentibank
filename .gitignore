@@ -90,7 +90,10 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
-# test.py (for local testing)
-test.py
+# Temporary test files
+test_*.tmp.py
+*.test.tmp
 
 docs/_build
+
+test.ipynb
