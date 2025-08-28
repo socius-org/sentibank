@@ -5,7 +5,20 @@ All notable changes to the sentibank project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.0.0] - 2024-01-XX
+## [1.1.0] - 2024-08-28
+
+### 🐛 Fixed
+- **GitHub Actions Workflow**: Fixed PyPI publishing workflow trigger timing issue
+- **Release Process**: Ensured proper workflow execution on release publication
+
+### 🔧 Improved
+- **CI/CD Pipeline**: Added manual workflow dispatch option for flexible publishing
+- **Release Management**: Streamlined version management across all configuration files
+
+### 📚 Documentation
+- **Version Alignment**: Synchronized version numbers across pyproject.toml, setup.py, and __init__.py
+
+## [1.0.0] - 2024-08-27
 
 ### ✨ Added
 - **Major Refactoring**: Complete overhaul of the codebase for improved maintainability
