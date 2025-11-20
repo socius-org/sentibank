@@ -51,12 +51,6 @@ sentibank analyze VADER_v2014 "I love this product!"
 sentibank export VADER_v2014 --format json
 ```
 
-### 🏗️ Modern Python Packaging
-- **📦 pyproject.toml**: Modern packaging standards
-- **🔄 CI/CD Pipeline**: Automated testing and publishing
-- **📚 Enhanced Documentation**: Examples and comprehensive guides
-- **🎨 Code Quality**: Black, isort, flake8, mypy integration
-
 ## Getting Started 
 
 ### Installation
