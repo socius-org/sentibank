@@ -15,7 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Documentation
 - README and documentation restyled to the socius conventions (hero and banner images, badge row, no emoji); documentation language kept plain.
-- SO-CAL page removed from the documentation and the README, since the package does not ship its data.
+- SO-CAL page removed from the documentation and the README table (the dictionary itself remains available in the package as `SO-CAL_v2011`).
 - Documentation is now built and published automatically by a GitHub Actions workflow (`.github/workflows/docs.yml`).
 - Corrected the 1.0.0 and 1.1.0 release dates and refreshed citation metadata.
 - Fixed README typos and the dictionary identifier used in the label-based example.
