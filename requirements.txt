@@ -1,5 +1,7 @@
-spacy == 3.7.2
-spacymoji == 3.1.0
-rich == 13.4.2
-pandas == 2.1.4
-pyenchant == 3.2.2
+# Runtime dependencies (kept in sync with pyproject.toml). Install the package itself with
+# `pip install -e .`; this file exists for tools that read requirements.txt.
+spacy>=3.7.2
+spacymoji>=3.1.0
+rich>=13.4.2
+pandas>=2.1.4
+pyenchant>=3.2.2
