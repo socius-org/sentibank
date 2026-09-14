@@ -39,7 +39,7 @@ covering composition, annotation methodology, evaluation and usage guidance, wit
 
 ## Install
 
-Python 3.8 or later.
+Python 3.10 or later.
 
 ```bash
 pip install sentibank

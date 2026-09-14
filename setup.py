@@ -24,6 +24,6 @@ setup(
         'pandas>=2.1.4',
         'pyenchant>=3.2.2'
     ],
-    python_requires='>=3.8', 
+    python_requires='>=3.10', 
     include_package_data=True,
 )
