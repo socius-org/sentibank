@@ -1,6 +1,6 @@
 """emos.py
-    
-    A collection of word-punc & punc-word emoticons from VADER, ...
+
+A collection of word-punc & punc-word emoticons from VADER, ...
 """
 
 emoticons = [

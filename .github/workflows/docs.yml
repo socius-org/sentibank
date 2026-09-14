@@ -1,5 +1,5 @@
 # Builds the Jupyter Book in docs/ (executing its notebooks) and publishes it to the
-# gh-pages branch, which GitHub Pages serves at https://doc.socius.org/sentibank/.
+# gh-pages branch, which GitHub Pages serves at https://socius-org.github.io/sentibank/.
 # Runs whenever docs/ or the package changes on main, or manually from the Actions tab.
 
 name: sentibank Docs

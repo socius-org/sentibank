@@ -1,17 +1,19 @@
-from rich.progress import track
-from rich import print as pprint
 import itertools
-from itertools import combinations, chain
-import statistics
-from collections import Counter
-import spacy
-from spacymoji import Emoji
-from sentibank.dict_arXiv import emos
 import re
-import enchant 
-from sentibank import archive
+import statistics
 import subprocess
 import sys
+from collections import Counter
+from itertools import chain, combinations
+
+import enchant
+import spacy
+from rich import print as pprint
+from rich.progress import track
+from spacymoji import Emoji
+
+from sentibank import archive
+from sentibank.dict_arXiv import emos
 
 load = archive.load()
 
@@ -37,18 +39,24 @@ class analysis:
             # Model not found, attempt to download it
             import subprocess
             import sys
-            
+
             print("SpaCy model 'en_core_web_sm' not found. Downloading...")
             try:
                 subprocess.check_call(
                     [sys.executable, "-m", "spacy", "download", "en_core_web_sm"],
                     stdout=subprocess.DEVNULL,  # Suppress output for cleaner experience
-                    stderr=subprocess.STDOUT
+                    stderr=subprocess.STDOUT,
                 )
                 # Try loading again after download
                 self.spacy_nlp = spacy.load(
                     "en_core_web_sm",
-                    exclude=["parser", "senter", "attribute_ruler", "lemmatizer", "ner"],
+                    exclude=[
+                        "parser",
+                        "senter",
+                        "attribute_ruler",
+                        "lemmatizer",
+                        "ner",
+                    ],
                 )
                 print("Successfully downloaded and loaded en_core_web_sm")
             except subprocess.CalledProcessError:
@@ -57,7 +65,7 @@ class analysis:
                     "Please install it manually by running:\n"
                     "    python -m spacy download en_core_web_sm"
                 )
-        
+
         # Add emoji detection pipeline (this stays the same)
         # self.spacy_nlp.add_pipe("sentencizer")
         self.spacy_nlp.add_pipe("emoji", first=True)
@@ -369,6 +377,7 @@ class analysis:
 
         return pprint(summary)
 
+
 class spellcheck:
     """
     A class for spell-checking sentences.
@@ -389,10 +398,11 @@ class spellcheck:
         corrected_sentence = spellchecker.sentence("I am sooooo happppyyyy")
         print(corrected_sentence)
     """
-    def __init__(self): 
+
+    def __init__(self):
         self.spellchecker = enchant.Dict("en_US")
-    
-    def shorten_word(self, word:str):
+
+    def shorten_word(self, word: str):
         """
         Shortens words with three or more consecutive identical alphabets to two consecutive identical alphabets.
 
@@ -403,18 +413,18 @@ class spellcheck:
             str: The shortened word.
         """
         # Find sections with three or more consecutive identical alphabets
-        matches = re.findall(r'(\w)\1{2,}', word)
-        
+        matches = re.findall(r"(\w)\1{2,}", word)
+
         # Shorten each section to two alphabets
         for match in matches:
             replacement = match[:2]
-            word = re.sub(r'(\w)\1{2,}', replacement * 2, word, count=1)
-        
-        return word 
-    
-    def sentence(self, sentence:str):
+            word = re.sub(r"(\w)\1{2,}", replacement * 2, word, count=1)
+
+        return word
+
+    def sentence(self, sentence: str):
         """
-        Spell-checks the given sentence, correcting misspelled words. 
+        Spell-checks the given sentence, correcting misspelled words.
         Shortens words with three or more consecutive identical alphabets before spell-checking.
         Returns the spell-checked sentence in lowercase.
 
@@ -429,12 +439,12 @@ class spellcheck:
 
         for word in words:
             # Shorten word if it has three consecutive identical alphabets
-            if re.search(r'(\w)\1{2,}', word):
+            if re.search(r"(\w)\1{2,}", word):
                 word = self.shorten_word(word)
                 print(word)
-                if word == "soo": #Add more words that enchant wrongly spell checks 
+                if word == "soo":  # Add more words that enchant wrongly spell checks
                     suggestions = ["so"]
-                else: 
+                else:
                     # Spell check the word
                     suggestions = self.spellchecker.suggest(word)
                 if suggestions:
@@ -444,8 +454,10 @@ class spellcheck:
             else:
                 spellchecked_words.append(word)
 
-        return ' '.join(spellchecked_words).lower()
-class analyze: 
+        return " ".join(spellchecked_words).lower()
+
+
+class analyze:
     """
     A class for sentiment analysis with lexicon dictionaries.
 
@@ -462,10 +474,11 @@ class analyze:
             The dictionary can be selected from a list of available options.
             Returns a summary of sentiment scores or labels depending on the dictionary used.
     """
+
     def __init__(self):
         self.spellcheck = spellcheck()
-    
-    def dictionary(self, dictionary: dict or str = None): 
+
+    def dictionary(self, dictionary: dict or str = None):
         """
         Summarises sentiment information based on the provided lexicon dictionary.
 
@@ -479,15 +492,15 @@ class analyze:
         Returns:
             None
         """
-        if dictionary is None: 
-             raise ValueError("The 'dictionary' parameter must be provided.")
-        else: 
-            if isinstance(dictionary, str): 
+        if dictionary is None:
+            raise ValueError("The 'dictionary' parameter must be provided.")
+        else:
+            if isinstance(dictionary, str):
                 loaded_dictionary = load.dict(dictionary)
                 analysis().summarise_lex_dict(loaded_dictionary)
-            elif isinstance(dictionary, dict): 
+            elif isinstance(dictionary, dict):
                 analysis().summarise_lex_dict(dictionary)
-    
+
     def sentiment(self, text: str, dictionary: str = None):
         """
         Performs bag-of-words sentiment analysis on the given text using the specified lexicon dictionary.
@@ -499,12 +512,12 @@ class analyze:
                 Should be selected from the list of available options.
 
         Returns:
-            Union[float, Dict[str, int]]: 
+            Union[float, Dict[str, int]]:
                 If the lexicon dictionary is score-based, returns the total sentiment score as a float.
                 If the lexicon dictionary is label-based, returns a dictionary with sentiment class counts.
         """
         text = self.spellcheck.sentence(text)
-        
+
         avaliable_dictionary = [
             "MASTER_v2022",
             "VADER_v2014",
@@ -550,7 +563,7 @@ class analyze:
             "SenticNet_v2022_semantics",
             "SO-CAL_v2011",
         ]
-        # Add functions to analyse bidimensional dictionaries 
+        # Add functions to analyse bidimensional dictionaries
         if dictionary in avaliable_dictionary:
             if (
                 dictionary == "SenticNet_v2012_attributes"
@@ -592,7 +605,7 @@ class analyze:
                     lex_dict_type = "unknown"
             else:
                 lex_dict_type = "unknown"
-        
+
         # If score-based, calculate sentiment
         if lex_dict_type == "discrete" or lex_dict_type == "continuous":
             total_score = 0
@@ -612,7 +625,7 @@ class analyze:
                     matched_positions.update(range(start, end))
             return round(total_score, 4)
 
-        # Else if label based, collect sentiment        
+        # Else if label based, collect sentiment
         elif lex_dict_type == "categorical":
             if (
                 dictionary == "Aigents+_v2022"
@@ -623,16 +636,16 @@ class analyze:
                 sentiment_labels = ["positive", "negative"]
             elif dictionary == "DED_v2022":
                 sentiment_labels = ["anger", "anxiety", "optimism", "sadness"]
-            
+
             total_sentiment = []
             matched_positions = set()
-            
+
             for key, value in loaded_dictionary.items():
                 pattern = re.compile(
                     r"\b" + re.escape(key) + r"\b", flags=re.IGNORECASE
                 )
                 matches = pattern.finditer(text.lower())
-                for match in matches: 
+                for match in matches:
                     start, end = match.span()
                     # Check if there is any overlapping match
                     if any(start < pos < end for pos in matched_positions):
@@ -640,16 +653,16 @@ class analyze:
                     total_sentiment.append(value)
                     # Add the positions of the current match to the set
                     matched_positions.update(range(start, end))
-            
+
             class_counts = {word: 0 for word in sentiment_labels}
 
             # Count occurrences of each class in the list
             for class_name in total_sentiment:
                 class_counts[class_name] += 1
-            
+
             return class_counts
-        
-        elif lex_dict_type == "categorical (multi-label)": 
+
+        elif lex_dict_type == "categorical (multi-label)":
             if dictionary == "MASTER_v2022":
                 sentiment_labels = [
                     "Negative",
@@ -994,7 +1007,7 @@ class analyze:
 
             total_sentiment = []
             matched_positions = set()
-            
+
             for key, value in loaded_dictionary.items():
                 pattern = re.compile(
                     r"\b" + re.escape(key) + r"\b", flags=re.IGNORECASE
@@ -1008,15 +1021,15 @@ class analyze:
                     total_sentiment.extend(value)
                     # Add the positions of the current match to the set
                     matched_positions.update(range(start, end))
-            
+
             class_counts = {word: 0 for word in sentiment_labels}
 
             # Count occurrences of each class in the list
             for class_name in total_sentiment:
                 class_counts[class_name] += 1
-            
+
             return class_counts
-        
+
 
 # class lexical_overview:
 #     """
@@ -1049,9 +1062,8 @@ class analyze:
 #             self.result = self.bag_of_words(text=text, dictionary=dictionary)
 #         else:
 #             raise ValueError
-    
-#     def __str__(self): 
+
+#     def __str__(self):
 #         return str(self.result)
-    
+
 #     def bag_of_words(self, text: str, dictionary: str):
-        

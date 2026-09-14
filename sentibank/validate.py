@@ -1,6 +1,6 @@
-#Benchmark 
-#Conceptual 
-#Concordance 
-#Contextual
-#Connotative 
-#Discriminant
+# Benchmark
+# Conceptual
+# Concordance
+# Contextual
+# Connotative
+# Discriminant

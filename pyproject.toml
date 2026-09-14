@@ -68,7 +68,7 @@ docs = [
 
 [project.urls]
 Homepage = "https://github.com/socius-org/sentibank"
-Documentation = "https://doc.socius.org/sentibank/about.html"
+Documentation = "https://socius-org.github.io/sentibank/about.html"
 Repository = "https://github.com/socius-org/sentibank"
 Issues = "https://github.com/socius-org/sentibank/issues"
 Changelog = "https://github.com/socius-org/sentibank/releases"

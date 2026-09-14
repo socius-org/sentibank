@@ -5,7 +5,7 @@
   [![Paper](https://img.shields.io/badge/Paper-ICWSM%202024-1C9418)](https://doi.org/10.1609/icwsm.v18i1.31443)
   [![DOI](https://zenodo.org/badge/673006895.svg)](https://zenodo.org/doi/10.5281/zenodo.10514542)
   [![PyPI](https://img.shields.io/pypi/v/sentibank?label=PyPI&color=3775A9&logo=pypi&logoColor=white)](https://pypi.org/project/sentibank/)
-  [![Docs](https://img.shields.io/badge/Docs-doc.socius.org-00002E)](https://doc.socius.org/sentibank/about.html)
+  [![Docs](https://img.shields.io/badge/Docs-socius--org.github.io-00002E)](https://socius-org.github.io/sentibank/about.html)
   [![Downloads](https://img.shields.io/pypi/dm/sentibank?label=Downloads&color=51DA4C)](https://pypistats.org/packages/sentibank)
   [![CI](https://img.shields.io/github/actions/workflow/status/socius-org/sentibank/ci.yml?label=CI)](https://github.com/socius-org/sentibank/actions)
   [![License](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-3C46FF)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
@@ -34,7 +34,7 @@ call works for all 43 preprocessed identifiers, with caching for repeated loads.
 **Originals kept alongside.** `load.origin(...)` returns the author's original file as a pandas
 DataFrame, so preprocessing choices can be checked and redone.
 
-**Documented provenance.** Every lexicon has a page in the [documentation](https://doc.socius.org/sentibank/archive/intro.html)
+**Documented provenance.** Every lexicon has a page in the [documentation](https://socius-org.github.io/sentibank/archive/intro.html)
 covering composition, annotation methodology, evaluation and usage guidance, with references.
 
 ## Install
@@ -123,7 +123,7 @@ tests/             pytest suite
 
 ## Documentation
 
-The [documentation](https://doc.socius.org/sentibank/about.html) covers installation, loading and
+The [documentation](https://socius-org.github.io/sentibank/about.html) covers installation, loading and
 analysis, and has a page for each lexicon with its composition, methodology, evaluation and usage
 guidance.
 
