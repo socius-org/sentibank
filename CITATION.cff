@@ -5,7 +5,7 @@ authors:
   given-names: "NICK"
   orcid: "https://orcid.org/0009-0003-2575-5493"
 title: "sentibank: A Unified Resource of Sentiment Lexicons and Dictionaries"
-version: 0.2.3
+version: 1.1.1
 doi: 10.1609/icwsm.v18i1.31443
-date-released: 2024-05-28
+date-released: 2026-09-15
 url: "https://github.com/socius-org/sentibank"

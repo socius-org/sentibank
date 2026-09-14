@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "sentibank"
-version = "1.1.0"
+version = "1.1.1"
 description = "Unifying sentiment lexicons and dictionaries into an accessible open python package"
 readme = "README.md"
 requires-python = ">=3.8"

@@ -5,22 +5,31 @@ All notable changes to the sentibank project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.1.0] - 2024-08-28
+## [1.1.1] - 2026-09-15
 
-### 🐛 Fixed
+### Documentation
+- README and documentation restyled to the socius conventions (hero and banner images, badge row, no emoji); documentation language kept plain.
+- SO-CAL page removed from the documentation and the README, since the package does not ship its data.
+- Documentation is now built and published automatically by a GitHub Actions workflow (`.github/workflows/docs.yml`).
+- Corrected the 1.0.0 and 1.1.0 release dates and refreshed citation metadata.
+- Fixed README typos and the dictionary identifier used in the label-based example.
+
+## [1.1.0] - 2025-08-28
+
+### Fixed
 - **GitHub Actions Workflow**: Fixed PyPI publishing workflow trigger timing issue
 - **Release Process**: Ensured proper workflow execution on release publication
 
-### 🔧 Improved
+### Improved
 - **CI/CD Pipeline**: Added manual workflow dispatch option for flexible publishing
 - **Release Management**: Streamlined version management across all configuration files
 
-### 📚 Documentation
+### Documentation
 - **Version Alignment**: Synchronized version numbers across pyproject.toml, setup.py, and __init__.py
 
-## [1.0.0] - 2024-08-27
+## [1.0.0] - 2025-08-27
 
-### ✨ Added
+### Added
 - **Major Refactoring**: Complete overhaul of the codebase for improved maintainability
 - **Type Hints**: Full type annotations throughout the codebase for better IDE support
 - **Error Handling**: Comprehensive exception handling for file operations and data loading
@@ -33,36 +42,36 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Examples**: Complete examples directory with usage demonstrations
 - **Documentation**: Enhanced docstrings and type information
 
-### 🔧 Changed
+### Changed
 - **BREAKING**: Refactored `load` class with new method signatures and return types
 - **Architecture**: Centralized lexicon path mappings to eliminate code duplication
 - **File Handling**: Migration from `os.path` to `pathlib.Path` for better path handling
 - **Version Sync**: Synchronized version numbers between setup.py and __init__.py
 
-### 🐛 Fixed
+### Fixed
 - **Code Duplication**: Eliminated repeated lexicon_paths dictionaries in archive.py
 - **Version Mismatch**: Fixed inconsistent version numbers across package files
 - **Incomplete Methods**: Properly implemented the benchmark() method with clear documentation
 - **gitignore Issues**: Resolved conflicts with test.py tracking
 
-### 📚 Documentation
+### Documentation
 - **CLAUDE.md**: Added comprehensive guide for future development
 - **Examples**: Created practical usage examples for common scenarios
 - **Type Stubs**: Added type information for better IDE integration
 - **CLI Help**: Comprehensive help text and usage examples
 
-### 🏗️ Infrastructure
+### Infrastructure
 - **GitHub Actions**: Automated testing on multiple Python versions and operating systems
 - **Code Quality**: Added black, isort, flake8, and mypy configuration
 - **Testing**: pytest configuration with coverage reporting
 - **Publishing**: Automated PyPI publishing workflow
 
-### 💥 Breaking Changes
+### Breaking Changes
 - Method signatures in `load` class now include type hints
 - Error handling may raise different exception types
 - Some internal APIs have been refactored
 
-### 🔄 Migration Guide
+### Migration Guide
 For users upgrading from previous versions:
 1. Update import statements if using internal APIs
 2. Handle new exception types in error handling code

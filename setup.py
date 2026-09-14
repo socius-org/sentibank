@@ -4,13 +4,13 @@ setup(
     name='sentibank',
     packages=['sentibank'],
     package_data={'sentibank': ['dict_arXiv/*.csv', 'dict_arXiv/*.pickle', 'dict_arXiv/*.json']}, 
-    version='1.1.0', 
+    version='1.1.1', 
     license='CC BY-NC-SA 4.0',
     description='Unifying sentiment lexicons and dictionaries into an accessible open python package',
     author='Nick Oh',
     author_email='nick.sh.oh@socius.org',
     url='https://github.com/socius-org/sentibank',
-    download_url='https://github.com/socius-org/sentibank/archive/refs/tags/0.2.4.tar.gz',  # Updated
+    download_url='https://github.com/socius-org/sentibank/archive/refs/tags/v1.1.1.tar.gz',
     keywords=[
         'Sentiment Analysis', 
         'Sentiment Dictionary', 

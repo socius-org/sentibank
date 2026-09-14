@@ -1,4 +1,6 @@
-jupyter-book
+# Build dependencies for the documentation (see .github/workflows/docs.yml).
+# The workflow also installs this repository itself, since the notebooks import sentibank.
+# Jupyter Book 2 is a different tool with a different config format; stay on 1.x.
+jupyter-book>=1.0,<2
+itables
 matplotlib
-itable 
-sentibank

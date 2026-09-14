@@ -1,38 +1,37 @@
-# About 
+# About
 
-## We introduce 🗃️ sentibank, **a large-scale unified database consolidating 15 original sentiment dictionaries and 43 preprocessed dictionaries, spanning 7 genres and 6 domains**.
+sentibank is an open database of expert-curated sentiment dictionaries and lexicons, distributed as a Python package. It consolidates 15 original sentiment dictionaries and 43 preprocessed dictionaries, spanning 7 genres and 6 domains, behind a single loading interface. The resource is described in [Oh (2024)](https://doi.org/10.1609/icwsm.v18i1.31443), published at ICWSM 2024.
 
-## Overview 
+## Overview
 
-### Sentiment Analysis
+### Sentiment analysis
 
-Sentiment analysis is the automated process of identifying and extracting subjective information such as opinions, emotions, and attitudes from textual data. It has become an increasingly critical technique across many social science domains such as business, politics, and economics. 
+Sentiment analysis is the automated process of identifying and extracting subjective information such as opinions, emotions, and attitudes from textual data. It has become an increasingly important technique across many social science domains such as business, politics, and economics.
 
-While deep learning models have excelled in achieving high accuracy, often surpassing simpler lexicon models in sentiment analysis tasks (Al-Qablan
-et al. 2023), their inherently opaque nature poses challenges for applications in high-stakes domains like government policy making or mental health diagnosis, where transparent and interpretable decision-making is crucial (Rudin 2019). Recognising the continued importance of rule-based sentiment analysis, particularly in computational social science fields where interpretability is paramount, improving rule-based SA remains vital. 
+While deep learning models have achieved high accuracy, often surpassing simpler lexicon models in sentiment analysis tasks (Al-Qablan et al. 2023), their opaque nature poses challenges for applications in high-stakes domains such as government policy making or mental health diagnosis, where transparent and interpretable decision-making is essential (Rudin 2019). Rule-based sentiment analysis therefore remains important, particularly in computational social science, and improving it remains worthwhile.
 
 ### sentibank
 
-Rule-based sentiment analysis relies on expert-curated lexicons containing words with pre-assigned sentiment scores, as human expertise is required to accurately annotate the sentiment of words across contexts. However, effectively applying these lexicons in rule-based systems faces several challenges:
+Rule-based sentiment analysis relies on expert-curated lexicons containing words with pre-assigned sentiment scores, because human expertise is required to annotate the sentiment of words across contexts. Applying these lexicons in practice faces several challenges:
 
-- **🔍 Fragmented resources** requiring laborious integration
-- **🌐 Lack of verified, high-quality lexicons** spanning domains 
-- **🔓 Inaccessibility** limiting transparency and advancement
+- **Fragmented resources** that require laborious integration
+- **A lack of verified, high-quality lexicons** spanning domains
+- **Inaccessibility** that limits transparency and further development
 
-By consolidating lexicons into an open and public platform, sentibank enables users to tap into a vast knowledge base of sentiments with ease. Here's some of the key capabilities: 
+By consolidating lexicons into an open and public resource, sentibank gives users access to a large body of sentiment knowledge through one interface. Its main capabilities are:
 
-- 🗃️ **15+ (and counting) sentiment dictionaries** spanning domains and use cases
-- 🧠 Curation of dictionaries provided by **leading experts** in sentiment analysis
-- 📖 Access **original lexicons** and **preprocessed versions**
-- ✏️ Customise existing dictionaries or contribute new ones
-- 🚀 Production-ready for integration into analyses
+- **15 sentiment dictionaries** (and counting) spanning domains and use cases
+- Dictionaries curated by **leading experts** in sentiment analysis
+- Access to both the **original lexicons** and**preprocessed versions**
+- The ability to customise existing dictionaries or contribute new ones
+- A tested package ready for integration into analyses
 
-## Navigating the Documentation
+## Navigating the documentation
 
-This documentation provides researchers, data scientists, and developers with both conceptual and practical knowledge to effectively leverage sentibank. Key sections include:
+This documentation provides researchers, data scientists and developers with both conceptual and practical guidance for using sentibank. The main sections are:
 
-- **[Getting Started](getting_started/installation.ipynb)** - Installation, basic usage, and quickstart examples
-- **[Archive](archive/intro.md)** - In-depth documentation on included lexicons 
-- **[Contributions](Contributions.md)** - Instructions for contributing new lexicons
+- **[Getting Started](getting_started/installation.ipynb)**: installation, loading dictionaries, and analysing dictionaries and text
+- **[Archive](archive/intro.md)**: a page for each included lexicon, covering its composition, methodology, evaluation and usage
+- **[Contributions](Contributions.md)**: how to contribute new lexicons or request changes
 
-Whether you're looking for overviews, implementation details, or contributing guidance, our comprehensive documentation aim to illuminate both the possibilities and practicalities of integrating sentibank into your work.
+sentibank is developed at [socius](https://socius.org). The source code is on [GitHub](https://github.com/socius-org/sentibank) and releases are published on [PyPI](https://pypi.org/project/sentibank/).

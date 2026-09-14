@@ -25,7 +25,6 @@ parts:
     - file: archive/OpinionLexicon
     - file: archive/SenticNet
     - file: archive/SentiWordNet
-    - file: archive/SO-CAL
     - file: archive/VADER
     - file: archive/WordNet-Affect
   - caption: Contributions

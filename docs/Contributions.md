@@ -12,7 +12,7 @@ This section provides guidelines for contributing new lexicons, requesting modif
 
 Creating high-quality sentiment lexicons requires careful consideration of the scope, data sources, annotation process, and format. We welcome new lexicons that meet our [contribution criteria](https://github.com/socius-org/sentibank/blob/main/.github/CONTRIBUTING.md). 
 
-> 💡We are currently collaborating with domain experts to create a new *gold-standard* sentiment dictionaries on various social science topics, including `ideology`, `current_affairs`, `market`, `cryptocurrency`, `politics`, `activism_reform`, `academic`, `esg`, and `society`.  If you are a researcher willing to lend your expertise in our progress, please reach out to research@socius.org.  
+> We are currently collaborating with domain experts to create a new *gold-standard* sentiment dictionaries on various social science topics, including `ideology`, `current_affairs`, `market`, `cryptocurrency`, `politics`, `activism_reform`, `academic`, `esg`, and `society`.  If you are a researcher willing to lend your expertise in our progress, please reach out to research@socius.org.  
 
 ## Requesting Additions and Modifications
 
