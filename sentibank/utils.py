@@ -501,6 +501,44 @@ class analyze:
             elif isinstance(dictionary, dict):
                 analysis().summarise_lex_dict(dictionary)
 
+    #: Dictionaries whose values are related concepts rather than sentiment scores or labels.
+    UNSUPPORTED_SUFFIXES = ("_semantics",)
+
+    @staticmethod
+    def _dictionary_type(loaded_dictionary: dict) -> str:
+        """Classify a dictionary by the shape of its values."""
+        for value in itertools.islice(loaded_dictionary.values(), 1):
+            if isinstance(value, bool):
+                return "unknown"
+            if isinstance(value, str):
+                return "categorical"
+            if isinstance(value, int):
+                return "discrete"
+            if isinstance(value, float):
+                return "continuous"
+            if isinstance(value, list) and value:
+                if all(isinstance(item, str) for item in value):
+                    return "categorical (multi-label)"
+                if all(isinstance(item, (int, float)) for item in value):
+                    return "vector representation"
+        return "unknown"
+
+    @staticmethod
+    def _matched_values(text: str, loaded_dictionary: dict) -> list:
+        """Values of the dictionary terms found in `text` (bag of words, non-overlapping)."""
+        lowered = text.lower()
+        matched_positions: set = set()
+        values = []
+        for key, value in loaded_dictionary.items():
+            pattern = re.compile(r"\b" + re.escape(key) + r"\b", flags=re.IGNORECASE)
+            for match in pattern.finditer(lowered):
+                start, end = match.span()
+                if any(start < pos < end for pos in matched_positions):
+                    continue
+                values.append(value)
+                matched_positions.update(range(start, end))
+        return values
+
     def sentiment(self, text: str, dictionary: str = None):
         """
         Performs bag-of-words sentiment analysis on the given text using the specified lexicon dictionary.
@@ -508,562 +546,72 @@ class analyze:
 
         Parameters:
             text (str): The input text for sentiment analysis.
-            dictionary (str): The lexicon dictionary to be used for sentiment analysis.
-                Should be selected from the list of available options.
+            dictionary (str): The identifier of the lexicon dictionary to use. Any identifier
+                returned by ``archive.load().list_available()["dictionaries"]`` is accepted,
+                except the SenticNet ``_semantics`` dictionaries, whose values are related
+                concepts rather than sentiment.
 
         Returns:
-            Union[float, Dict[str, int]]:
-                If the lexicon dictionary is score-based, returns the total sentiment score as a float.
-                If the lexicon dictionary is label-based, returns a dictionary with sentiment class counts.
+            Union[float, Dict[str, int], List[float]]:
+                Score-based dictionaries: the summed score of the matched terms.
+                Label-based dictionaries (single or multi-label): a count per label, with every
+                label of the dictionary present (zero when unmatched).
+                Vector-valued dictionaries (for example ``NoVAD_v2013_bidimensional`` or the
+                SenticNet ``_attributes`` dictionaries): the per-dimension sums of the matched
+                terms, in the dictionary's dimension order.
         """
+        if dictionary is None:
+            raise ValueError("The 'dictionary' parameter must be provided.")
+
+        available = load.list_available()["dictionaries"]
+        if dictionary not in available:
+            raise ValueError(
+                f"The provided dictionary '{dictionary}' is not available. "
+                "Use archive.load().list_available() to see the available identifiers."
+            )
+        if dictionary.endswith(self.UNSUPPORTED_SUFFIXES):
+            raise ValueError(
+                f"The provided dictionary '{dictionary}' maps concepts to related concepts "
+                "rather than to sentiment scores or labels, so it cannot be used for "
+                "sentiment analysis."
+            )
+
+        loaded_dictionary = load.dict(dictionary)
         text = self.spellcheck.sentence(text)
+        lex_dict_type = self._dictionary_type(loaded_dictionary)
+        matched = self._matched_values(text, loaded_dictionary)
 
-        avaliable_dictionary = [
-            "MASTER_v2022",
-            "VADER_v2014",
-            "AFINN_v2009",
-            "AFINN_v2011",
-            "AFINN_v2015",
-            "Aigents+_v2022",
-            "HarvardGI_v2000",
-            "WordNet-Affect_v2006",
-            "SentiWordNet_v2010_simple",
-            "SentiWordNet_v2010_logtransform",
-            "Henry_v2006",
-            "OpinionLexicon_v2004",
-            "ANEW_v1999_simple",
-            "ANEW_v1999_weighted",
-            "DED_v2022",
-            "DAL_v2009_norm",
-            "DAL_v2009_boosted",
-            "NoVAD_v2013_norm",
-            "NoVAD_v2013_boosted",
-            "SenticNet_v2010",
-            "SenticNet_v2012",
-            "SenticNet_v2012_attributes",
-            "SenticNet_v2012_semantics",
-            "SenticNet_v2014",
-            "SenticNet_v2014_attributes",
-            "SenticNet_v2014_semantics",
-            "SenticNet_v2016",
-            "SenticNet_v2016_attributes",
-            "SenticNet_v2016_mood",
-            "SenticNet_v2016_semantics",
-            "SenticNet_v2018",
-            "SenticNet_v2018_attributes",
-            "SenticNet_v2018_mood",
-            "SenticNet_v2018_semantics",
-            "SenticNet_v2020",
-            "SenticNet_v2020_attributes",
-            "SenticNet_v2020_mood",
-            "SenticNet_v2020_semantics",
-            "SenticNet_v2022",
-            "SenticNet_v2022_attributes",
-            "SenticNet_v2022_mood",
-            "SenticNet_v2022_semantics",
-            "SO-CAL_v2011",
-        ]
-        # Add functions to analyse bidimensional dictionaries
-        if dictionary in avaliable_dictionary:
-            if (
-                dictionary == "SenticNet_v2012_attributes"
-                or dictionary == "SenticNet_v2014_attributes"
-                or dictionary == "SenticNet_v2016_attributes"
-                or dictionary == "SenticNet_v2018_attributes"
-                or dictionary == "SenticNet_v2020_attributes"
-                or dictionary == "SenticNet_v2022_attributes"
-            ):
-                raise ValueError(
-                    f"The provided dictionary '{dictionary}' is currently unsupported."
+        if lex_dict_type in ("discrete", "continuous"):
+            return round(sum(matched), 4)
+
+        if lex_dict_type == "categorical":
+            labels = list(dict.fromkeys(loaded_dictionary.values()))
+            counts = {label: 0 for label in labels}
+            for value in matched:
+                counts[value] += 1
+            return counts
+
+        if lex_dict_type == "categorical (multi-label)":
+            labels = list(
+                dict.fromkeys(
+                    label for value in loaded_dictionary.values() for label in value
                 )
-            else:
-                loaded_dictionary = load.dict(dictionary)
-        else:
-            if dictionary is None:
-                raise ValueError("The 'dictionary' parameter must be provided.")
-            else:
-                raise ValueError(
-                    f"The provided dictionary '{dictionary}' is not available."
-                )
+            )
+            counts = {label: 0 for label in labels}
+            for value in matched:
+                for label in value:
+                    counts[label] += 1
+            return counts
 
-        # Check if dictionary is score-based or label-based
-        for key, value in itertools.islice(loaded_dictionary.items(), 1):
-            if isinstance(value, str):
-                lex_dict_type = "categorical"
-            elif isinstance(value, int):
-                lex_dict_type = "discrete"
-            elif isinstance(value, float):
-                lex_dict_type = "continuous"
-            elif isinstance(value, list):
-                if all(isinstance(item, str) for item in value):
-                    lex_dict_type = "categorical (multi-label)"
-                elif all(isinstance(item, float) for item in value) or all(
-                    isinstance(item, int) for item in value
-                ):
-                    lex_dict_type = "vector representation"
-                else:
-                    lex_dict_type = "unknown"
-            else:
-                lex_dict_type = "unknown"
+        if lex_dict_type == "vector representation":
+            dimensions = len(next(iter(loaded_dictionary.values())))
+            totals = [0.0] * dimensions
+            for value in matched:
+                for i, component in enumerate(value[:dimensions]):
+                    totals[i] += component
+            return [round(total, 4) for total in totals]
 
-        # If score-based, calculate sentiment
-        if lex_dict_type == "discrete" or lex_dict_type == "continuous":
-            total_score = 0
-            matched_positions = set()
-            for key, value in loaded_dictionary.items():
-                pattern = re.compile(
-                    r"\b" + re.escape(key) + r"\b", flags=re.IGNORECASE
-                )
-                matches = pattern.finditer(text.lower())
-                for match in matches:
-                    start, end = match.span()
-                    # Check if there is any overlapping match
-                    if any(start < pos < end for pos in matched_positions):
-                        continue
-                    total_score += value
-                    # Add the positions of the current match to the set
-                    matched_positions.update(range(start, end))
-            return round(total_score, 4)
-
-        # Else if label based, collect sentiment
-        elif lex_dict_type == "categorical":
-            if (
-                dictionary == "Aigents+_v2022"
-                or dictionary == "Henry_v2006"
-                or dictionary == "OpinionLexicon_v2004"
-                or dictionary == "GeneralInquirer_v2000"
-            ):
-                sentiment_labels = ["positive", "negative"]
-            elif dictionary == "DED_v2022":
-                sentiment_labels = ["anger", "anxiety", "optimism", "sadness"]
-
-            total_sentiment = []
-            matched_positions = set()
-
-            for key, value in loaded_dictionary.items():
-                pattern = re.compile(
-                    r"\b" + re.escape(key) + r"\b", flags=re.IGNORECASE
-                )
-                matches = pattern.finditer(text.lower())
-                for match in matches:
-                    start, end = match.span()
-                    # Check if there is any overlapping match
-                    if any(start < pos < end for pos in matched_positions):
-                        continue
-                    total_sentiment.append(value)
-                    # Add the positions of the current match to the set
-                    matched_positions.update(range(start, end))
-
-            class_counts = {word: 0 for word in sentiment_labels}
-
-            # Count occurrences of each class in the list
-            for class_name in total_sentiment:
-                class_counts[class_name] += 1
-
-            return class_counts
-
-        elif lex_dict_type == "categorical (multi-label)":
-            if dictionary == "MASTER_v2022":
-                sentiment_labels = [
-                    "Negative",
-                    "Uncertainty",
-                    "Constraining",
-                    "Positive",
-                    "Litigious",
-                    "Weak_Modal",
-                    "Strong_Modal",
-                ]
-            elif dictionary == "WordNet-Affect_v2006":
-                sentiment_labels = [
-                    "general-dislike",
-                    "anger",
-                    "fury",
-                    "negative-emotion",
-                    "wrath",
-                    "ambiguous-emotion",
-                    "love",
-                    "positive-emotion",
-                    "worship",
-                    "sadness",
-                    "melancholy",
-                    "world-weariness",
-                    "wonder",
-                    "astonishment",
-                    "surprise",
-                    "sorrow",
-                    "lost-sorrow",
-                    "mournfulness",
-                    "woe",
-                    "neutral-unconcern",
-                    "indifference",
-                    "neutral-emotion",
-                    "withdrawal",
-                    "oppression",
-                    "depression",
-                    "weight",
-                    "weepiness",
-                    "liking",
-                    "preference",
-                    "weakness",
-                    "hostility",
-                    "belligerence",
-                    "hate",
-                    "warpath",
-                    "lovingness",
-                    "warmheartedness",
-                    "malevolence",
-                    "vindictiveness",
-                    "ambiguous-agitation",
-                    "unrest",
-                    "dislike",
-                    "unfriendliness",
-                    "diffidence",
-                    "timidity",
-                    "negative-fear",
-                    "unassertiveness",
-                    "umbrage",
-                    "tumult",
-                    "joy",
-                    "exultation",
-                    "triumph",
-                    "apprehension",
-                    "trepidation",
-                    "calmness",
-                    "tranquillity",
-                    "closeness",
-                    "belonging",
-                    "togetherness",
-                    "exhilaration",
-                    "titillation",
-                    "thing",
-                    "compassion",
-                    "tenderness",
-                    "sympathy",
-                    "resentment",
-                    "sulkiness",
-                    "stupefaction",
-                    "stir",
-                    "anxiety",
-                    "negative-agitation",
-                    "stewing",
-                    "stage-fright",
-                    "regret-sorrow",
-                    "solicitude",
-                    "positive-concern",
-                    "softheartedness",
-                    "affection",
-                    "soft-spot",
-                    "satisfaction",
-                    "contentment",
-                    "complacency",
-                    "smugness",
-                    "sinking",
-                    "shyness",
-                    "embarrassment",
-                    "shame",
-                    "shamefacedness",
-                    "foreboding",
-                    "shadow",
-                    "sensation",
-                    "self-pity",
-                    "self-pride",
-                    "self-esteem",
-                    "self-disgust",
-                    "humility",
-                    "self-depreciation",
-                    "self-consciousness",
-                    "fearlessness",
-                    "security",
-                    "scruple",
-                    "scare",
-                    "positive-hope",
-                    "optimism",
-                    "sanguinity",
-                    "reverence",
-                    "ambiguous-fear",
-                    "despair",
-                    "resignation",
-                    "disgust",
-                    "repugnance",
-                    "compunction",
-                    "repentance",
-                    "regard",
-                    "puppy-love",
-                    "protectiveness",
-                    "satisfaction-pride",
-                    "presage",
-                    "plaintiveness",
-                    "placidity",
-                    "annoyance",
-                    "pique",
-                    "pessimism",
-                    "pensiveness",
-                    "peace",
-                    "panic",
-                    "nausea",
-                    "murderousness",
-                    "misopedia",
-                    "misoneism",
-                    "misology",
-                    "misogyny",
-                    "misogamy",
-                    "misocainea",
-                    "misery",
-                    "misanthropy",
-                    "mercifulness",
-                    "meekness",
-                    "malice",
-                    "maleficence",
-                    "loyalty",
-                    "lividity",
-                    "levity",
-                    "apathy",
-                    "neutral-languor",
-                    "easiness",
-                    "positive-languor",
-                    "kindheartedness",
-                    "cheerlessness",
-                    "joylessness",
-                    "merriment",
-                    "jollity",
-                    "jocundity",
-                    "jitteriness",
-                    "envy",
-                    "jealousy",
-                    "alienation",
-                    "isolation",
-                    "bad-temper",
-                    "irascibility",
-                    "insecurity",
-                    "ingratitude",
-                    "infuriation",
-                    "indignation",
-                    "fidget",
-                    "impatience",
-                    "empathy",
-                    "identification",
-                    "hysteria",
-                    "huffiness",
-                    "hopelessness",
-                    "hopefulness",
-                    "hilarity",
-                    "hesitance",
-                    "admiration",
-                    "hero-worship",
-                    "helplessness",
-                    "heavyheartedness",
-                    "negative-unconcern",
-                    "heartlessness",
-                    "heartburning",
-                    "harassment",
-                    "happiness",
-                    "enthusiasm",
-                    "gusto",
-                    "guilt",
-                    "grudge",
-                    "grief",
-                    "gravity",
-                    "gratitude",
-                    "gratefulness",
-                    "friendliness",
-                    "good-will",
-                    "gloom",
-                    "gloat",
-                    "gladness",
-                    "playfulness",
-                    "fulfillment",
-                    "frustration",
-                    "positive-fear",
-                    "frisson",
-                    "forlornness",
-                    "forgiveness",
-                    "fondness",
-                    "fit",
-                    "ambiguous-expectation",
-                    "fever",
-                    "approval",
-                    "favor",
-                    "exuberance",
-                    "elation",
-                    "euphoria",
-                    "encouragement",
-                    "emotionlessness",
-                    "electricity",
-                    "ego",
-                    "edginess",
-                    "earnestness",
-                    "eagerness",
-                    "dysphoria",
-                    "dudgeon",
-                    "downheartedness",
-                    "dolor",
-                    "dolefulness",
-                    "distress",
-                    "distance",
-                    "displeasure",
-                    "disinclination",
-                    "discouragement",
-                    "discomfiture",
-                    "disapproval",
-                    "devotion",
-                    "despondency",
-                    "despisal",
-                    "demoralization",
-                    "defeatism",
-                    "daze",
-                    "dander",
-                    "cynicism",
-                    "cruelty",
-                    "creeps",
-                    "covetousness",
-                    "coolness",
-                    "contempt",
-                    "conscience",
-                    "confusion",
-                    "confidence",
-                    "negative-concern",
-                    "compatibility",
-                    "commiseration",
-                    "comfortableness",
-                    "class-feeling",
-                    "cheerfulness",
-                    "chagrin",
-                    "carefreeness",
-                    "captivation",
-                    "buoyancy",
-                    "buck-fever",
-                    "brotherhood",
-                    "bonheur",
-                    "blue-devils",
-                    "benevolence",
-                    "beneficence",
-                    "bang",
-                    "attrition",
-                    "attachment",
-                    "enthusiasm-ardor",
-                    "anxiousness",
-                    "antipathy",
-                    "positive-expectation",
-                    "anticipation",
-                    "antagonism",
-                    "animosity",
-                    "amour-propre",
-                    "amorousness",
-                    "amicability",
-                    "alarm",
-                    "aggression",
-                    "aggravation",
-                    "abhorrence",
-                    "abashment",
-                    "angst",
-                    "horror",
-                    "positive-suspense",
-                    "awe",
-                    "fear-intimidation",
-                    "ambiguous-hope",
-                ]
-            elif (
-                dictionary == "SenticNet_v2016_mood"
-                or dictionary == "SenticNet_v2018_mood"
-                or dictionary == "SenticNet_v2020_mood"
-            ):
-                sentiment_labels = [
-                    "joy",
-                    "surprise",
-                    "admiration",
-                    "disgust",
-                    "interest",
-                    "fear",
-                    "sadness",
-                    "anger",
-                ]
-            elif dictionary == "SenticNet_v2022_mood":
-                sentiment_labels = [
-                    "eagerness",
-                    "pleasantness",
-                    "calmness",
-                    "serenity",
-                    "contentment",
-                    "fear",
-                    "melancholy",
-                    "grief",
-                    "bliss",
-                    "disgust",
-                    "terror",
-                    "dislike",
-                    "sadness",
-                    "annoyance",
-                    "responsiveness",
-                    "loathing",
-                    "delight",
-                    "anxiety",
-                    "enthusiasm",
-                    "anger",
-                    "joy",
-                    "rage",
-                    "ecstasy",
-                    "acceptance",
-                ]
-
-            total_sentiment = []
-            matched_positions = set()
-
-            for key, value in loaded_dictionary.items():
-                pattern = re.compile(
-                    r"\b" + re.escape(key) + r"\b", flags=re.IGNORECASE
-                )
-                matches = pattern.finditer(text.lower())
-                for match in matches:
-                    start, end = match.span()
-                    # Check if there is any overlapping match
-                    if any(start < pos < end for pos in matched_positions):
-                        continue
-                    total_sentiment.extend(value)
-                    # Add the positions of the current match to the set
-                    matched_positions.update(range(start, end))
-
-            class_counts = {word: 0 for word in sentiment_labels}
-
-            # Count occurrences of each class in the list
-            for class_name in total_sentiment:
-                class_counts[class_name] += 1
-
-            return class_counts
-
-
-# class lexical_overview:
-#     """
-#     Class for generating a lexical overview based on a sentiment lexicon dictionary.
-
-#     Attributes:
-#         dictionary (dict): Input sentiment lexicon dictionary for analysis.
-#     """
-
-#     def __init__(self, dictionary: dict = None):
-#         """
-#         Initializes the lexical_overview class with a sentiment lexicon dictionary.
-
-#         Args:
-#             dictionary (dict): Input sentiment lexicon dictionary for analysis.
-
-#         Raises:
-#             ValueError: Raised if no dictionary is provided.
-#         """
-#         # dict:str = Consider if users simply come up with the lex_dict_idx
-#         if dict is None:
-#             raise ValueError("The 'dictionary' parameter must be provided.")
-#         else:
-#             analysis().summarise_lex_dict(dictionary)
-
-
-# class sentimentanalysis:
-#     def __init__(self, method: str, text: str, dictionary: str = None):
-#         if method.lower() == ("bow" or "bag-of-words" or "bag of words"):
-#             self.result = self.bag_of_words(text=text, dictionary=dictionary)
-#         else:
-#             raise ValueError
-
-#     def __str__(self):
-#         return str(self.result)
-
-#     def bag_of_words(self, text: str, dictionary: str):
+        raise ValueError(
+            f"The provided dictionary '{dictionary}' has values that sentiment analysis "
+            "does not support."
+        )

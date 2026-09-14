@@ -5,7 +5,21 @@ All notable changes to the sentibank project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [1.2.0] - 2026-09-15
+
+### Fixed
+- `analyze.sentiment()` now accepts every identifier the loader provides. It previously kept
+  its own list, which still named `HarvardGI_v2000` (so `GeneralInquirer_v2000` was refused)
+  and omitted `NoVAD_v2013_bidimensional`.
+- Label counts are derived from the dictionary's own labels instead of a fixed table, which
+  fixes the crashes on the SenticNet `_mood` dictionaries (`KeyError`) and removes the
+  `UnboundLocalError` on the `_semantics` ones, which are now rejected with a clear message.
+- Vector-valued dictionaries (`NoVAD_v2013_bidimensional`, SenticNet `_attributes`) return
+  per-dimension sums instead of failing.
+- `sentibank export --format csv` works for label-based and vector-valued dictionaries
+  (list values are written `;`-joined).
+- Loading wide original files no longer prints a pandas mixed-types warning.
+- The examples README notes that `compare_dictionaries.py` needs matplotlib.
 
 ### Changed
 - Python 3.10 or later is required: spaCy, a core dependency, no longer supports Python 3.9.

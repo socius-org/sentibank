@@ -128,7 +128,13 @@ def cmd_export(args: argparse.Namespace) -> int:
         elif args.format == "csv":
             import pandas as pd
 
-            df = pd.DataFrame.from_dict(data, orient="index", columns=["score"])
+            # Label-based and vector-valued dictionaries hold lists; join them so the
+            # CSV keeps one row per term.
+            rows = {
+                term: ";".join(map(str, value)) if isinstance(value, list) else value
+                for term, value in data.items()
+            }
+            df = pd.DataFrame.from_dict(rows, orient="index", columns=["score"])
             df.index.name = "word"
             df.to_csv(output_path)
         else:  # pickle

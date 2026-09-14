@@ -16,7 +16,7 @@ pip install sentibank
 Demonstrates how to load dictionaries and perform basic sentiment analysis.
 
 ### Dictionary Comparison (`compare_dictionaries.py`)
-Shows how to compare sentiment scores across different dictionaries.
+Shows how to compare sentiment scores across different dictionaries. Requires matplotlib, which is not a sentibank dependency: `pip install matplotlib`.
 
 ### Batch Analysis (`batch_analysis.py`)
 Demonstrates analyzing multiple texts efficiently.

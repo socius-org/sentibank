@@ -236,7 +236,7 @@ class load:
             elif idx == "SO-CAL_v2011":
                 self.origin_df = pd.read_csv(file_path, index_col=["word", "pos"])
             else:
-                self.origin_df = pd.read_csv(file_path)
+                self.origin_df = pd.read_csv(file_path, low_memory=False)
 
             # Cache the loaded dataframe
             self._cache[cache_key] = self.origin_df

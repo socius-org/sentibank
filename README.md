@@ -61,7 +61,7 @@ analyzer = analyze()
 analyzer.sentiment("I am excited and happy about the new announcement!", dictionary="VADER_v2014")
 # 4.1
 analyzer.sentiment("We are pleased to announce record results to our shareholders.", dictionary="MASTER_v2022")
-# {'Negative': 0, 'Uncertainty': 0, 'Constraining': 0, 'Positive': 2, 'Litigious': 0, 'Weak_Modal': 0, 'Strong_Modal': 0}
+# {'Negative': 0, 'Uncertainty': 0, 'Constraining': 0, 'Positive': 1, 'Litigious': 0, 'Weak_Modal': 0, 'Strong_Modal': 0}
 analyzer.dictionary("WordNet-Affect_v2006")   # summary of the lexicon's structure and scores
 ```
 
